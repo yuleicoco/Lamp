@@ -180,6 +180,9 @@
 		34E166501E0520F1004A65AB /* take_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E166191E0520F1004A65AB /* take_on.png */; };
 		34E166511E0520F1004A65AB /* top_egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E1661A1E0520F1004A65AB /* top_egg.png */; };
 		34E166521E0520F1004A65AB /* 退出.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E1661B1E0520F1004A65AB /* 退出.png */; };
+		7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71821E63BE9200F27BFD /* LampViewController.m */; };
+		7D0F71861E63BEA200F27BFD /* VisiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71851E63BEA200F27BFD /* VisiterViewController.m */; };
+		7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71881E63BEA900F27BFD /* MeViewController.m */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -822,6 +825,12 @@
 		34E1661B1E0520F1004A65AB /* 退出.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "退出.png"; sourceTree = "<group>"; };
 		3AC2930639E43591051DDADA /* Pods-funpaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funpaw.release.xcconfig"; path = "Pods/Target Support Files/Pods-funpaw/Pods-funpaw.release.xcconfig"; sourceTree = "<group>"; };
 		782952FC14463F99DF3112FF /* libPods-funpaw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-funpaw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0F71811E63BE9200F27BFD /* LampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampViewController.h; sourceTree = "<group>"; };
+		7D0F71821E63BE9200F27BFD /* LampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampViewController.m; sourceTree = "<group>"; };
+		7D0F71841E63BEA200F27BFD /* VisiterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisiterViewController.h; sourceTree = "<group>"; };
+		7D0F71851E63BEA200F27BFD /* VisiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterViewController.m; sourceTree = "<group>"; };
+		7D0F71871E63BEA900F27BFD /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		7D0F71881E63BEA900F27BFD /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -2093,9 +2102,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D0F717E1E63BE7500F27BFD /* Lamp */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F71811E63BE9200F27BFD /* LampViewController.h */,
+				7D0F71821E63BE9200F27BFD /* LampViewController.m */,
+			);
+			path = Lamp;
+			sourceTree = "<group>";
+		};
+		7D0F717F1E63BE7500F27BFD /* Visiter */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F71841E63BEA200F27BFD /* VisiterViewController.h */,
+				7D0F71851E63BEA200F27BFD /* VisiterViewController.m */,
+			);
+			path = Visiter;
+			sourceTree = "<group>";
+		};
+		7D0F71801E63BE7500F27BFD /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F71871E63BEA900F27BFD /* MeViewController.h */,
+				7D0F71881E63BEA900F27BFD /* MeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		7D2D58291E49A27A0086A823 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F717E1E63BE7500F27BFD /* Lamp */,
+				7D0F717F1E63BE7500F27BFD /* Visiter */,
+				7D0F71801E63BE7500F27BFD /* Me */,
 				7D2D582D1E49A3060086A823 /* MainTab */,
 				7D2D582A1E49A3060086A823 /* Base */,
 				7D2D582C1E49A3060086A823 /* Login */,
@@ -2361,6 +2400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */,
 				34E164151E050B18004A65AB /* UIViewController+HUD.m in Sources */,
 				34E1640D1E050B18004A65AB /* NSString+URLEncoding.m in Sources */,
 				34E164121E050B18004A65AB /* UIImage-Extensions.m in Sources */,
@@ -2392,9 +2432,11 @@
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
+				7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				34A864551E49A07100AD6D8A /* BaseModel.m in Sources */,
 				3496F9C51E04DF8E00744A1E /* main.m in Sources */,
+				7D0F71861E63BEA200F27BFD /* VisiterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

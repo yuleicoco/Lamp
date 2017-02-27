@@ -7,9 +7,14 @@
 //
 
 #import "MainTabViewController.h"
-
+#import "LampViewController.h"
+#import "VisiterViewController.h"
+#import "MeViewController.h"
 
 @interface MainTabViewController ()
+@property(nonatomic,strong)UINavigationController * lampVc;
+@property(nonatomic,strong)UINavigationController * visiterVc;
+@property(nonatomic,strong)UINavigationController * meVc;
 
 @end
 
@@ -21,7 +26,9 @@
 }
 
 -(void)setupSubviews{
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.viewControllers = @[self.lampVc,self.visiterVc,self.meVc];
+    
     self.tabBar.layer.shadowColor = [UIColor blackColor].CGColor;
     self.tabBar.layer.shadowOffset = CGSizeMake(0, -1);
     self.tabBar.layer.shadowOpacity = 0.4;
@@ -56,6 +63,53 @@
 //    return _moreVc;
 //}
 //
+
+-(UINavigationController *)lampVc{
+    if ((!_lampVc)) {
+        LampViewController * vc = [[LampViewController alloc]init];
+                vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil
+                                                             image:[[UIImage imageNamed:@"egg_more@2x"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"egg_more_s"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+
+    _lampVc = [[UINavigationController alloc]initWithRootViewController:vc];
+    }
+
+    return _lampVc;
+}
+
+-(UINavigationController *)visiterVc{
+    if (!_visiterVc) {
+        VisiterViewController * vc = [[VisiterViewController alloc]init];
+        vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil
+                                                     image:[[UIImage imageNamed:@"egg_more@2x"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"egg_more_s"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        
+        
+        _visiterVc = [[UINavigationController alloc]initWithRootViewController:vc];
+    }
+
+    
+
+    return _visiterVc;
+}
+
+-(UINavigationController *)meVc{
+    if (!_meVc) {
+        MeViewController * vc = [[MeViewController alloc]init];
+        vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil
+                                                     image:[[UIImage imageNamed:@"egg_more@2x"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"egg_more_s"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        _meVc = [[UINavigationController alloc]initWithRootViewController:vc];
+        
+        
+    }
+    return _meVc;
+}
+
+
+
+
+
+
+
+
 
 
 

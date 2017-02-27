@@ -280,7 +280,13 @@
     
 }
 
+-(void)loginbuttonTouch{
+    [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
 
+
+
+
+}
 
 
 
