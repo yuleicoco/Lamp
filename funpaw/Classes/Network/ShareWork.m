@@ -90,25 +90,15 @@
 //            params[@"classes"] = @"appinterface";
 //            params[@"method"] = @"json";
             
-        path =[NSString  stringWithFormat:@"http://180.97.80.227:15105/clientAction.do?method=json&classes=appinterface&%@",path];
-        
-            
-           // path =@"http://180.97.80.227:15102/clientAction.do?method=json&classes=appinterface&common=memberLogin";
-            
-
+           path =[NSString  stringWithFormat:@"http://180.97.80.227:15105/clientAction.do?method=json&classes=appinterface&%@",path];
         
             [self POST:path parameters:params progress:nil success:^(NSURLSessionTask *task, NSDictionary * responseObject) {
                  NSError* error = nil;
                 
                 BaseModel * model =[[BaseModel  alloc]initWithDictionary:responseObject[@"jsondata"] error:&error];
-                
                 success(model);
-                
-                
             } failure:^(NSURLSessionTask *operation, NSError *error) {
                 NSLog(@"Error: %@", error);
-//                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:error.localizedDescription delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//                [alert show];
                 failure(error);
             }];
             break;
@@ -120,5 +110,30 @@
             
 
 // 销毁 [self.operationQueue cancelAllOperations];
+
+
+
+- (void)requestNetWorkWithSuccessBlock:(requestNetBlock)success
+          WithFailurBlock:(requestFailureBlock)failure
+{
+
+    
+    NSString * str  =@"http://ip.taobao.com/service/getIpInfo.php?ip=myip";
+    
+    [self POST:str parameters:nil progress:nil success:^(NSURLSessionTask *task, NSDictionary * responseObject) {
+        NSError* error = nil;
+        
+        NetWork * model =[[NetWork  alloc]initWithDictionary:responseObject error:&error];
+        
+        success(model);
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        failure(error);
+    }];
+    
+}
+
+
 
 @end
