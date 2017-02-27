@@ -11,4 +11,5 @@ pod 'MojoDatabase', '~> 1.4'
 pod 'RMMapper', '~> 1.1.5'
 pod 'MWPhotoBrowser', '~> 2.1.1'
 pod 'Masonry', '~> 0.6.0'
+pod 'ShareSDK3', '~> 3.2.2'
 end
