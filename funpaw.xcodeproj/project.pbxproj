@@ -203,6 +203,8 @@
 		7D3E710B1E6550E6002047C1 /* ShareWork+Visiters.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E710A1E6550E6002047C1 /* ShareWork+Visiters.m */; };
 		7D3E710F1E65548D002047C1 /* DouyiDouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E710E1E65548D002047C1 /* DouyiDouTableViewCell.m */; };
 		7D3E71121E655649002047C1 /* VisiterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E71111E655649002047C1 /* VisiterModel.m */; };
+		7D3E71141E6562C2002047C1 /* newpersonback.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3E71131E6562C2002047C1 /* newpersonback.png */; };
+		7D3E71171E656C70002047C1 /* ShareWork+PersonMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E71161E656C70002047C1 /* ShareWork+PersonMember.m */; };
 		7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A009D1E4C62B400B5B40F /* PopStartView.m */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
 		7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCADC671E5E86E70092FA5A /* LoginModel.m */; };
@@ -885,6 +887,9 @@
 		7D3E710E1E65548D002047C1 /* DouyiDouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouyiDouTableViewCell.m; sourceTree = "<group>"; };
 		7D3E71101E655649002047C1 /* VisiterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisiterModel.h; sourceTree = "<group>"; };
 		7D3E71111E655649002047C1 /* VisiterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterModel.m; sourceTree = "<group>"; };
+		7D3E71131E6562C2002047C1 /* newpersonback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newpersonback.png; sourceTree = "<group>"; };
+		7D3E71151E656C70002047C1 /* ShareWork+PersonMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+PersonMember.h"; sourceTree = "<group>"; };
+		7D3E71161E656C70002047C1 /* ShareWork+PersonMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+PersonMember.m"; sourceTree = "<group>"; };
 		7D4A009C1E4C62B400B5B40F /* PopStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopStartView.h; sourceTree = "<group>"; };
 		7D4A009D1E4C62B400B5B40F /* PopStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopStartView.m; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
@@ -974,6 +979,7 @@
 		348A2D8A1E52B24700B85D7B /* funpawegg */ = {
 			isa = PBXGroup;
 			children = (
+				7D3E71131E6562C2002047C1 /* newpersonback.png */,
 				7DCADC711E5EE1AA0092FA5A /* weixin.png */,
 				7DCADC6F1E5EE1A20092FA5A /* qq.png */,
 				7DCADC6D1E5EDE910092FA5A /* passtu.png */,
@@ -1352,6 +1358,8 @@
 				34A51E6C1E6525D7005E8888 /* ShareWork+Incall.m */,
 				3468FF441E4857AF00DEBE4B /* ShareWork.h */,
 				3468FF451E4857AF00DEBE4B /* ShareWork.m */,
+				7D3E71151E656C70002047C1 /* ShareWork+PersonMember.h */,
+				7D3E71161E656C70002047C1 /* ShareWork+PersonMember.m */,
 				7DCADC731E5EE44C0092FA5A /* ShareWork+Login.h */,
 				7DCADC741E5EE44C0092FA5A /* ShareWork+Login.m */,
 				7D3E71091E6550E6002047C1 /* ShareWork+Visiters.h */,
@@ -2363,6 +2371,7 @@
 				34CAC2281E5BEA1D00249BA9 /* chat_message_not_delivered.png in Resources */,
 				34E166491E0520F1004A65AB /* left_egg.png in Resources */,
 				34E166501E0520F1004A65AB /* take_on.png in Resources */,
+				7D3E71141E6562C2002047C1 /* newpersonback.png in Resources */,
 				34E1664F1E0520F1004A65AB /* take_off.png in Resources */,
 				34E165C81E050B19004A65AB /* Localizable.strings in Resources */,
 				34CAC2451E5BEA1D00249BA9 /* hello8000.wav in Resources */,
@@ -2509,6 +2518,7 @@
 				34E164121E050B18004A65AB /* UIImage-Extensions.m in Sources */,
 				34A51E751E65269B005E8888 /* WifiViewController.m in Sources */,
 				34E1644D1E050B18004A65AB /* SephoneManager.m in Sources */,
+				7D3E71171E656C70002047C1 /* ShareWork+PersonMember.m in Sources */,
 				34E1640E1E050B18004A65AB /* QFTableView.m in Sources */,
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
 				7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */,
