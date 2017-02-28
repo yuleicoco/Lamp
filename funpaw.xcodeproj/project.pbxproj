@@ -200,6 +200,9 @@
 		7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D583C1E49A5A30086A823 /* MainTabViewController.m */; };
 		7D2D58401E49AB290086A823 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D583F1E49AB290086A823 /* LoginViewController.m */; };
 		7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58451E49ABE80086A823 /* AccountManager.m */; };
+		7D3E710B1E6550E6002047C1 /* ShareWork+Visiters.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E710A1E6550E6002047C1 /* ShareWork+Visiters.m */; };
+		7D3E710F1E65548D002047C1 /* DouyiDouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E710E1E65548D002047C1 /* DouyiDouTableViewCell.m */; };
+		7D3E71121E655649002047C1 /* VisiterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E71111E655649002047C1 /* VisiterModel.m */; };
 		7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A009D1E4C62B400B5B40F /* PopStartView.m */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
 		7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCADC671E5E86E70092FA5A /* LoginModel.m */; };
@@ -876,6 +879,12 @@
 		7D2D583F1E49AB290086A823 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7D2D58441E49ABE80086A823 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
 		7D2D58451E49ABE80086A823 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		7D3E71091E6550E6002047C1 /* ShareWork+Visiters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Visiters.h"; sourceTree = "<group>"; };
+		7D3E710A1E6550E6002047C1 /* ShareWork+Visiters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+Visiters.m"; sourceTree = "<group>"; };
+		7D3E710D1E65548D002047C1 /* DouyiDouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DouyiDouTableViewCell.h; sourceTree = "<group>"; };
+		7D3E710E1E65548D002047C1 /* DouyiDouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouyiDouTableViewCell.m; sourceTree = "<group>"; };
+		7D3E71101E655649002047C1 /* VisiterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisiterModel.h; sourceTree = "<group>"; };
+		7D3E71111E655649002047C1 /* VisiterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterModel.m; sourceTree = "<group>"; };
 		7D4A009C1E4C62B400B5B40F /* PopStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopStartView.h; sourceTree = "<group>"; };
 		7D4A009D1E4C62B400B5B40F /* PopStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopStartView.m; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
@@ -1314,6 +1323,8 @@
 			children = (
 				7DCADC661E5E86E70092FA5A /* LoginModel.h */,
 				7DCADC671E5E86E70092FA5A /* LoginModel.m */,
+				7D3E71101E655649002047C1 /* VisiterModel.h */,
+				7D3E71111E655649002047C1 /* VisiterModel.m */,
 				34066F4E1E6428F200CE0B0C /* NetModel.h */,
 				34066F4F1E6428F200CE0B0C /* NetModel.m */,
 				34E15FA71E050B16004A65AB /* Base */,
@@ -1343,6 +1354,8 @@
 				3468FF451E4857AF00DEBE4B /* ShareWork.m */,
 				7DCADC731E5EE44C0092FA5A /* ShareWork+Login.h */,
 				7DCADC741E5EE44C0092FA5A /* ShareWork+Login.m */,
+				7D3E71091E6550E6002047C1 /* ShareWork+Visiters.h */,
+				7D3E710A1E6550E6002047C1 /* ShareWork+Visiters.m */,
 				34A51E611E651DD1005E8888 /* ShareWork+GetSipIP.h */,
 				34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */,
 			);
@@ -2186,6 +2199,7 @@
 		7D0F717F1E63BE7500F27BFD /* Visiter */ = {
 			isa = PBXGroup;
 			children = (
+				7D3E710C1E655481002047C1 /* Views */,
 				34FBE99C1E641105000E9A2B /* VisiterViewController.h */,
 				34FBE99D1E641105000E9A2B /* VisiterViewController.m */,
 			);
@@ -2252,6 +2266,15 @@
 				7D2D583C1E49A5A30086A823 /* MainTabViewController.m */,
 			);
 			path = MainTab;
+			sourceTree = "<group>";
+		};
+		7D3E710C1E655481002047C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D3E710D1E65548D002047C1 /* DouyiDouTableViewCell.h */,
+				7D3E710E1E65548D002047C1 /* DouyiDouTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BE24F9B948DE606D7B2BFECA /* Pods */ = {
@@ -2508,9 +2531,11 @@
 				34E164171E050B18004A65AB /* Reachability.m in Sources */,
 				34FBE99E1E641105000E9A2B /* VisiterViewController.m in Sources */,
 				7DCADC751E5EE44C0092FA5A /* ShareWork+Login.m in Sources */,
+				7D3E710F1E65548D002047C1 /* DouyiDouTableViewCell.m in Sources */,
 				34E164111E050B18004A65AB /* UIButton+Blocks.m in Sources */,
 				34A51E781E6526E9005E8888 /* ShareWork+device.m in Sources */,
 				34A51E6A1E652583005E8888 /* HWWeakTimer.m in Sources */,
+				7D3E71121E655649002047C1 /* VisiterModel.m in Sources */,
 				34E1640C1E050B18004A65AB /* AppDelegate.m in Sources */,
 				34E1640F1E050B18004A65AB /* UIActionSheet+Blocks.m in Sources */,
 				34E1640A1E050B18004A65AB /* AppDelegate+Sephone.m in Sources */,
@@ -2520,6 +2545,7 @@
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
 				34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
+				7D3E710B1E6550E6002047C1 /* ShareWork+Visiters.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
 				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
