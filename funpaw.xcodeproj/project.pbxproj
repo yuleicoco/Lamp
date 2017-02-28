@@ -183,6 +183,8 @@
 		7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71821E63BE9200F27BFD /* LampViewController.m */; };
 		7D0F71861E63BEA200F27BFD /* VisiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71851E63BEA200F27BFD /* VisiterViewController.m */; };
 		7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71881E63BEA900F27BFD /* MeViewController.m */; };
+		7D0F718C1E640AF600F27BFD /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F718B1E640AF600F27BFD /* RegiestViewController.m */; };
+		7D0F718F1E640B0500F27BFD /* CompleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F718E1E640B0500F27BFD /* CompleViewController.m */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -831,6 +833,10 @@
 		7D0F71851E63BEA200F27BFD /* VisiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterViewController.m; sourceTree = "<group>"; };
 		7D0F71871E63BEA900F27BFD /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		7D0F71881E63BEA900F27BFD /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		7D0F718A1E640AF600F27BFD /* RegiestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
+		7D0F718B1E640AF600F27BFD /* RegiestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
+		7D0F718D1E640B0500F27BFD /* CompleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleViewController.h; sourceTree = "<group>"; };
+		7D0F718E1E640B0500F27BFD /* CompleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleViewController.m; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -2162,6 +2168,10 @@
 			children = (
 				7D2D583E1E49AB290086A823 /* LoginViewController.h */,
 				7D2D583F1E49AB290086A823 /* LoginViewController.m */,
+				7D0F718A1E640AF600F27BFD /* RegiestViewController.h */,
+				7D0F718B1E640AF600F27BFD /* RegiestViewController.m */,
+				7D0F718D1E640B0500F27BFD /* CompleViewController.h */,
+				7D0F718E1E640B0500F27BFD /* CompleViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -2408,6 +2418,7 @@
 				34E1640E1E050B18004A65AB /* QFTableView.m in Sources */,
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
 				7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */,
+				7D0F718C1E640AF600F27BFD /* RegiestViewController.m in Sources */,
 				7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */,
 				34E164141E050B18004A65AB /* UIView+TapBlocks.m in Sources */,
 				3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */,
@@ -2432,6 +2443,7 @@
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
+				7D0F718F1E640B0500F27BFD /* CompleViewController.m in Sources */,
 				7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				34A864551E49A07100AD6D8A /* BaseModel.m in Sources */,

@@ -7,8 +7,8 @@
 //
 
 #import "LoginViewController.h"
-//#import "RegiestViewController.h"
-//#import "CompleViewController.h"
+#import "RegiestViewController.h"
+#import "CompleViewController.h"
 #import "ShareWork+Login.h"
 #import "LoginModel.h"
 
@@ -281,12 +281,67 @@
 }
 
 -(void)loginbuttonTouch{
-    [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
-
-
-
+    if ([AppUtil isBlankString:_numberTextfield.text]) {
+        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"login_acc", nil)];
+        return;
+    }
+    if ([AppUtil isBlankString:_passwordTextfield.text]) {
+        [[AppUtil appTopViewController]showHint:NSLocalizedString(@"login_ps", nil)];
+        return;
+    }
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
+    [[ShareWork sharedManager]memberLoginWithaccountnumber:_numberTextfield.text password:_passwordTextfield.text complete:^(BaseModel *model) {
+        if (model) {
+            if ([model.retCode isEqualToString:@"0000"]) {
+                LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
+                [[AccountManager sharedAccountManager]login:loginmodel];
+                [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
+            
+            }else{
+                  [[AppUtil appTopViewController]showHint:model.retDesc];
+            }
+            
+            
+        }
+        
+        
+        
+        
+    }];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
+
+
+-(void)regiestButtonTouch{
+    RegiestViewController * regiestVc = [[RegiestViewController alloc]init];
+    [self.navigationController pushViewController:regiestVc animated:NO];
+    
+    
+}
+
+-(void)forgetpasswordButtonTouch{
+    CompleViewController * comVc = [[CompleViewController alloc]init];
+    [self.navigationController pushViewController:comVc animated:NO];
+    
+    
+    
+    
+    
+}
+
+
+
 
 
 

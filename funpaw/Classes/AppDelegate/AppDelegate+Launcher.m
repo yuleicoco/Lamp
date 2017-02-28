@@ -10,6 +10,7 @@
 #import "PopStartView.h"
 //#import "AFHttpClient+Account.h"
 //#import "EggViewController.h"
+
 @interface AppDelegate()<GetScrollVDelegate>
 
 @end
@@ -221,6 +222,5 @@
 //
 //    
 //}
-
 
 @end
