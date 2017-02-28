@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34066F4D1E64247400CE0B0C /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 34066F4C1E64247400CE0B0C /* NetWork.m */; };
+		34066F501E6428F200CE0B0C /* NetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34066F4F1E6428F200CE0B0C /* NetModel.m */; };
 		340DE9EE1E55535B00B7B258 /* backk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 340DE9ED1E55535B00B7B258 /* backk@2x.png */; };
 		343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50821E54473B002C2AD1 /* egg_device_n@2x.png */; };
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
@@ -180,11 +182,9 @@
 		34E166501E0520F1004A65AB /* take_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E166191E0520F1004A65AB /* take_on.png */; };
 		34E166511E0520F1004A65AB /* top_egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E1661A1E0520F1004A65AB /* top_egg.png */; };
 		34E166521E0520F1004A65AB /* 退出.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E1661B1E0520F1004A65AB /* 退出.png */; };
+		34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBE99A1E6410EF000E9A2B /* MeViewController.m */; };
+		34FBE99E1E641105000E9A2B /* VisiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBE99D1E641105000E9A2B /* VisiterViewController.m */; };
 		7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71821E63BE9200F27BFD /* LampViewController.m */; };
-		7D0F71861E63BEA200F27BFD /* VisiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71851E63BEA200F27BFD /* VisiterViewController.m */; };
-		7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71881E63BEA900F27BFD /* MeViewController.m */; };
-		7D0F718C1E640AF600F27BFD /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F718B1E640AF600F27BFD /* RegiestViewController.m */; };
-		7D0F718F1E640B0500F27BFD /* CompleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F718E1E640B0500F27BFD /* CompleViewController.m */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -204,6 +204,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34066F4B1E64247400CE0B0C /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		34066F4C1E64247400CE0B0C /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
+		34066F4E1E6428F200CE0B0C /* NetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetModel.h; sourceTree = "<group>"; };
+		34066F4F1E6428F200CE0B0C /* NetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetModel.m; sourceTree = "<group>"; };
 		340DE9ED1E55535B00B7B258 /* backk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backk@2x.png"; sourceTree = "<group>"; };
 		343E50821E54473B002C2AD1 /* egg_device_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device_n@2x.png"; sourceTree = "<group>"; };
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
@@ -825,18 +829,14 @@
 		34E166191E0520F1004A65AB /* take_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_on.png; sourceTree = "<group>"; };
 		34E1661A1E0520F1004A65AB /* top_egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_egg.png; sourceTree = "<group>"; };
 		34E1661B1E0520F1004A65AB /* 退出.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "退出.png"; sourceTree = "<group>"; };
+		34FBE9991E6410EF000E9A2B /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		34FBE99A1E6410EF000E9A2B /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		34FBE99C1E641105000E9A2B /* VisiterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisiterViewController.h; sourceTree = "<group>"; };
+		34FBE99D1E641105000E9A2B /* VisiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterViewController.m; sourceTree = "<group>"; };
 		3AC2930639E43591051DDADA /* Pods-funpaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funpaw.release.xcconfig"; path = "Pods/Target Support Files/Pods-funpaw/Pods-funpaw.release.xcconfig"; sourceTree = "<group>"; };
 		782952FC14463F99DF3112FF /* libPods-funpaw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-funpaw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0F71811E63BE9200F27BFD /* LampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampViewController.h; sourceTree = "<group>"; };
 		7D0F71821E63BE9200F27BFD /* LampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampViewController.m; sourceTree = "<group>"; };
-		7D0F71841E63BEA200F27BFD /* VisiterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisiterViewController.h; sourceTree = "<group>"; };
-		7D0F71851E63BEA200F27BFD /* VisiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisiterViewController.m; sourceTree = "<group>"; };
-		7D0F71871E63BEA900F27BFD /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		7D0F71881E63BEA900F27BFD /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		7D0F718A1E640AF600F27BFD /* RegiestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
-		7D0F718B1E640AF600F27BFD /* RegiestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
-		7D0F718D1E640B0500F27BFD /* CompleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleViewController.h; sourceTree = "<group>"; };
-		7D0F718E1E640B0500F27BFD /* CompleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleViewController.m; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1258,6 +1258,8 @@
 			children = (
 				7DCADC661E5E86E70092FA5A /* LoginModel.h */,
 				7DCADC671E5E86E70092FA5A /* LoginModel.m */,
+				34066F4E1E6428F200CE0B0C /* NetModel.h */,
+				34066F4F1E6428F200CE0B0C /* NetModel.m */,
 				34E15FA71E050B16004A65AB /* Base */,
 			);
 			path = Models;
@@ -1268,6 +1270,8 @@
 			children = (
 				34A864531E49A07100AD6D8A /* BaseModel.h */,
 				34A864541E49A07100AD6D8A /* BaseModel.m */,
+				34066F4B1E64247400CE0B0C /* NetWork.h */,
+				34066F4C1E64247400CE0B0C /* NetWork.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2120,8 +2124,8 @@
 		7D0F717F1E63BE7500F27BFD /* Visiter */ = {
 			isa = PBXGroup;
 			children = (
-				7D0F71841E63BEA200F27BFD /* VisiterViewController.h */,
-				7D0F71851E63BEA200F27BFD /* VisiterViewController.m */,
+				34FBE99C1E641105000E9A2B /* VisiterViewController.h */,
+				34FBE99D1E641105000E9A2B /* VisiterViewController.m */,
 			);
 			path = Visiter;
 			sourceTree = "<group>";
@@ -2129,8 +2133,8 @@
 		7D0F71801E63BE7500F27BFD /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				7D0F71871E63BEA900F27BFD /* MeViewController.h */,
-				7D0F71881E63BEA900F27BFD /* MeViewController.m */,
+				34FBE9991E6410EF000E9A2B /* MeViewController.h */,
+				34FBE99A1E6410EF000E9A2B /* MeViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -2168,10 +2172,6 @@
 			children = (
 				7D2D583E1E49AB290086A823 /* LoginViewController.h */,
 				7D2D583F1E49AB290086A823 /* LoginViewController.m */,
-				7D0F718A1E640AF600F27BFD /* RegiestViewController.h */,
-				7D0F718B1E640AF600F27BFD /* RegiestViewController.m */,
-				7D0F718D1E640B0500F27BFD /* CompleViewController.h */,
-				7D0F718E1E640B0500F27BFD /* CompleViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -2418,7 +2418,7 @@
 				34E1640E1E050B18004A65AB /* QFTableView.m in Sources */,
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
 				7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */,
-				7D0F718C1E640AF600F27BFD /* RegiestViewController.m in Sources */,
+				34066F4D1E64247400CE0B0C /* NetWork.m in Sources */,
 				7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */,
 				34E164141E050B18004A65AB /* UIView+TapBlocks.m in Sources */,
 				3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */,
@@ -2432,23 +2432,23 @@
 				34E164161E050B18004A65AB /* AppUtil.m in Sources */,
 				34E164181E050B18004A65AB /* CycleScrollView.m in Sources */,
 				34E164171E050B18004A65AB /* Reachability.m in Sources */,
+				34FBE99E1E641105000E9A2B /* VisiterViewController.m in Sources */,
 				7DCADC751E5EE44C0092FA5A /* ShareWork+Login.m in Sources */,
 				34E164111E050B18004A65AB /* UIButton+Blocks.m in Sources */,
 				34E1640C1E050B18004A65AB /* AppDelegate.m in Sources */,
 				34E1640F1E050B18004A65AB /* UIActionSheet+Blocks.m in Sources */,
 				34E1640A1E050B18004A65AB /* AppDelegate+Sephone.m in Sources */,
+				34066F501E6428F200CE0B0C /* NetModel.m in Sources */,
 				7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */,
 				34E164101E050B18004A65AB /* UIAlertView+Blocks.m in Sources */,
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
-				7D0F718F1E640B0500F27BFD /* CompleViewController.m in Sources */,
-				7D0F71891E63BEA900F27BFD /* MeViewController.m in Sources */,
+				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				34A864551E49A07100AD6D8A /* BaseModel.m in Sources */,
 				3496F9C51E04DF8E00744A1E /* main.m in Sources */,
-				7D0F71861E63BEA200F27BFD /* VisiterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

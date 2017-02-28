@@ -32,6 +32,9 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - ShareSDK3 (3.2.2):
+    - ShareSDK3/ShareSDK (= 3.2.2)
+  - ShareSDK3/ShareSDK (3.2.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -45,6 +48,7 @@ DEPENDENCIES:
   - MWPhotoBrowser (~> 2.1.1)
   - RMMapper (~> 1.1.5)
   - SDWebImage (~> 3.7.1)
+  - ShareSDK3 (~> 3.2.2)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -59,7 +63,8 @@ SPEC CHECKSUMS:
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   RMMapper: 21122d753c736d975f6c61e674afce8db73579af
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  ShareSDK3: 1c6290878f2d267641d20d516c38b9a11cf5559f
 
-PODFILE CHECKSUM: a739c89cac8c772f24ff0b5ce74fea98f3f9ee33
+PODFILE CHECKSUM: 019029a6512d2e49e11298d11c8d72836649b97e
 
 COCOAPODS: 1.0.1

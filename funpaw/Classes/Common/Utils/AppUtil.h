@@ -10,6 +10,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <ifaddrs.h>
+#import <arpa/inet.h>
 
 
 //蓝色
@@ -77,5 +79,10 @@
 +(NSString *)getNowTime;
 
 +(NSString *)getCurrentTime;
+
+// 获取局域网ip地址
++ (NSString *)getIPAddress;
+
+
 
 @end
