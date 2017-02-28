@@ -124,7 +124,6 @@
         NSError* error = nil;
         
         NetWork * model =[[NetWork  alloc]initWithDictionary:responseObject error:&error];
-        
         success(model);
         
     } failure:^(NSURLSessionTask *operation, NSError *error) {
