@@ -430,6 +430,7 @@
 {
     BindingViewController * bindVC =[[BindingViewController alloc]init];
     [self.navigationController pushViewController:bindVC animated:NO];
+    
 }
 
 // 设置选项
@@ -438,6 +439,7 @@
 {
     WifiViewController * wifiVC =[[WifiViewController alloc]init];
     [self.navigationController pushViewController:wifiVC animated:NO];
+    
 }
 // 解除绑定
 - (void)bdinTouch:(UIButton *)sender
@@ -445,6 +447,8 @@
     BindingViewController * bandVC =[[BindingViewController alloc]init];
     bandVC.strTT =DeviceNum;
     [self.navigationController pushViewController:bandVC animated:NO];
+    
+    
 }
 
 /**

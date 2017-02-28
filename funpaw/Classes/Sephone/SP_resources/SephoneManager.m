@@ -2318,7 +2318,7 @@ static void audioRouteChangeListenerCallback (
     const char * server ="sip.smartsuoo.com";
     
     if (domain && [domain length] != 0) {
-        sephone_address_set_domain(address, server);
+        sephone_address_set_domain(address, [domain UTF8String]);
         sephone_proxy_config_set_server_addr(proxyCfg, [domain UTF8String]);
     }
     
