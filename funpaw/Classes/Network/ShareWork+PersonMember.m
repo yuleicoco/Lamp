@@ -44,10 +44,20 @@
 
 }
 
+-(void)queryByIdMemberWithMid:(NSString *)mid complete:(void (^)(BaseModel *))completeBlock{
+    NSMutableDictionary * params = [[NSMutableDictionary alloc]init];
+    params[@"mid"] = mid;
+    [self requestWithMethod:POST WithPath:@"common=queryByIdMember" WithParams:params WithSuccessBlock:^(BaseModel *model) {
+        if (model) {
+           
+        }
+        if (completeBlock) {
+            completeBlock(model);
+        }
+        
+    } WithFailurBlock:^(NSError *error) {
+        
+    }];
 
-
-
-
-
-
+}
 @end

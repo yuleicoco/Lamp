@@ -8,6 +8,7 @@
 
 #import "MeViewController.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
+#import "InformationViewController.h"
 
 @interface MeViewController ()
 @property(nonatomic,strong)UILabel * nameLabel;
@@ -379,14 +380,9 @@
 
 //个人资料
 -(void)headbuttonTouch{
-    
+    InformationViewController * informationVc = [[InformationViewController alloc]init];
+    [self.navigationController pushViewController:informationVc animated:NO];
 
-
-    
-    
-    
-    
-    
     
 }
 
