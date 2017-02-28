@@ -193,6 +193,8 @@
 		7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58451E49ABE80086A823 /* AccountManager.m */; };
 		7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A009D1E4C62B400B5B40F /* PopStartView.m */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
+		7D63CCA81E65171C001D0491 /* CompleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63CCA51E65171C001D0491 /* CompleViewController.m */; };
+		7D63CCA91E65171C001D0491 /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63CCA71E65171C001D0491 /* RegiestViewController.m */; };
 		7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCADC671E5E86E70092FA5A /* LoginModel.m */; };
 		7DCADC6A1E5EDC160092FA5A /* loginback.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC691E5EDC160092FA5A /* loginback.png */; };
 		7DCADC6C1E5EDE810092FA5A /* numbertu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC6B1E5EDE810092FA5A /* numbertu.png */; };
@@ -853,6 +855,10 @@
 		7D4A009D1E4C62B400B5B40F /* PopStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopStartView.m; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
 		7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGridViewController.m; sourceTree = "<group>"; };
+		7D63CCA41E65171C001D0491 /* CompleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleViewController.h; sourceTree = "<group>"; };
+		7D63CCA51E65171C001D0491 /* CompleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleViewController.m; sourceTree = "<group>"; };
+		7D63CCA61E65171C001D0491 /* RegiestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
+		7D63CCA71E65171C001D0491 /* RegiestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
 		7DCADC661E5E86E70092FA5A /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		7DCADC671E5E86E70092FA5A /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		7DCADC691E5EDC160092FA5A /* loginback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginback.png; sourceTree = "<group>"; };
@@ -2172,6 +2178,10 @@
 			children = (
 				7D2D583E1E49AB290086A823 /* LoginViewController.h */,
 				7D2D583F1E49AB290086A823 /* LoginViewController.m */,
+				7D63CCA41E65171C001D0491 /* CompleViewController.h */,
+				7D63CCA51E65171C001D0491 /* CompleViewController.m */,
+				7D63CCA61E65171C001D0491 /* RegiestViewController.h */,
+				7D63CCA71E65171C001D0491 /* RegiestViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -2228,7 +2238,7 @@
 				TargetAttributes = {
 					3496F9BF1E04DF8E00744A1E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = HPKQAF34Z3;
+						DevelopmentTeam = ZMFX8728A9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -2424,6 +2434,7 @@
 				3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */,
 				7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */,
 				34E164191E050B18004A65AB /* NSTimer+Addition.m in Sources */,
+				7D63CCA91E65171C001D0491 /* RegiestViewController.m in Sources */,
 				34E164A71E050B18004A65AB /* UIView+SDAutoLayout.m in Sources */,
 				3496F9D11E04DF8E00744A1E /* funpaw.xcdatamodeld in Sources */,
 				3496F9CB1E04DF8E00744A1E /* ViewController.m in Sources */,
@@ -2442,6 +2453,7 @@
 				7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */,
 				34E164101E050B18004A65AB /* UIAlertView+Blocks.m in Sources */,
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
+				7D63CCA81E65171C001D0491 /* CompleViewController.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
@@ -2570,7 +2582,7 @@
 			baseConfigurationReference = D73B91DE92C95DDCDFE60BB6 /* Pods-funpaw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPKQAF34Z3;
+				DEVELOPMENT_TEAM = ZMFX8728A9;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/funpaw/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2605,7 +2617,7 @@
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib",
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib/mediastreamer/plugins",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sg.funpaw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sg.lamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2615,7 +2627,7 @@
 			baseConfigurationReference = 3AC2930639E43591051DDADA /* Pods-funpaw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPKQAF34Z3;
+				DEVELOPMENT_TEAM = ZMFX8728A9;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/funpaw/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2650,7 +2662,7 @@
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib",
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib/mediastreamer/plugins",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sg.funpaw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sg.lamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

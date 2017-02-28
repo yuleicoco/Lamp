@@ -72,11 +72,6 @@
     }];
 
 
-
-
-
-
-
 }
 
 -(void)forgetPasswordWithPhone:(NSString *)phone password:(NSString *)password complete:(void (^)(BaseModel *))completeBlock{
@@ -96,14 +91,28 @@
         
     }];
 
-
-
-
-
-
 }
 
+-(void)otherLoginWithNickname:(NSString *)nickname secretkey:(NSString *)secretkey headportrait:(NSString *)headportrait rtype:(NSString *)rtype complete:(void (^)(BaseModel *))completeBlock{
+    NSMutableDictionary * params = [[NSMutableDictionary alloc]init];
+    params[@"nickname"] = nickname;
+    params[@"secretkey"] = secretkey;
+    params[@"headportrait"] = headportrait;
+    params[@"rtype"] = rtype;
+    [self requestWithMethod:POST WithPath:@"common=otherLogin" WithParams:params WithSuccessBlock:^(BaseModel *model) {
+        
+        if (model) {
+            // NSLog(@"哈哈");
+        }
+        if (completeBlock) {
+            completeBlock(model);
+        }
+        
+    } WithFailurBlock:^(NSError *error) {
+        
+    }];
 
+}
 
 
 

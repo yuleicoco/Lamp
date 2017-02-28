@@ -11,6 +11,7 @@
 #import "CompleViewController.h"
 #import "ShareWork+Login.h"
 #import "LoginModel.h"
+#import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
 
 @interface LoginViewController ()
 @property (nonatomic,strong)UIButton * loginBtn;
@@ -279,6 +280,60 @@
 
     
 }
+
+-(void)qqbuttonTouch{
+    [ShareSDK getUserInfo:SSDKPlatformTypeQQ onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error) {
+        if (state == SSDKResponseStateSuccess) {
+            [self loginRepace:@"q" Secretkey:user.uid nick:user.nickname headportrait:user.icon];
+            
+        }
+        
+        
+    }];
+    
+    
+
+}
+
+-(void)weixinbuttonTouch{
+    [ShareSDK getUserInfo:SSDKPlatformTypeWechat onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error) {
+        if (state == SSDKResponseStateSuccess) {
+            [self loginRepace:@"w" Secretkey:user.uid nick:user.nickname headportrait:user.icon];
+            
+        }
+        
+        
+    }];
+    
+
+}
+
+
+
+
+- (void)loginRepace:(NSString *)type Secretkey:(NSString *)secretkey nick:(NSString *)nickname headportrait:(NSString *)headportrait
+{
+    
+    [[ShareWork sharedManager]otherLoginWithNickname:nickname secretkey:secretkey headportrait:headportrait rtype:type complete:^(BaseModel *model) {
+      
+        if (model) {
+            if ([model.retCode isEqualToString:@"0000"]) {
+                
+                LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
+                [[AccountManager sharedAccountManager]login:loginmodel];
+                [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
+                
+            }else{
+                [[AppUtil appTopViewController]showHint:model.retDesc];
+                
+            }
+        }
+        
+    }];
+
+
+}
+
 
 -(void)loginbuttonTouch{
     if ([AppUtil isBlankString:_numberTextfield.text]) {
