@@ -381,25 +381,22 @@
     {
         //设备在线
         if ([strState isEqualToString:@"ds001"]) {
-            [bgImage setImage:[UIImage imageNamed:@"egg_online"]];
-            
+            [bgImage setImage:[UIImage imageNamed:@"online_e"]];
         }
         //离线
         if ([strState isEqualToString:@"ds002"]) {
             
-            [bgImage setImage:[UIImage imageNamed:@"egg_offline"]];
-            
+            [bgImage setImage:[UIImage imageNamed:@"offline_e"]];
         }
         // 通话中
         if ([strState isEqualToString:@"ds003"]) {
-            [bgImage setImage:[UIImage imageNamed:@"egg_busy"]];
+            [bgImage setImage:[UIImage imageNamed:@"busy_e"]];
         }
         //正在上传文件
         if ([strState isEqualToString:@"ds004"]) {
             
-            [bgImage setImage:[UIImage imageNamed:@"egg_busy"]];
+            [bgImage setImage:[UIImage imageNamed:@"busy_e"]];
         }
-        
         [self showBarBtn:NO];
         addBtn.hidden = YES;
     }
@@ -426,13 +423,11 @@
     
 }
 
-
 #pragma make ---------------------------tools
 
 //绑定设备
 -(void)btn_add:(UIButton *)sender
 {
-    
     BindingViewController * bindVC =[[BindingViewController alloc]init];
     [self.navigationController pushViewController:bindVC animated:NO];
 }
@@ -447,14 +442,10 @@
 // 解除绑定
 - (void)bdinTouch:(UIButton *)sender
 {
-    
     BindingViewController * bandVC =[[BindingViewController alloc]init];
     bandVC.strTT =DeviceNum;
     [self.navigationController pushViewController:bandVC animated:NO];
 }
-
-
-
 
 /**
  开始视频
@@ -463,8 +454,6 @@
  */
 - (void)OpenVideo:(UIButton *)sender
 {
-    
-    
     NSString * strDevicenume =[Defaluts objectForKey:PREF_DEVICE_NUMBER];
     
     if ([AppUtil isBlankString:Mid_D]) {
