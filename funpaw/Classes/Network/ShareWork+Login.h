@@ -21,6 +21,10 @@
 //忘记密码
 -(void)forgetPasswordWithPhone:(NSString *)phone password:(NSString *)password  complete:(void(^)(BaseModel *model))completeBlock;
 
+//第三方登录
+-(void)otherLoginWithNickname:(NSString *)nickname secretkey:(NSString *)secretkey headportrait:(NSString *)headportrait rtype:(NSString *)rtype complete:(void(^)(BaseModel *model))completeBlock;
+
+
 
 
 

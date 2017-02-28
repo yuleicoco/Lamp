@@ -310,16 +310,15 @@
     }
     
     [self showHudInView:self.view hint:NSLocalizedString(@"regist_ing", nil)];
-//    [[AFHttpClient sharedAFHttpClient]regiestWithPhone:_numberTextfield.text password:_passwordTextfield.text complete:^(BaseModel *model) {
-//        [self hideHud];
-//        [[AppUtil appTopViewController] showHint:model.retDesc];
-//        if (model) {
-//            [self.navigationController popViewControllerAnimated:NO];
-//        }
-//        
-//        
-//    }];
-//    
+  
+    [[ShareWork sharedManager]memberRegisterWithPhone:_numberTextfield.text password:_passwordTextfield.text complete:^(BaseModel *model) {
+        [self hideHud];
+        [[AppUtil appTopViewController]showHint:model.retDesc];
+        if (model) {
+            [self.navigationController popViewControllerAnimated:NO];
+        }
+    }];
+    
     
     
     

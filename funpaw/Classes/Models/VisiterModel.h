@@ -1,16 +1,14 @@
 //
-//  LoginModel.h
-//  petegg
+//  VisiterModel.h
+//  funpaw
 //
-//  Created by czx on 16/4/5.
-//  Copyright © 2016年 sego. All rights reserved.
+//  Created by czx on 2017/2/28.
+//  Copyright © 2017年 yulei. All rights reserved.
 //
 
-#import <MojoDatabase/MojoDatabase.h>
-#import "JSONModel.h"
+#import "BaseModel.h"
 
-
-@interface LoginModel : JSONModel
+@interface VisiterModel : BaseModel
 @property (nonatomic, copy) NSString<Optional> *accountnumber;
 
 @property (nonatomic, copy) NSString<Optional> *createtime;
@@ -58,4 +56,5 @@
 @property (nonatomic, copy) NSString<Optional> * termid;
 
 @property (nonatomic, copy) NSString<Optional> * type;
+
 @end
