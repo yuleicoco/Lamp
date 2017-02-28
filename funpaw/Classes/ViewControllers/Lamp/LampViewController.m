@@ -26,7 +26,8 @@
     
     
      [[ShareWork sharedManager]requestNetWorkWithSuccessBlock:^(NetWork *model) {
-         NetModel * net =[[NetModel alloc]initWithDictionary:model.data error:nil];
+         
+       //  NetModel * net =[[NetModel alloc]initWithDictionary:model.data error:nil];
       
 
      } WithFailurBlock:^(NSError *error) {
