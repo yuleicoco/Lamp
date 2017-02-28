@@ -20,6 +20,15 @@
 		3496F9CE1E04DF8E00744A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3496F9CC1E04DF8E00744A1E /* Main.storyboard */; };
 		3496F9D11E04DF8E00744A1E /* funpaw.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3496F9CF1E04DF8E00744A1E /* funpaw.xcdatamodeld */; };
 		3496F9D61E04DF8E00744A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3496F9D41E04DF8E00744A1E /* LaunchScreen.storyboard */; };
+		34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E5C1E651958005E8888 /* CompleViewController.m */; };
+		34A51E601E651958005E8888 /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E5E1E651958005E8888 /* RegiestViewController.m */; };
+		34A51E631E651DD1005E8888 /* ShareWork+GetSipIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */; };
+		34A51E671E652532005E8888 /* InCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E661E652532005E8888 /* InCallViewController.m */; };
+		34A51E6A1E652583005E8888 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E691E652583005E8888 /* HWWeakTimer.m */; };
+		34A51E6D1E6525D7005E8888 /* ShareWork+Incall.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E6C1E6525D7005E8888 /* ShareWork+Incall.m */; };
+		34A51E711E65264A005E8888 /* BindingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E701E65264A005E8888 /* BindingViewController.m */; };
+		34A51E751E65269B005E8888 /* WifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E741E65269B005E8888 /* WifiViewController.m */; };
+		34A51E781E6526E9005E8888 /* ShareWork+device.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E771E6526E9005E8888 /* ShareWork+device.m */; };
 		34A864551E49A07100AD6D8A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A864541E49A07100AD6D8A /* BaseModel.m */; };
 		34C102EF1E52D85500FFB241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C102EE1E52D85500FFB241 /* Assets.xcassets */; };
 		34CAC2201E5BEA1D00249BA9 /* active_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC1EA1E5BEA1D00249BA9 /* active_chat.png */; };
@@ -223,6 +232,24 @@
 		3496F9D01E04DF8E00744A1E /* funpaw.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funpaw.xcdatamodel; sourceTree = "<group>"; };
 		3496F9D51E04DF8E00744A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3496F9D71E04DF8E00744A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A51E5B1E651958005E8888 /* CompleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleViewController.h; sourceTree = "<group>"; };
+		34A51E5C1E651958005E8888 /* CompleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleViewController.m; sourceTree = "<group>"; };
+		34A51E5D1E651958005E8888 /* RegiestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
+		34A51E5E1E651958005E8888 /* RegiestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
+		34A51E611E651DD1005E8888 /* ShareWork+GetSipIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+GetSipIP.h"; sourceTree = "<group>"; };
+		34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+GetSipIP.m"; sourceTree = "<group>"; };
+		34A51E651E652532005E8888 /* InCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InCallViewController.h; sourceTree = "<group>"; };
+		34A51E661E652532005E8888 /* InCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InCallViewController.m; sourceTree = "<group>"; };
+		34A51E681E652583005E8888 /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
+		34A51E691E652583005E8888 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
+		34A51E6B1E6525D7005E8888 /* ShareWork+Incall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Incall.h"; sourceTree = "<group>"; };
+		34A51E6C1E6525D7005E8888 /* ShareWork+Incall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+Incall.m"; sourceTree = "<group>"; };
+		34A51E6F1E65264A005E8888 /* BindingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingViewController.h; sourceTree = "<group>"; };
+		34A51E701E65264A005E8888 /* BindingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingViewController.m; sourceTree = "<group>"; };
+		34A51E731E65269B005E8888 /* WifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiViewController.h; sourceTree = "<group>"; };
+		34A51E741E65269B005E8888 /* WifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiViewController.m; sourceTree = "<group>"; };
+		34A51E761E6526E9005E8888 /* ShareWork+device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+device.h"; sourceTree = "<group>"; };
+		34A51E771E6526E9005E8888 /* ShareWork+device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+device.m"; sourceTree = "<group>"; };
 		34A864531E49A07100AD6D8A /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		34A864541E49A07100AD6D8A /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		34C102EE1E52D85500FFB241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -999,6 +1026,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		34A51E641E65243B005E8888 /* InCall */ = {
+			isa = PBXGroup;
+			children = (
+				34A51E651E652532005E8888 /* InCallViewController.h */,
+				34A51E661E652532005E8888 /* InCallViewController.m */,
+				34A51E681E652583005E8888 /* HWWeakTimer.h */,
+				34A51E691E652583005E8888 /* HWWeakTimer.m */,
+			);
+			path = InCall;
+			sourceTree = "<group>";
+		};
+		34A51E6E1E65264A005E8888 /* Band */ = {
+			isa = PBXGroup;
+			children = (
+				34A51E6F1E65264A005E8888 /* BindingViewController.h */,
+				34A51E701E65264A005E8888 /* BindingViewController.m */,
+			);
+			path = Band;
+			sourceTree = "<group>";
+		};
+		34A51E721E65269B005E8888 /* Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				34A51E731E65269B005E8888 /* WifiViewController.h */,
+				34A51E741E65269B005E8888 /* WifiViewController.m */,
+			);
+			path = Wifi;
+			sourceTree = "<group>";
+		};
 		34CAC1E71E5BEA1D00249BA9 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1279,10 +1335,16 @@
 		34E15FDA1E050B16004A65AB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				34A51E761E6526E9005E8888 /* ShareWork+device.h */,
+				34A51E771E6526E9005E8888 /* ShareWork+device.m */,
+				34A51E6B1E6525D7005E8888 /* ShareWork+Incall.h */,
+				34A51E6C1E6525D7005E8888 /* ShareWork+Incall.m */,
 				3468FF441E4857AF00DEBE4B /* ShareWork.h */,
 				3468FF451E4857AF00DEBE4B /* ShareWork.m */,
 				7DCADC731E5EE44C0092FA5A /* ShareWork+Login.h */,
 				7DCADC741E5EE44C0092FA5A /* ShareWork+Login.m */,
+				34A51E611E651DD1005E8888 /* ShareWork+GetSipIP.h */,
+				34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -2142,6 +2204,9 @@
 		7D2D58291E49A27A0086A823 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				34A51E721E65269B005E8888 /* Wifi */,
+				34A51E6E1E65264A005E8888 /* Band */,
+				34A51E641E65243B005E8888 /* InCall */,
 				7D0F717E1E63BE7500F27BFD /* Lamp */,
 				7D0F717F1E63BE7500F27BFD /* Visiter */,
 				7D0F71801E63BE7500F27BFD /* Me */,
@@ -2170,6 +2235,10 @@
 		7D2D582C1E49A3060086A823 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				34A51E5B1E651958005E8888 /* CompleViewController.h */,
+				34A51E5C1E651958005E8888 /* CompleViewController.m */,
+				34A51E5D1E651958005E8888 /* RegiestViewController.h */,
+				34A51E5E1E651958005E8888 /* RegiestViewController.m */,
 				7D2D583E1E49AB290086A823 /* LoginViewController.h */,
 				7D2D583F1E49AB290086A823 /* LoginViewController.m */,
 			);
@@ -2411,9 +2480,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */,
+				34A51E631E651DD1005E8888 /* ShareWork+GetSipIP.m in Sources */,
 				34E164151E050B18004A65AB /* UIViewController+HUD.m in Sources */,
 				34E1640D1E050B18004A65AB /* NSString+URLEncoding.m in Sources */,
 				34E164121E050B18004A65AB /* UIImage-Extensions.m in Sources */,
+				34A51E751E65269B005E8888 /* WifiViewController.m in Sources */,
 				34E1644D1E050B18004A65AB /* SephoneManager.m in Sources */,
 				34E1640E1E050B18004A65AB /* QFTableView.m in Sources */,
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
@@ -2424,17 +2495,22 @@
 				3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */,
 				7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */,
 				34E164191E050B18004A65AB /* NSTimer+Addition.m in Sources */,
+				34A51E601E651958005E8888 /* RegiestViewController.m in Sources */,
 				34E164A71E050B18004A65AB /* UIView+SDAutoLayout.m in Sources */,
+				34A51E671E652532005E8888 /* InCallViewController.m in Sources */,
 				3496F9D11E04DF8E00744A1E /* funpaw.xcdatamodeld in Sources */,
 				3496F9CB1E04DF8E00744A1E /* ViewController.m in Sources */,
 				7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */,
 				7D2D58401E49AB290086A823 /* LoginViewController.m in Sources */,
+				34A51E6D1E6525D7005E8888 /* ShareWork+Incall.m in Sources */,
 				34E164161E050B18004A65AB /* AppUtil.m in Sources */,
 				34E164181E050B18004A65AB /* CycleScrollView.m in Sources */,
 				34E164171E050B18004A65AB /* Reachability.m in Sources */,
 				34FBE99E1E641105000E9A2B /* VisiterViewController.m in Sources */,
 				7DCADC751E5EE44C0092FA5A /* ShareWork+Login.m in Sources */,
 				34E164111E050B18004A65AB /* UIButton+Blocks.m in Sources */,
+				34A51E781E6526E9005E8888 /* ShareWork+device.m in Sources */,
+				34A51E6A1E652583005E8888 /* HWWeakTimer.m in Sources */,
 				34E1640C1E050B18004A65AB /* AppDelegate.m in Sources */,
 				34E1640F1E050B18004A65AB /* UIActionSheet+Blocks.m in Sources */,
 				34E1640A1E050B18004A65AB /* AppDelegate+Sephone.m in Sources */,
@@ -2442,10 +2518,12 @@
 				7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */,
 				34E164101E050B18004A65AB /* UIAlertView+Blocks.m in Sources */,
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
+				34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
 				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
+				34A51E711E65264A005E8888 /* BindingViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				34A864551E49A07100AD6D8A /* BaseModel.m in Sources */,
 				3496F9C51E04DF8E00744A1E /* main.m in Sources */,
