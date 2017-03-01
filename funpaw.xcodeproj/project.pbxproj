@@ -10,6 +10,12 @@
 		34066F4D1E64247400CE0B0C /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 34066F4C1E64247400CE0B0C /* NetWork.m */; };
 		34066F501E6428F200CE0B0C /* NetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34066F4F1E6428F200CE0B0C /* NetModel.m */; };
 		340DE9EE1E55535B00B7B258 /* backk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 340DE9ED1E55535B00B7B258 /* backk@2x.png */; };
+		3420B3991E65676000AE228F /* backk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B3971E65676000AE228F /* backk@2x.png */; };
+		3420B39A1E65676000AE228F /* videobiaobiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B3981E65676000AE228F /* videobiaobiao.png */; };
+		3420B39D1E65689200AE228F /* offline_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39B1E65689200AE228F /* offline_e.png */; };
+		3420B39E1E65689200AE228F /* online_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39C1E65689200AE228F /* online_e.png */; };
+		3420B3A01E65689B00AE228F /* busy_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39F1E65689B00AE228F /* busy_e.png */; };
+		3420B3A21E657EBF00AE228F /* English_tips.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B3A11E657EBF00AE228F /* English_tips.png */; };
 		343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50821E54473B002C2AD1 /* egg_device_n@2x.png */; };
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
@@ -225,6 +231,12 @@
 		34066F4E1E6428F200CE0B0C /* NetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetModel.h; sourceTree = "<group>"; };
 		34066F4F1E6428F200CE0B0C /* NetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetModel.m; sourceTree = "<group>"; };
 		340DE9ED1E55535B00B7B258 /* backk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backk@2x.png"; sourceTree = "<group>"; };
+		3420B3971E65676000AE228F /* backk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backk@2x.png"; sourceTree = "<group>"; };
+		3420B3981E65676000AE228F /* videobiaobiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videobiaobiao.png; sourceTree = "<group>"; };
+		3420B39B1E65689200AE228F /* offline_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline_e.png; sourceTree = "<group>"; };
+		3420B39C1E65689200AE228F /* online_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online_e.png; sourceTree = "<group>"; };
+		3420B39F1E65689B00AE228F /* busy_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busy_e.png; sourceTree = "<group>"; };
+		3420B3A11E657EBF00AE228F /* English_tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = English_tips.png; sourceTree = "<group>"; };
 		343E50821E54473B002C2AD1 /* egg_device_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device_n@2x.png"; sourceTree = "<group>"; };
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
@@ -982,6 +994,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3420B3961E65676000AE228F /* eggImage */ = {
+			isa = PBXGroup;
+			children = (
+				3420B3A11E657EBF00AE228F /* English_tips.png */,
+				3420B39F1E65689B00AE228F /* busy_e.png */,
+				3420B39B1E65689200AE228F /* offline_e.png */,
+				3420B39C1E65689200AE228F /* online_e.png */,
+				3420B3971E65676000AE228F /* backk@2x.png */,
+				3420B3981E65676000AE228F /* videobiaobiao.png */,
+			);
+			path = eggImage;
+			sourceTree = "<group>";
+		};
 		348A2D8A1E52B24700B85D7B /* funpawegg */ = {
 			isa = PBXGroup;
 			children = (
@@ -2126,6 +2151,7 @@
 		34E163761E050B17004A65AB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3420B3961E65676000AE228F /* eggImage */,
 				348A2D8A1E52B24700B85D7B /* funpawegg */,
 			);
 			path = Resources;
@@ -2386,6 +2412,7 @@
 				34CAC2251E5BEA1D00249BA9 /* chat.png in Resources */,
 				34CAC2361E5BEA1D00249BA9 /* ok.png in Resources */,
 				34E164491E050B18004A65AB /* ring.caf in Resources */,
+				3420B39E1E65689200AE228F /* online_e.png in Resources */,
 				34CAC2231E5BEA1D00249BA9 /* call_status_incoming.png in Resources */,
 				34E1664B1E0520F1004A65AB /* Lnormal_light.png in Resources */,
 				34E164471E050B18004A65AB /* msg.wav in Resources */,
@@ -2408,12 +2435,15 @@
 				34C102EF1E52D85500FFB241 /* Assets.xcassets in Resources */,
 				34E166521E0520F1004A65AB /* 退出.png in Resources */,
 				34E166471E0520F1004A65AB /* Lclick_photo.png in Resources */,
+				3420B3A21E657EBF00AE228F /* English_tips.png in Resources */,
 				34E1644E1E050B18004A65AB /* sephonerc in Resources */,
 				34CAC2371E5BEA1D00249BA9 /* sephone-banner.png in Resources */,
 				343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */,
 				34CAC2461E5BEA1D00249BA9 /* incoming_chat.wav in Resources */,
 				34CAC23C1E5BEA1D00249BA9 /* startcall-small.png in Resources */,
+				3420B3991E65676000AE228F /* backk@2x.png in Resources */,
 				34CAC22F1E5BEA1D00249BA9 /* dialer.png in Resources */,
+				3420B39D1E65689200AE228F /* offline_e.png in Resources */,
 				34CAC24A1E5BEA1D00249BA9 /* oldphone-mono.wav in Resources */,
 				343E50891E54473B002C2AD1 /* egg_more@2x.png in Resources */,
 				34CAC2421E5BEA1D00249BA9 /* stopcall-small.png in Resources */,
@@ -2424,6 +2454,7 @@
 				34E166461E0520F1004A65AB /* Lclick_light.png in Resources */,
 				34CAC2211E5BEA1D00249BA9 /* addcall-green.png in Resources */,
 				34CAC24E1E5BEA1D00249BA9 /* sweet.wav in Resources */,
+				3420B3A01E65689B00AE228F /* busy_e.png in Resources */,
 				34CAC2301E5BEA1D00249BA9 /* history-orange.png in Resources */,
 				34CAC2471E5BEA1D00249BA9 /* ringback.wav in Resources */,
 				34E166411E0520F1004A65AB /* down_egg.png in Resources */,
@@ -2431,6 +2462,7 @@
 				34CAC2261E5BEA1D00249BA9 /* chat_message_delivered.png in Resources */,
 				7DCADC6C1E5EDE810092FA5A /* numbertu.png in Resources */,
 				7DCADC6A1E5EDC160092FA5A /* loginback.png in Resources */,
+				3420B39A1E65676000AE228F /* videobiaobiao.png in Resources */,
 				34CAC2221E5BEA1D00249BA9 /* call.png in Resources */,
 				7DCADC6E1E5EDE910092FA5A /* passtu.png in Resources */,
 				3496F9CE1E04DF8E00744A1E /* Main.storyboard in Resources */,
