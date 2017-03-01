@@ -9,6 +9,7 @@
 #import "MeViewController.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
 #import "InformationViewController.h"
+#import "PermissionViewController.h"
 
 @interface MeViewController ()
 @property(nonatomic,strong)UILabel * nameLabel;
@@ -169,7 +170,7 @@
     }];
     
     UILabel * doumaLabel = [[UILabel alloc]init];
-    doumaLabel.text = NSLocalizedString(@"me_douma", nil);
+    doumaLabel.text = @"好友";
     doumaLabel.textColor = [UIColor blackColor];
     doumaLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:doumaLabel];
@@ -202,7 +203,7 @@
     
     
     UILabel * quanxianLabel = [[UILabel alloc]init];
-    quanxianLabel.text = NSLocalizedString(@"me_Permission_settings", nil);
+    quanxianLabel.text = @"权限设置";
     quanxianLabel.textColor = [UIColor blackColor];
     quanxianLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:quanxianLabel];
@@ -256,7 +257,7 @@
     }];
     
     UILabel * exchangeLabel = [[UILabel alloc]init];
-    exchangeLabel.text = NSLocalizedString(@"me_repair", nil);
+    exchangeLabel.text = @"修改密码";
     exchangeLabel.textColor = [UIColor blackColor];
     exchangeLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:exchangeLabel];
@@ -287,7 +288,7 @@
     }];
     
     UILabel * aboutLabel = [[UILabel alloc]init];
-    aboutLabel.text = NSLocalizedString(@"me_aobout", nil);
+    aboutLabel.text = @"关于";
     aboutLabel.textColor = [UIColor blackColor];
     aboutLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:aboutLabel];
@@ -386,7 +387,12 @@
     
 }
 
+-(void)quanxianbuttonTouch{
+    PermissionViewController * perVc= [[PermissionViewController alloc]init];
+    [self.navigationController pushViewController:perVc animated:NO];
 
+
+}
 
 
 
