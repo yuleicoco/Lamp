@@ -23,6 +23,8 @@
 #define GRAY_COLOR RGB(205, 205, 193)
 #define LIGHT_GRAY_COLOR RGB(239, 242, 243)
 #define LIGHT_GRAYdcdc_COLOR RGB(220, 220, 220)
+//蓝色 73,195,241
+#define BLUE_COLOR RGB(73, 195, 241)
 // 红色
 #define RED_COLOR RGB(193, 42, 56)
 

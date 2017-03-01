@@ -2315,7 +2315,7 @@ static void audioRouteChangeListenerCallback (
     sephone_address_set_username(address, normalizedUserName);
 
   
-    const char * server ="sip.smartsuoo.com";
+   // const char * server ="sip.smartsuoo.com";
     
     if (domain && [domain length] != 0) {
         sephone_address_set_domain(address, [domain UTF8String]);
@@ -2326,7 +2326,7 @@ static void audioRouteChangeListenerCallback (
      sephone_address_set_transport(address, SephoneTransportTcp);
     // 设置在使用的STUN服务器地址 去掉后面的端口号
     
-     sephone_core_set_stun_server(lc, server);
+     sephone_core_set_stun_server(lc, [domain UTF8String]);
     // 启用ice
     sephone_core_set_firewall_policy(lc, SephonePolicyUseIce);
     // _SephoneFirewallPolicy 用于获取_SephoneFirewallPolicy里的枚举
@@ -2335,6 +2335,7 @@ static void audioRouteChangeListenerCallback (
         NSLog(@"hh");
         
     }
+    
     identity = sephone_address_as_string_uri_only(address);
     sephone_proxy_config_set_identity(proxyCfg, identity);
 
