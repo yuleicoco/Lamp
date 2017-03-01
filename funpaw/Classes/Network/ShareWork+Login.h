@@ -25,6 +25,9 @@
 -(void)otherLoginWithNickname:(NSString *)nickname secretkey:(NSString *)secretkey headportrait:(NSString *)headportrait rtype:(NSString *)rtype complete:(void(^)(BaseModel *model))completeBlock;
 
 
+//修改密码
+//修改密码
+-(void)exchangePasswordWithMid:(NSString *)mid password:(NSString *)password complete:(void (^)(BaseModel * model))completeBlock;
 
 
 

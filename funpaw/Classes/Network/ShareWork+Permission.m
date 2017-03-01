@@ -76,7 +76,7 @@
     params[@"rulesname"] = rulesname;
     params[@"object"] = object;
     params[@"friends"] = friends;
-    params[@"tsnum"] = tsnum;
+   // params[@"tsnum"] = tsnum;
     [self requestWithMethod:POST WithPath:@"common=ruleSet" WithParams:params WithSuccessBlock:^(BaseModel *model) {
         
         if (model) {
@@ -100,7 +100,7 @@
     params[@"rulesname"] = rulesname;
     params[@"object"] = object;
     params[@"friends"] = friends;
-    params[@"tsnum"] = tsnum;
+   // params[@"tsnum"] = tsnum;
     [self requestWithMethod:POST WithPath:@"common=ruleModifyInfo" WithParams:params WithSuccessBlock:^(BaseModel *model) {
         
         if (model) {
