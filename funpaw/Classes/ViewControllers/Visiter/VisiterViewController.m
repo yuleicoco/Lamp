@@ -90,10 +90,18 @@ static NSString * cellId = @"douyidouCellid";
         cell.lineLabel.hidden = YES;
     }
     
-//    
+//
+    
     [cell.headImage sd_setImageWithURL:[NSURL URLWithString:model.headportrait] placeholderImage:[UIImage imageNamed:@""]];
     cell.nameLabel.text = model.nickname;
+   
+    if ([model.status isEqualToString:@"ds001"]) {
+        cell.rightBtn.hidden = NO;
+    }else{
+        cell.rightBtn.hidden = YES;
+    }
     
+    //[cell.rightBtn setTitle:@"" forState:UIControlStateNormal];
     cell.rightBtn.tag = indexPath.row + 111;
     [cell.rightBtn addTarget:self action:@selector(rightButtontouch1:) forControlEvents:UIControlEventTouchUpInside];
     

@@ -45,20 +45,13 @@
             make.width.mas_equalTo(300);
         }];
         
-        
-        
-        
-        
-        
-        
-        
-        
+    
     }
-
-
-
+    
+    
+    
     return self;
-
+    
 }
 
 @end
