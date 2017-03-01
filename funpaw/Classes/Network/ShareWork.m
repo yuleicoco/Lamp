@@ -90,7 +90,7 @@
 //            params[@"classes"] = @"appinterface";
 //            params[@"method"] = @"json";
             
-           path =[NSString  stringWithFormat:@"http://180.97.80.227:15105/clientAction.do?method=json&classes=appinterface&%@",path];
+           path =[NSString  stringWithFormat:@"http://180.97.80.227:15102/clientAction.do?method=json&classes=appinterface&%@",path];
         
             [self POST:path parameters:params progress:nil success:^(NSURLSessionTask *task, NSDictionary * responseObject) {
                  NSError* error = nil;
