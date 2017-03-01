@@ -36,6 +36,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = BLUE_COLOR;
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     switch (status) {
         case AVAuthorizationStatusNotDetermined:{
@@ -177,8 +179,8 @@
     // 获取sip地址
     [[ShareWork sharedManager]service:nil complete:^(BaseModel *model) {
         if ([model.retCode isEqualToString:@"0000"]) {
-            // SIP注册
-            [SephoneManager addProxyConfig:[AccountManager sharedAccountManager].loginModel.sipno password:[AccountManager sharedAccountManager].loginModel.sippw domain:model.content];
+            // SIP注册 www.segosip001.cn
+            [SephoneManager addProxyConfig:[AccountManager sharedAccountManager].loginModel.sipno password:[AccountManager sharedAccountManager].loginModel.sippw domain:@"www.segosip001.cn"];
         }
     }];
 }
@@ -258,15 +260,17 @@
     
     // 开启按钮
     openVideoBtn =[UIButton new];
-    
+    [openVideoBtn setTitle:@"开启" forState:UIControlStateNormal];
+    openVideoBtn.layer.cornerRadius =45;
+    openVideoBtn.layer.borderWidth =1;
     [openVideoBtn addTarget:self action:@selector(OpenVideo:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:openVideoBtn];
     
     [openVideoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.height.width.equalTo(@62);
-        make.bottom.equalTo(self.view.mas_centerY).offset(91);
-        make.right.equalTo(self.view.mas_right).with.offset(-35);
+        make.height.width.equalTo(@90);
+        make.bottom.equalTo(self.view.mas_centerY).offset(140);
+        make.centerX.equalTo(self.view.mas_centerX);
         
     }];
     
@@ -411,11 +415,14 @@
     {
         openVideoBtn.hidden = NO;
         if ([strState isEqualToString:@"ds001"]) {
-            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open"] forState:UIControlStateNormal];
+//            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open"] forState:UIControlStateNormal];
+             openVideoBtn.layer.borderColor =[UIColor whiteColor].CGColor;
             openVideoBtn.userInteractionEnabled = YES;
         }else{
-            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open_offine"] forState:UIControlStateNormal];
+//            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open_offine"] forState:UIControlStateNormal];
+             openVideoBtn.layer.borderColor = GRAY_COLOR.CGColor;
             openVideoBtn.userInteractionEnabled = NO;
+            
             
         }
     }
@@ -471,7 +478,6 @@
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *  locationString=[dateformatter stringFromDate:senddate];
-    
     
     if ([strState isEqualToString:@"ds001"]) {
         [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"self" deviceno:Mid_D belong:Mid_S starttime:locationString complete:^(BaseModel * model) {
