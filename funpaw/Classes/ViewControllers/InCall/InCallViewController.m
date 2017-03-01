@@ -94,8 +94,6 @@
 
 - (void)setCall:(SephoneCall *)acall {
     call = acall;
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -1147,9 +1145,6 @@
 - (void)hideSpinnerIndicator:(SephoneCall *)call {
     
     [flowUI stopAnimating];
-    
-    
-    
 }
 
 static void hideSpinner(SephoneCall *call, void *user_data) {
