@@ -24,6 +24,7 @@
 		34662FF51E6808CC00019D2E /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FEF1E6808CC00019D2E /* AgreementViewController.m */; };
 		34662FF61E6808CC00019D2E /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FF11E6808CC00019D2E /* IntroduceViewController.m */; };
 		34662FF71E6808CC00019D2E /* SuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FF31E6808CC00019D2E /* SuggestViewController.m */; };
+		34662FF91E68181800019D2E /* guide_l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34662FF81E68181800019D2E /* guide_l.jpg */; };
 		3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3468FF451E4857AF00DEBE4B /* ShareWork.m */; };
 		3496F9C51E04DF8E00744A1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3496F9C41E04DF8E00744A1E /* main.m */; };
 		3496F9CB1E04DF8E00744A1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3496F9CA1E04DF8E00744A1E /* ViewController.m */; };
@@ -278,6 +279,7 @@
 		34662FF11E6808CC00019D2E /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
 		34662FF21E6808CC00019D2E /* SuggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewController.h; sourceTree = "<group>"; };
 		34662FF31E6808CC00019D2E /* SuggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewController.m; sourceTree = "<group>"; };
+		34662FF81E68181800019D2E /* guide_l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_l.jpg; sourceTree = "<group>"; };
 		3468FF441E4857AF00DEBE4B /* ShareWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareWork.h; sourceTree = "<group>"; };
 		3468FF451E4857AF00DEBE4B /* ShareWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareWork.m; sourceTree = "<group>"; };
 		3496F9C01E04DF8E00744A1E /* funpaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funpaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1078,6 +1080,7 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
+				34662FF81E68181800019D2E /* guide_l.jpg */,
 				3420B3A11E657EBF00AE228F /* English_tips.png */,
 				3420B39F1E65689B00AE228F /* busy_e.png */,
 				3420B39B1E65689200AE228F /* offline_e.png */,
@@ -2679,6 +2682,7 @@
 				34CAC2241E5BEA1D00249BA9 /* call_status_outgoing.png in Resources */,
 				7DCADC701E5EE1A20092FA5A /* qq.png in Resources */,
 				34CAC23E1E5BEA1D00249BA9 /* status-offline.png in Resources */,
+				34662FF91E68181800019D2E /* guide_l.jpg in Resources */,
 				34E1644F1E050B18004A65AB /* sephonerc-factory in Resources */,
 				34E164501E050B18004A65AB /* sephonerc-factory~ipad in Resources */,
 				34E1644C1E050B18004A65AB /* rootca.pem in Resources */,
