@@ -223,6 +223,7 @@
 		7D557AFC1E67BCA60038A6DA /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AFB1E67BCA60038A6DA /* UITabBar+Badge.m */; };
 		7D557AFE1E67CB300038A6DA /* newfriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D557AFD1E67CB300038A6DA /* newfriend.png */; };
 		7D557B001E67F5590038A6DA /* find.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D557AFF1E67F5590038A6DA /* find.png */; };
+		7D557B021E6816C40038A6DA /* loginBackkk.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D557B011E6816C40038A6DA /* loginBackkk.png */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
 		7D8BBB8D1E66A3C800CB4DD9 /* ShareWork+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8C1E66A3C800CB4DD9 /* ShareWork+Permission.m */; };
 		7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8F1E66A42A00CB4DD9 /* ZdFriendModel.m */; };
@@ -955,6 +956,7 @@
 		7D557AFB1E67BCA60038A6DA /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
 		7D557AFD1E67CB300038A6DA /* newfriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newfriend.png; sourceTree = "<group>"; };
 		7D557AFF1E67F5590038A6DA /* find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find.png; sourceTree = "<group>"; };
+		7D557B011E6816C40038A6DA /* loginBackkk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBackkk.png; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
 		7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGridViewController.m; sourceTree = "<group>"; };
 		7D8BBB8B1E66A3C800CB4DD9 /* ShareWork+Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Permission.h"; sourceTree = "<group>"; };
@@ -1091,6 +1093,7 @@
 		348A2D8A1E52B24700B85D7B /* funpawegg */ = {
 			isa = PBXGroup;
 			children = (
+				7D557B011E6816C40038A6DA /* loginBackkk.png */,
 				7D557AFF1E67F5590038A6DA /* find.png */,
 				7D557AFD1E67CB300038A6DA /* newfriend.png */,
 				7D8BBBB31E66B38F00CB4DD9 /* quan_guize.png */,
@@ -2562,7 +2565,7 @@
 				TargetAttributes = {
 					3496F9BF1E04DF8E00744A1E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = HPKQAF34Z3;
+						DevelopmentTeam = ZMFX8728A9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -2600,6 +2603,7 @@
 				34E164471E050B18004A65AB /* msg.wav in Resources */,
 				34CAC2381E5BEA1D00249BA9 /* sephone.icns in Resources */,
 				34CAC23B1E5BEA1D00249BA9 /* startcall-green.png in Resources */,
+				7D557B021E6816C40038A6DA /* loginBackkk.png in Resources */,
 				34CAC22D1E5BEA1D00249BA9 /* contact_unstarred.png in Resources */,
 				3496F9D61E04DF8E00744A1E /* LaunchScreen.storyboard in Resources */,
 				34E164461E050B18004A65AB /* msg.caf in Resources */,
@@ -2955,7 +2959,7 @@
 			baseConfigurationReference = D73B91DE92C95DDCDFE60BB6 /* Pods-funpaw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPKQAF34Z3;
+				DEVELOPMENT_TEAM = ZMFX8728A9;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/funpaw/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2990,7 +2994,7 @@
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib",
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib/mediastreamer/plugins",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sg.funpaw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sego.Lamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3000,7 +3004,7 @@
 			baseConfigurationReference = 3AC2930639E43591051DDADA /* Pods-funpaw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HPKQAF34Z3;
+				DEVELOPMENT_TEAM = ZMFX8728A9;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/funpaw/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3035,7 +3039,7 @@
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib",
 					"$(PROJECT_DIR)/funpaw/Classes/Sephone/SP_sdk/libsephone-sdk/apple-darwin/lib/mediastreamer/plugins",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sg.funpaw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sego.Lamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
