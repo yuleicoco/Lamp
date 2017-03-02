@@ -7,8 +7,8 @@
 //
 
 #import "BaseViewController.h"
-//#import "UITabBar+Badge.h"
-//#import "AFHttpClient+Friend.h"
+#import "UITabBar+Badge.h"
+#import "ShareWork+Friend.h"
 @implementation BaseViewController
 
 - (void)viewDidLoad{
@@ -57,22 +57,22 @@
 }
 
 -(void)isfriendmessage{
-//    [[AFHttpClient sharedAFHttpClient]newFriendsMsgCountWithMid:[AccountManager sharedAccountManager].loginModel.mid complete:^(BaseModel *model) {
-//        if ([model.content isEqualToString:@"0"]) {
-//            NSUserDefaults * defeults =[NSUserDefaults standardUserDefaults];
-//            [defeults setObject:model.content forKey:@"countfoucetip"];
-//            [defeults synchronize];
-//            [self.tabBarController.tabBar hideBadgeOnItemIndex:3];
-//        }else{
-//            NSUserDefaults * defeults =[NSUserDefaults standardUserDefaults];
-//            [defeults setObject:model.content forKey:@"countfoucetip"];
-//            [defeults synchronize];
-//            [self.tabBarController.tabBar showBadgeOnItemIndex:3];
-//            
-//        }
-//        
-//        
-//    }];
+    [[ShareWork sharedManager]newFriendsMsgCountWithMid:[AccountManager sharedAccountManager].loginModel.mid complete:^(BaseModel *model) {
+        if ([model.content isEqualToString:@"0"]) {
+            NSUserDefaults * defeults =[NSUserDefaults standardUserDefaults];
+            [defeults setObject:model.content forKey:@"countfoucetip"];
+            [defeults synchronize];
+            [self.tabBarController.tabBar hideBadgeOnItemIndex:2];
+        }else{
+            NSUserDefaults * defeults =[NSUserDefaults standardUserDefaults];
+            [defeults setObject:model.content forKey:@"countfoucetip"];
+            [defeults synchronize];
+            [self.tabBarController.tabBar showBadgeOnItemIndex:2];
+            
+        }
+        
+        
+    }];
 
 
 

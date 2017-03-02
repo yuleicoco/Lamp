@@ -12,11 +12,13 @@
 #import "PermissionViewController.h"
 #import "ExchangPasswordViewController.h"
 #import "AboutViewController.h"
+#import "FriendViewController.h"
 
 @interface MeViewController ()
 @property(nonatomic,strong)UILabel * nameLabel;
 @property(nonatomic,strong)UIButton * headBtn;
 @property (nonatomic,strong)UIImageView * headImage;
+@property (nonatomic,strong)UIButton * redBtn;
 @end
 
 @implementation MeViewController
@@ -181,6 +183,15 @@
         make.centerY.equalTo(doumaImage.mas_centerY);
         
     }];
+    
+    _redBtn = [[UIButton alloc]init];
+    _redBtn.backgroundColor = [UIColor redColor];
+    
+    
+    
+    
+    
+    
     
     UIButton * doumaBtn = [[UIButton alloc]init];
     doumaBtn.backgroundColor = [UIColor clearColor];
@@ -388,6 +399,17 @@
 
     
 }
+//好友
+-(void)doumabuttonTouch{
+    FriendViewController * friendVc= [[FriendViewController alloc]init];
+    [self.navigationController pushViewController:friendVc animated:NO];
+
+}
+
+
+
+
+
 //权限设置
 -(void)quanxianbuttonTouch{
     PermissionViewController * perVc= [[PermissionViewController alloc]init];
