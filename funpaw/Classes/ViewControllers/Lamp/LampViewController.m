@@ -367,7 +367,6 @@
     [Guideview removeFromSuperview];
 }
 
-
 // 检查设备状态
 - (void)checkDeviceStats
 {
@@ -443,11 +442,10 @@
     {
         openVideoBtn.hidden = NO;
         if ([strState isEqualToString:@"ds001"]) {
-//            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open"] forState:UIControlStateNormal];
+
              openVideoBtn.layer.borderColor =[UIColor whiteColor].CGColor;
             openVideoBtn.userInteractionEnabled = YES;
         }else{
-//            [openVideoBtn setImage:[UIImage imageNamed:@"egg_open_offine"] forState:UIControlStateNormal];
              openVideoBtn.layer.borderColor = GRAY_COLOR.CGColor;
             openVideoBtn.userInteractionEnabled = NO;
             
