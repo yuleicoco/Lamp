@@ -20,4 +20,9 @@
 @property(nonatomic,strong)NSString * strState;
 @property(nonatomic,strong)NSString * DeviceNum;
 
+// other
+@property(nonatomic,strong)NSString * OTdeviceNum;
+@property(nonatomic,strong)NSString * OTmid;
+
+
 @end

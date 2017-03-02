@@ -10,5 +10,6 @@
 
 @interface ShareWork (Visiters)
 -(void)icanvisitWithMid:(NSString *)mid page:(int)page size:(int)size complete:(void(^)(BaseModel *model))completeBlock;
+-(void)OtherMid:(NSString *)mid  complete:(void (^)(BaseModel *))completeBlock;
 
 @end

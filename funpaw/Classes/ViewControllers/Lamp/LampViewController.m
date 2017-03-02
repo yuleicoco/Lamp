@@ -15,10 +15,14 @@
 #import "WifiViewController.h"
 #import "BindingViewController.h"
 #import "ShareWork+Incall.h"
+#import "VisiterModel.h"
 
 @interface LampViewController ()
 {
     NSArray * arrBtn;
+    VisiterModel * modelOt;
+    
+    
 }
 
 @end
@@ -82,6 +86,8 @@
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callUpdate:) name:kSephoneCallUpdate object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registrationUpdate:) name:kSephoneRegistrationUpdate object:nil];
+    [[NSNotificationCenter  defaultCenter]addObserver:self selector:@selector(OtherName:) name:@"otherNam" object:nil];
+    
     
     // 检查设置状态
     moveTimer =[HWWeakTimer scheduledTimerWithTimeInterval:5.0 block:^(id userInfo) {
@@ -105,6 +111,17 @@
     
 }
 
+
+
+- (void)OtherName:(NSNotification *)sn
+{
+     modelOt = sn.object;
+    
+    self.OTdeviceNum = modelOt.retVal[@"deviceno"];
+    self.OTmid = modelOt.retVal[@"mid"];
+    
+    
+}
 /**
  通话状态处理
  
@@ -167,6 +184,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kSephoneCallUpdate object:nil];
     
     [[NSNotificationCenter defaultCenter]removeObserver:self name:kSephoneRegistrationUpdate object:nil];
+   // [[NSNotificationCenter  defaultCenter]removeObserver:self name:@"otherNam" object:nil];
+    
+    self.OTmid = nil;
+    self.OTdeviceNum = nil;
     [moveTimer invalidate];
     
 }
@@ -350,7 +371,14 @@
 // 检查设备状态
 - (void)checkDeviceStats
 {
-    [[ShareWork sharedManager]DeviceStats:Mid_S complete:^(BaseModel * model) {
+    NSString * str;
+    if ([AppUtil isBlankString:self.OTdeviceNum]) {
+        str = Mid_S;
+    }else
+    {
+        str = self.OTmid;
+    }
+    [[ShareWork sharedManager]DeviceStats:str complete:^(BaseModel * model) {
         
         if ([model.retCode isEqualToString:@"0000"]) {
             if ([AppUtil isBlankString:model.retVal[@"status"]]) {
@@ -466,28 +494,46 @@
 - (void)OpenVideo:(UIButton *)sender
 {
     NSString * strDevicenume =[Defaluts objectForKey:PREF_DEVICE_NUMBER];
-    
-    if ([AppUtil isBlankString:Mid_D]) {
-        
-        [self sipCall:strDevicenume sipName:nil];
-    }else
-    {
-        [self sipCall:Mid_D sipName:nil];
-    }
     NSDate *  senddate=[NSDate date];
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *  locationString=[dateformatter stringFromDate:senddate];
     
-    if ([strState isEqualToString:@"ds001"]) {
-        [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"self" deviceno:Mid_D belong:Mid_S starttime:locationString complete:^(BaseModel * model) {
-            [Defaluts setObject:model.content forKey:@"selfID"];
-            [Defaluts synchronize];
-        }];
+    if ([AppUtil isBlankString:self.OTdeviceNum]) {
+        if ([AppUtil isBlankString:Mid_D]) {
+            [self sipCall:strDevicenume sipName:nil];
+        }else
+        {
+            [self sipCall:Mid_D sipName:nil];
+        }
+        
+        if ([strState isEqualToString:@"ds001"]) {
+            [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"self" deviceno:Mid_D belong:Mid_S starttime:locationString complete:^(BaseModel * model) {
+                [Defaluts setObject:model.content forKey:@"selfID"];
+                [Defaluts synchronize];
+            }];
+        }else
+        {
+            return;
+        }
+        
     }else
     {
-        return;
+         [self sipCall:self.OTdeviceNum sipName:nil];
+        
+        if ([strState isEqualToString:@"ds001"]) {
+            [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"other" deviceno:self.OTdeviceNum belong:self.OTmid starttime:locationString complete:^(BaseModel * model) {
+                [Defaluts setObject:model.content forKey:@"selfID"];
+                [Defaluts synchronize];
+            }];
+        }else
+        {
+            return;
+        }
+        
     }
+    
+    
 }
 
 

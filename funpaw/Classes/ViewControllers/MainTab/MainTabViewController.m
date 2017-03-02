@@ -106,16 +106,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 -(void)pushViewController:(UIViewController *)viewController{
     if ([self.selectedViewController isKindOfClass:[UINavigationController class]]) {
         

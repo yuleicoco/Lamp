@@ -10,6 +10,7 @@
 #import "ShareWork+Visiters.h"
 #import "DouyiDouTableViewCell.h"
 #import "VisiterModel.h"
+#import "LampViewController.h"
 static NSString * cellId = @"douyidouCellid";
 @interface VisiterViewController ()
 
@@ -89,9 +90,6 @@ static NSString * cellId = @"douyidouCellid";
     if (indexPath.row == 0) {
         cell.lineLabel.hidden = YES;
     }
-    
-//
-    
     [cell.headImage sd_setImageWithURL:[NSURL URLWithString:model.headportrait] placeholderImage:[UIImage imageNamed:@""]];
     cell.nameLabel.text = model.nickname;
    
@@ -101,7 +99,6 @@ static NSString * cellId = @"douyidouCellid";
         cell.rightBtn.hidden = YES;
     }
     
-    //[cell.rightBtn setTitle:@"" forState:UIControlStateNormal];
     cell.rightBtn.tag = indexPath.row + 111;
     [cell.rightBtn addTarget:self action:@selector(rightButtontouch1:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -110,7 +107,21 @@ static NSString * cellId = @"douyidouCellid";
     return cell;
 }
 
+//
 -(void)rightButtontouch1:(UIButton *)sender{
+    NSInteger i = sender.tag - 111;
+    VisiterModel * model = self.dataSource[i];
+    
+    
+  
+    [[ShareWork sharedManager]OtherMid:model.mid complete:^(BaseModel * model) {
+    
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"otherNam" object: model];
+     self.navigationController.tabBarController.selectedIndex =0;
+        
+    }];
+    
+    
     
 
 
