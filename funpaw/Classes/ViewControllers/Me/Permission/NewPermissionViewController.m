@@ -33,8 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavTitle:NSLocalizedString(@"as_newRulll", nil)];
-    self.view.backgroundColor = GRAY_COLOR;
+    [self setNavTitle:@"新建规则"];
+    self.view.backgroundColor = LIGHT_GRAY_COLOR;
     _isXiugai = NO;
 }
 
@@ -51,23 +51,23 @@
         make.top.equalTo(topView.superview);
         make.left.equalTo(topView.superview);
         make.right.equalTo(topView.superview);
-        make.height.mas_equalTo(120);
+        make.height.mas_equalTo(60);
     }];
     
-    UILabel * lineLabel = [[UILabel alloc]init];
-    lineLabel.backgroundColor = LIGHT_GRAYdcdc_COLOR;
-    [topView addSubview:lineLabel];
-    [lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(lineLabel.superview).offset(12);
-        make.right.equalTo(lineLabel.superview).offset(-12);
-        make.centerY.equalTo(lineLabel.superview.mas_centerY);
-        make.height.mas_equalTo(0.5);
-        
-        
-    }];
+//    UILabel * lineLabel = [[UILabel alloc]init];
+//    lineLabel.backgroundColor = LIGHT_GRAYdcdc_COLOR;
+//    [topView addSubview:lineLabel];
+//    [lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(lineLabel.superview).offset(12);
+//        make.right.equalTo(lineLabel.superview).offset(-12);
+//        make.centerY.equalTo(lineLabel.superview.mas_centerY);
+//        make.height.mas_equalTo(0.5);
+//        
+//        
+//    }];
 
     UILabel * leftLabel1 = [[UILabel alloc]init];
-    leftLabel1.text = NSLocalizedString(@"as_rulename", nil);
+    leftLabel1.text = @"规则名称";
     leftLabel1.textColor = [UIColor blackColor];
     leftLabel1.font = [UIFont systemFontOfSize:18];
     [topView addSubview:leftLabel1];
@@ -79,18 +79,18 @@
     }];
     
     
-    UILabel * leftLabel2 = [[UILabel alloc]init];
-    leftLabel2.text = NSLocalizedString(@"as_Accessfood", nil);
-    leftLabel2.textColor = [UIColor blackColor];
-    leftLabel2.font = [UIFont systemFontOfSize:18];
-    [topView addSubview:leftLabel2];
-    [leftLabel2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(leftLabel2.superview).offset(12);
-        make.top.equalTo(lineLabel.mas_bottom).offset(20);
-    }];
+//    UILabel * leftLabel2 = [[UILabel alloc]init];
+//    leftLabel2.text = NSLocalizedString(@"as_Accessfood", nil);
+//    leftLabel2.textColor = [UIColor blackColor];
+//    leftLabel2.font = [UIFont systemFontOfSize:18];
+//    [topView addSubview:leftLabel2];
+//    [leftLabel2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(leftLabel2.superview).offset(12);
+//        make.top.equalTo(lineLabel.mas_bottom).offset(20);
+//    }];
     
     _ruleNameLabel = [[UILabel alloc]init];
-    _ruleNameLabel.text = NSLocalizedString(@"as_shuruname", nil);
+    _ruleNameLabel.text = @"请输入规则名称";
     _ruleNameLabel.textColor =[UIColor lightGrayColor];
     _ruleNameLabel.font = [UIFont systemFontOfSize:18];
     [topView addSubview:_ruleNameLabel];
@@ -109,32 +109,32 @@
       //  make.left.equalTo(_ruleNameBtn.mas_right).offset(20);
         make.right.equalTo(_ruleNameBtn.superview);
         make.top.equalTo(_ruleNameBtn.superview);
-        make.bottom.equalTo(lineLabel.mas_bottom);
+        make.bottom.equalTo(_ruleNameBtn.superview);
         make.width.mas_equalTo(300);
     }];
     
-    _toushiLabel = [[UILabel alloc]init];
-    _toushiLabel.text  = NSLocalizedString(@"as_allow", nil);
-    _toushiLabel.textColor = [UIColor blackColor];
-    _toushiLabel.font = [UIFont systemFontOfSize:18];
-    [topView addSubview:_toushiLabel];
-    [_toushiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(_ruleNameLabel.mas_right);
-        make.top.equalTo(lineLabel.mas_bottom).offset(20);
+//    _toushiLabel = [[UILabel alloc]init];
+//    _toushiLabel.text  = NSLocalizedString(@"as_allow", nil);
+//    _toushiLabel.textColor = [UIColor blackColor];
+//    _toushiLabel.font = [UIFont systemFontOfSize:18];
+//    [topView addSubview:_toushiLabel];
+//    [_toushiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(_ruleNameLabel.mas_right);
+//        make.top.equalTo(lineLabel.mas_bottom).offset(20);
+//    
+//    }];
     
-    }];
-    
-    _toushiBtn = [[UIButton alloc]init];
-    _toushiBtn.backgroundColor = [UIColor clearColor];
-    [topView addSubview:_toushiBtn];
-    [_toushiBtn addTarget:self action:@selector(toushubuttonTouch) forControlEvents:UIControlEventTouchUpInside];
-    [_toushiBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(_toushiBtn.superview);
-        make.top.equalTo(lineLabel.mas_bottom);
-         make.bottom.equalTo(_toushiBtn.superview);
-        make.width.mas_equalTo(300);
-        
-    }];
+//    _toushiBtn = [[UIButton alloc]init];
+//    _toushiBtn.backgroundColor = [UIColor clearColor];
+//    [topView addSubview:_toushiBtn];
+//    [_toushiBtn addTarget:self action:@selector(toushubuttonTouch) forControlEvents:UIControlEventTouchUpInside];
+//    [_toushiBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(_toushiBtn.superview);
+//        make.top.equalTo(lineLabel.mas_bottom);
+//         make.bottom.equalTo(_toushiBtn.superview);
+//        make.width.mas_equalTo(300);
+//        
+//    }];
     
     UIView * downView = [[UIView alloc]init];
     downView.backgroundColor = [UIColor whiteColor];
@@ -148,7 +148,7 @@
     }];
     
     UILabel * erbiLabel = [[UILabel alloc]init];
-    erbiLabel.text = NSLocalizedString(@"as_setwhocan", nil);
+    erbiLabel.text = @"设置谁能访问我的设备";
     erbiLabel.textColor = [UIColor blackColor];
     erbiLabel.font = [UIFont systemFontOfSize:18];
     [downView addSubview:erbiLabel];
@@ -163,7 +163,7 @@
     _allBtn.layer.borderWidth = 1;
     _allBtn.layer.cornerRadius = 3;
     _allBtn.backgroundColor = [UIColor whiteColor];
-    [_allBtn setTitle:NSLocalizedString(@"as_all", nil) forState:UIControlStateNormal];
+    [_allBtn setTitle:@"所有人" forState:UIControlStateNormal];
     [_allBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_allBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     _allBtn.selected = NO;
@@ -182,7 +182,7 @@
     _friendBtn.layer.borderWidth = 1;
     _friendBtn.layer.cornerRadius = 3;
     _friendBtn.backgroundColor = [UIColor whiteColor];
-    [_friendBtn setTitle:NSLocalizedString(@"as_friend", nil) forState:UIControlStateNormal];
+    [_friendBtn setTitle:@"好友" forState:UIControlStateNormal];
     [_friendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_friendBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     _friendBtn.selected = NO;
@@ -224,7 +224,7 @@
     
     UIButton * sureBtn = [[UIButton alloc]init];
     sureBtn.backgroundColor = GREEN_COLOR;
-    [sureBtn setTitle:NSLocalizedString(@"as_sureee", nil) forState:UIControlStateNormal];
+    [sureBtn setTitle:@"确认" forState:UIControlStateNormal];
     [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     sureBtn.titleLabel.font = [UIFont systemFontOfSize:20];
     sureBtn.layer.cornerRadius = 3;
@@ -240,20 +240,20 @@
 
 -(void)sureButtonTouchh{
     if (_isXiugai == NO) {
-        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"as_shuruname", nil)];
+        [[AppUtil appTopViewController] showHint:@"请输入规则名称"];
         return;
     }
     if (_allBtn.selected == NO && _friendBtn.selected == NO && _zdBtn.selected == NO) {
-        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"as_pleaseselewho", nil)];
+        [[AppUtil appTopViewController] showHint:@"请选择谁能访问我的设备"];
         return;
     }
 
     NSString * tsNum = @"";
-    if ([_toushiLabel.text isEqualToString:NSLocalizedString(@"me_noshare",nil)]) {
-        tsNum = @"0";
-    }else{
-        tsNum = @"1";
-    }
+//    if ([_toushiLabel.text isEqualToString:NSLocalizedString(@"me_noshare",nil)]) {
+//        tsNum = @"0";
+//    }else{
+//        tsNum = @"1";
+//    }
     
     NSString * objectStr = @"";
      NSMutableArray * array = [[NSMutableArray alloc]init];
@@ -271,7 +271,7 @@
     
 
     
-    [self showHudInView:self.view hint:NSLocalizedString(@"as_add", nil)];
+    [self showHudInView:self.view hint:@"新建中..."];
     [[ShareWork sharedManager]ruleSetWithMid:[AccountManager sharedAccountManager].loginModel.mid rulesname:_ruleNameLabel.text object:objectStr friends:friendstr tsnum:tsNum complete:^(BaseModel *model) {
         if (model) {
             [[AppUtil appTopViewController]showHint:model.retDesc];
@@ -362,7 +362,7 @@
     }];
     
     UILabel * nameLabel = [[UILabel alloc]init];
-    nameLabel.text = NSLocalizedString(@"as_rulename", nil);
+    nameLabel.text = @"规则名称";
     nameLabel.textColor = [UIColor blackColor];
     // nameLabel.text = [AccountManager sharedAccountManager].loginModel.nickname;
     nameLabel.font = [UIFont systemFontOfSize:17.5];
@@ -379,7 +379,7 @@
     }else{
         _exchangeTextfield.text = _ruleNameLabel.text;
     }
-    _exchangeTextfield.placeholder = NSLocalizedString(@"as_shuruname", nil);
+    _exchangeTextfield.placeholder = @"请输入规则名称";
     _exchangeTextfield.textAlignment = NSTextAlignmentCenter;
     _exchangeTextfield.textColor = [UIColor blackColor];
     _exchangeTextfield.font = [UIFont systemFontOfSize:17];
@@ -413,7 +413,7 @@
     }];
     
     UILabel * danceLabel = [[UILabel alloc]init];
-    danceLabel.text = NSLocalizedString(@"Cancel_bind", nil);
+    danceLabel.text = @"取消";
     danceLabel.textColor = [UIColor blackColor];
     danceLabel.font = [UIFont systemFontOfSize:17];
     [_centerwhteView addSubview:danceLabel];
@@ -423,7 +423,7 @@
     }];
     
     UILabel * sureLabel = [[UILabel alloc]init];
-    sureLabel.text = NSLocalizedString(@"Sure_bind", nil);
+    sureLabel.text = @"确定";
     sureLabel.textColor = [UIColor blackColor];
     sureLabel.font = [UIFont systemFontOfSize:17];
     [_centerwhteView addSubview:sureLabel];
@@ -465,11 +465,11 @@
 }
 -(void)namesurebuttonTouch{
     if ([AppUtil isBlankString:_exchangeTextfield.text]) {
-          [[AppUtil appTopViewController] showHint:NSLocalizedString(@"as_shuruname", nil)];
+          [[AppUtil appTopViewController] showHint:@"请输入规则名称"];
         return;
     }
     if (_exchangeTextfield.text.length > 11) {
-        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"as_zishu", nil)];
+        [[AppUtil appTopViewController] showHint:@"规则名称只能在11字以内哦"];
         return;
     }
       [_exchangeTextfield resignFirstResponder];
@@ -483,19 +483,20 @@
 -(void)bigbuttonTouch{
 //    _bigBtn.hidden = YES;
 //    _centerwhteView.hidden = YES;
+     [_exchangeTextfield resignFirstResponder];
 }
 
--(void)toushubuttonTouch{
-
-        if ([_toushiLabel.text isEqualToString:NSLocalizedString(@"as_allow", nil)]) {
-            _toushiLabel.text = NSLocalizedString(@"me_noshare", nil);
-        }else{
-            _toushiLabel.text = NSLocalizedString(@"as_allow",nil);
-        }
-
-    
-}
-
+//-(void)toushubuttonTouch{
+//
+//        if ([_toushiLabel.text isEqualToString:NSLocalizedString(@"as_allow", nil)]) {
+//            _toushiLabel.text = NSLocalizedString(@"me_noshare", nil);
+//        }else{
+//            _toushiLabel.text = NSLocalizedString(@"as_allow",nil);
+//        }
+//
+//    
+//}
+//
 
 
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C3BDA7E27576BE673A889C7930471C04C17C73FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C3BDA7E27576BE673A889C7930471C04C17C73FC" : 9223372036854775807,
+    "2227B53947CB0DFDFCA542A21385931C3C5AC707" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A9463E03-10E5-45E8-ABCD-51A055E1AA83",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C3BDA7E27576BE673A889C7930471C04C17C73FC" : "Lamp\/",
+    "2227B53947CB0DFDFCA542A21385931C3C5AC707" : "SeGoApp2.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "funpaw",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "funpaw.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yuleicoco\/SeGoApp2.0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2227B53947CB0DFDFCA542A21385931C3C5AC707"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yuleicoco\/Lamp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3BDA7E27576BE673A889C7930471C04C17C73FC"
+    }
+  ]
+}

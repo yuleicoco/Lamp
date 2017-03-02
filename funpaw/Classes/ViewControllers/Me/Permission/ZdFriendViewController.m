@@ -23,16 +23,16 @@ static NSString * cellId = @"zdFriendTableviewcellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _sourceArray = [[NSMutableArray alloc]init];
-    [self setNavTitle:NSLocalizedString(@"as_make", nil)];
+    [self setNavTitle:@"指定好友"];
 }
 -(void)doLeftButtonTouch{
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Warning", nil) message:NSLocalizedString(@"as_tipps", nil) preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"您确定要放弃选择指定好友吗" preferredStyle:UIAlertControllerStyleAlert];
     
-    [alert addAction:[UIAlertAction actionWithTitle: NSLocalizedString(@"Cancel_bind", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle: @"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
     }]];
     
-    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Sure_bind", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定"style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         [self.navigationController popViewControllerAnimated:YES];
         
@@ -52,14 +52,14 @@ static NSString * cellId = @"zdFriendTableviewcellId";
         make.bottom.equalTo(self.tableView.superview).offset(-45);
     }];
     
-    self.tableView.backgroundColor = GRAY_COLOR;
+    self.tableView.backgroundColor = LIGHT_GRAY_COLOR;
     [self.tableView registerClass:[ZdFriendTableViewCell class] forCellReuseIdentifier:cellId];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self initRefreshView];
 
     _sureBtn = [[UIButton alloc]init];
     _sureBtn.backgroundColor = [UIColor whiteColor];
-    [_sureBtn setTitle:NSLocalizedString(@"Sure_bind", nil)forState:UIControlStateNormal];
+    [_sureBtn setTitle:@"确定"forState:UIControlStateNormal];
     [_sureBtn setTitleColor:LIGHT_GRAYdcdc_COLOR forState:UIControlStateNormal];
     [_sureBtn addTarget:self action:@selector(sureButtonTouchhh) forControlEvents:UIControlEventTouchUpInside];
     _sureBtn.userInteractionEnabled = NO;

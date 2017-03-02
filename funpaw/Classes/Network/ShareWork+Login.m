@@ -114,6 +114,27 @@
 
 }
 
+-(void)exchangePasswordWithMid:(NSString *)mid password:(NSString *)password complete:(void (^)(BaseModel *))completeBlock
+{
+    NSMutableDictionary * params = [[NSMutableDictionary alloc]init];
+    params[@"mid"] = mid;
+    params[@"password"] = password;
+    
+    [self requestWithMethod:POST WithPath:@"common=modifyPassword" WithParams:params WithSuccessBlock:^(BaseModel *model) {
+        
+        if (model) {
+            // NSLog(@"哈哈");
+        }
+        if (completeBlock) {
+            completeBlock(model);
+        }
+        
+    } WithFailurBlock:^(NSError *error) {
+        
+    }];
+    
+
+}
 
 
 
