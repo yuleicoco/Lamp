@@ -28,6 +28,26 @@
       [self setNavTitle:@"我的"];
     
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSUserDefaults * tipUser = [NSUserDefaults standardUserDefaults];
+    NSString * tipstr = [tipUser objectForKey:@"countfoucetip"];
+    if ([tipstr isEqualToString:@"0"]) {
+        _redBtn.hidden = YES;
+    }else{
+        _redBtn.hidden = NO;
+
+    }
+    //  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cleanTip) name:@"isreaddd" object:nil];
+    
+    
+}
+
+
+
+
+
 -(void)setupView{
     [super setupView];
     self.view.backgroundColor = LIGHT_GRAY_COLOR;
@@ -186,11 +206,15 @@
     
     _redBtn = [[UIButton alloc]init];
     _redBtn.backgroundColor = [UIColor redColor];
-    
-    
-    
-    
-    
+    _redBtn.layer.cornerRadius = 7;
+    [self.view addSubview:_redBtn];
+    [_redBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_redBtn.superview).offset(-16);
+        make.centerY.equalTo(doumaImage.mas_centerY);
+        make.width.mas_equalTo(14);
+        make.height.mas_equalTo(14);
+        
+    }];
     
     
     UIButton * doumaBtn = [[UIButton alloc]init];

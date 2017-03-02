@@ -35,8 +35,7 @@ static NSString * cellId = @"friendtableviewcellId";
         [_messageBtn setTitle:tipstr forState:UIControlStateNormal];
     }
   //  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cleanTip) name:@"isreaddd" object:nil];
-    
-
+    [self initRefreshView];
 }
 
 
