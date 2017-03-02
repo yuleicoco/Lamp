@@ -217,6 +217,12 @@
 		7D557AEA1E67B9EC0038A6DA /* FriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AE71E67B9EC0038A6DA /* FriendModel.m */; };
 		7D557AEB1E67B9EC0038A6DA /* NewFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AE91E67B9EC0038A6DA /* NewFriendModel.m */; };
 		7D557AF01E67BB770038A6DA /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AEF1E67BB770038A6DA /* FriendTableViewCell.m */; };
+		7D557AF71E67BBBC0038A6DA /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AF21E67BBBB0038A6DA /* FriendViewController.m */; };
+		7D557AF81E67BBBC0038A6DA /* NewfriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AF41E67BBBC0038A6DA /* NewfriendViewController.m */; };
+		7D557AF91E67BBBC0038A6DA /* SearchFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AF61E67BBBC0038A6DA /* SearchFriendViewController.m */; };
+		7D557AFC1E67BCA60038A6DA /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AFB1E67BCA60038A6DA /* UITabBar+Badge.m */; };
+		7D557AFE1E67CB300038A6DA /* newfriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D557AFD1E67CB300038A6DA /* newfriend.png */; };
+		7D557B001E67F5590038A6DA /* find.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D557AFF1E67F5590038A6DA /* find.png */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
 		7D8BBB8D1E66A3C800CB4DD9 /* ShareWork+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8C1E66A3C800CB4DD9 /* ShareWork+Permission.m */; };
 		7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8F1E66A42A00CB4DD9 /* ZdFriendModel.m */; };
@@ -939,6 +945,16 @@
 		7D557AE91E67B9EC0038A6DA /* NewFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendModel.m; sourceTree = "<group>"; };
 		7D557AEE1E67BB770038A6DA /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTableViewCell.h; sourceTree = "<group>"; };
 		7D557AEF1E67BB770038A6DA /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewCell.m; sourceTree = "<group>"; };
+		7D557AF11E67BBBB0038A6DA /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		7D557AF21E67BBBB0038A6DA /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
+		7D557AF31E67BBBC0038A6DA /* NewfriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewfriendViewController.h; sourceTree = "<group>"; };
+		7D557AF41E67BBBC0038A6DA /* NewfriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewfriendViewController.m; sourceTree = "<group>"; };
+		7D557AF51E67BBBC0038A6DA /* SearchFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFriendViewController.h; sourceTree = "<group>"; };
+		7D557AF61E67BBBC0038A6DA /* SearchFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFriendViewController.m; sourceTree = "<group>"; };
+		7D557AFA1E67BCA60038A6DA /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		7D557AFB1E67BCA60038A6DA /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		7D557AFD1E67CB300038A6DA /* newfriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newfriend.png; sourceTree = "<group>"; };
+		7D557AFF1E67F5590038A6DA /* find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find.png; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
 		7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGridViewController.m; sourceTree = "<group>"; };
 		7D8BBB8B1E66A3C800CB4DD9 /* ShareWork+Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Permission.h"; sourceTree = "<group>"; };
@@ -1075,6 +1091,8 @@
 		348A2D8A1E52B24700B85D7B /* funpawegg */ = {
 			isa = PBXGroup;
 			children = (
+				7D557AFF1E67F5590038A6DA /* find.png */,
+				7D557AFD1E67CB300038A6DA /* newfriend.png */,
 				7D8BBBB31E66B38F00CB4DD9 /* quan_guize.png */,
 				7D8BBBB41E66B38F00CB4DD9 /* xuanquan_guize.png */,
 				7D8BBBB11E66AA0E00CB4DD9 /* pickkhou.png */,
@@ -2368,6 +2386,8 @@
 				7D2D58301E49A3700086A823 /* BaseViewController.m */,
 				7D2D58311E49A3700086A823 /* BaseTabViewController.h */,
 				7D2D58321E49A3700086A823 /* BaseTabViewController.m */,
+				7D557AFA1E67BCA60038A6DA /* UITabBar+Badge.h */,
+				7D557AFB1E67BCA60038A6DA /* UITabBar+Badge.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2416,6 +2436,12 @@
 		7D557AEC1E67BB620038A6DA /* Friend */ = {
 			isa = PBXGroup;
 			children = (
+				7D557AF11E67BBBB0038A6DA /* FriendViewController.h */,
+				7D557AF21E67BBBB0038A6DA /* FriendViewController.m */,
+				7D557AF31E67BBBC0038A6DA /* NewfriendViewController.h */,
+				7D557AF41E67BBBC0038A6DA /* NewfriendViewController.m */,
+				7D557AF51E67BBBC0038A6DA /* SearchFriendViewController.h */,
+				7D557AF61E67BBBC0038A6DA /* SearchFriendViewController.m */,
 				7D557AED1E67BB700038A6DA /* VIews */,
 			);
 			path = Friend;
@@ -2621,6 +2647,7 @@
 				7DCADC6A1E5EDC160092FA5A /* loginback.png in Resources */,
 				3420B39A1E65676000AE228F /* videobiaobiao.png in Resources */,
 				34CAC2221E5BEA1D00249BA9 /* call.png in Resources */,
+				7D557B001E67F5590038A6DA /* find.png in Resources */,
 				7DCADC6E1E5EDE910092FA5A /* passtu.png in Resources */,
 				3496F9CE1E04DF8E00744A1E /* Main.storyboard in Resources */,
 				34E1664E1E0520F1004A65AB /* right_egg.png in Resources */,
@@ -2634,6 +2661,7 @@
 				34E1664A1E0520F1004A65AB /* Lnormal_food.png in Resources */,
 				34E1664D1E0520F1004A65AB /* Lnormal_rool.png in Resources */,
 				34CAC24C1E5BEA1D00249BA9 /* orig.wav in Resources */,
+				7D557AFE1E67CB300038A6DA /* newfriend.png in Resources */,
 				34CAC22C1E5BEA1D00249BA9 /* contact_starred.png in Resources */,
 				34CAC2331E5BEA1D00249BA9 /* mic_active.png in Resources */,
 				34CAC2351E5BEA1D00249BA9 /* notok.png in Resources */,
@@ -2737,6 +2765,7 @@
 				34E164121E050B18004A65AB /* UIImage-Extensions.m in Sources */,
 				34A51E751E65269B005E8888 /* WifiViewController.m in Sources */,
 				34E1644D1E050B18004A65AB /* SephoneManager.m in Sources */,
+				7D557AF71E67BBBC0038A6DA /* FriendViewController.m in Sources */,
 				7D3E71171E656C70002047C1 /* ShareWork+PersonMember.m in Sources */,
 				34E1640E1E050B18004A65AB /* QFTableView.m in Sources */,
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
@@ -2759,6 +2788,7 @@
 				34A51E671E652532005E8888 /* InCallViewController.m in Sources */,
 				3496F9D11E04DF8E00744A1E /* funpaw.xcdatamodeld in Sources */,
 				3496F9CB1E04DF8E00744A1E /* ViewController.m in Sources */,
+				7D557AF81E67BBBC0038A6DA /* NewfriendViewController.m in Sources */,
 				7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */,
 				7D2D58401E49AB290086A823 /* LoginViewController.m in Sources */,
 				7D8BBB931E66A42A00CB4DD9 /* RuleModel.m in Sources */,
@@ -2775,6 +2805,7 @@
 				34A51E781E6526E9005E8888 /* ShareWork+device.m in Sources */,
 				34A51E6A1E652583005E8888 /* HWWeakTimer.m in Sources */,
 				7D3E71121E655649002047C1 /* VisiterModel.m in Sources */,
+				7D557AFC1E67BCA60038A6DA /* UITabBar+Badge.m in Sources */,
 				34E1640C1E050B18004A65AB /* AppDelegate.m in Sources */,
 				34E1640F1E050B18004A65AB /* UIActionSheet+Blocks.m in Sources */,
 				7D8BBB971E66A60400CB4DD9 /* InformationTableViewCell.m in Sources */,
@@ -2799,6 +2830,7 @@
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
 				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
 				34A51E711E65264A005E8888 /* BindingViewController.m in Sources */,
+				7D557AF91E67BBBC0038A6DA /* SearchFriendViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				34A864551E49A07100AD6D8A /* BaseModel.m in Sources */,
 				3496F9C51E04DF8E00744A1E /* main.m in Sources */,
