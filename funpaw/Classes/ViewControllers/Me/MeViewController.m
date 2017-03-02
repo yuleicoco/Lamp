@@ -10,6 +10,8 @@
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
 #import "InformationViewController.h"
 #import "PermissionViewController.h"
+#import "ExchangPasswordViewController.h"
+#import "AboutViewController.h"
 
 @interface MeViewController ()
 @property(nonatomic,strong)UILabel * nameLabel;
@@ -386,7 +388,7 @@
 
     
 }
-
+//权限设置
 -(void)quanxianbuttonTouch{
     PermissionViewController * perVc= [[PermissionViewController alloc]init];
     [self.navigationController pushViewController:perVc animated:NO];
@@ -394,7 +396,22 @@
 
 }
 
+//修改密码
+-(void)exchangebuttonTouch{
+    ExchangPasswordViewController * exchangeVc = [[ExchangPasswordViewController alloc]init];
+    [self.navigationController pushViewController:exchangeVc animated:NO];
 
+
+}
+
+//关于
+-(void)aboutbuttonTouch{
+    AboutViewController * aboutVc= [[AboutViewController alloc]init];
+    [self.navigationController pushViewController:aboutVc animated:NO];
+
+
+
+}
 
 
 @end

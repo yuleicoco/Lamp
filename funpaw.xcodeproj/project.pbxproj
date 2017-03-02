@@ -213,6 +213,10 @@
 		7D3E71171E656C70002047C1 /* ShareWork+PersonMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E71161E656C70002047C1 /* ShareWork+PersonMember.m */; };
 		7D3E711C1E6572E5002047C1 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E711B1E6572E5002047C1 /* InformationViewController.m */; };
 		7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A009D1E4C62B400B5B40F /* PopStartView.m */; };
+		7D557AE51E67B9B00038A6DA /* ShareWork+Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AE41E67B9B00038A6DA /* ShareWork+Friend.m */; };
+		7D557AEA1E67B9EC0038A6DA /* FriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AE71E67B9EC0038A6DA /* FriendModel.m */; };
+		7D557AEB1E67B9EC0038A6DA /* NewFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AE91E67B9EC0038A6DA /* NewFriendModel.m */; };
+		7D557AF01E67BB770038A6DA /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D557AEF1E67BB770038A6DA /* FriendTableViewCell.m */; };
 		7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */; };
 		7D8BBB8D1E66A3C800CB4DD9 /* ShareWork+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8C1E66A3C800CB4DD9 /* ShareWork+Permission.m */; };
 		7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBB8F1E66A42A00CB4DD9 /* ZdFriendModel.m */; };
@@ -229,6 +233,11 @@
 		7D8BBBB21E66AA0E00CB4DD9 /* pickkhou.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8BBBB11E66AA0E00CB4DD9 /* pickkhou.png */; };
 		7D8BBBB51E66B38F00CB4DD9 /* quan_guize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8BBBB31E66B38F00CB4DD9 /* quan_guize.png */; };
 		7D8BBBB61E66B38F00CB4DD9 /* xuanquan_guize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8BBBB41E66B38F00CB4DD9 /* xuanquan_guize.png */; };
+		7D8BBBBA1E66C94200CB4DD9 /* ExchangPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBBB91E66C94200CB4DD9 /* ExchangPasswordViewController.m */; };
+		7D8BBBC41E66CC0700CB4DD9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBBBC1E66CC0700CB4DD9 /* AboutViewController.m */; };
+		7D8BBBC51E66CC0700CB4DD9 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBBBE1E66CC0700CB4DD9 /* AgreementViewController.m */; };
+		7D8BBBC61E66CC0700CB4DD9 /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBBC01E66CC0700CB4DD9 /* IntroduceViewController.m */; };
+		7D8BBBC71E66CC0700CB4DD9 /* SuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BBBC21E66CC0700CB4DD9 /* SuggestViewController.m */; };
 		7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCADC671E5E86E70092FA5A /* LoginModel.m */; };
 		7DCADC6A1E5EDC160092FA5A /* loginback.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC691E5EDC160092FA5A /* loginback.png */; };
 		7DCADC6C1E5EDE810092FA5A /* numbertu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC6B1E5EDE810092FA5A /* numbertu.png */; };
@@ -922,6 +931,14 @@
 		7D3E711B1E6572E5002047C1 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
 		7D4A009C1E4C62B400B5B40F /* PopStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopStartView.h; sourceTree = "<group>"; };
 		7D4A009D1E4C62B400B5B40F /* PopStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopStartView.m; sourceTree = "<group>"; };
+		7D557AE31E67B9B00038A6DA /* ShareWork+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Friend.h"; sourceTree = "<group>"; };
+		7D557AE41E67B9B00038A6DA /* ShareWork+Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShareWork+Friend.m"; sourceTree = "<group>"; };
+		7D557AE61E67B9EC0038A6DA /* FriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendModel.h; sourceTree = "<group>"; };
+		7D557AE71E67B9EC0038A6DA /* FriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendModel.m; sourceTree = "<group>"; };
+		7D557AE81E67B9EC0038A6DA /* NewFriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendModel.h; sourceTree = "<group>"; };
+		7D557AE91E67B9EC0038A6DA /* NewFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendModel.m; sourceTree = "<group>"; };
+		7D557AEE1E67BB770038A6DA /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTableViewCell.h; sourceTree = "<group>"; };
+		7D557AEF1E67BB770038A6DA /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewCell.m; sourceTree = "<group>"; };
 		7D58077C1E4DB95E00D79D7E /* BaseGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGridViewController.h; sourceTree = "<group>"; };
 		7D58077D1E4DB95E00D79D7E /* BaseGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGridViewController.m; sourceTree = "<group>"; };
 		7D8BBB8B1E66A3C800CB4DD9 /* ShareWork+Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareWork+Permission.h"; sourceTree = "<group>"; };
@@ -950,6 +967,16 @@
 		7D8BBBB11E66AA0E00CB4DD9 /* pickkhou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickkhou.png; sourceTree = "<group>"; };
 		7D8BBBB31E66B38F00CB4DD9 /* quan_guize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quan_guize.png; sourceTree = "<group>"; };
 		7D8BBBB41E66B38F00CB4DD9 /* xuanquan_guize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xuanquan_guize.png; sourceTree = "<group>"; };
+		7D8BBBB81E66C94200CB4DD9 /* ExchangPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangPasswordViewController.h; sourceTree = "<group>"; };
+		7D8BBBB91E66C94200CB4DD9 /* ExchangPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangPasswordViewController.m; sourceTree = "<group>"; };
+		7D8BBBBB1E66CC0700CB4DD9 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		7D8BBBBC1E66CC0700CB4DD9 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		7D8BBBBD1E66CC0700CB4DD9 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
+		7D8BBBBE1E66CC0700CB4DD9 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
+		7D8BBBBF1E66CC0700CB4DD9 /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
+		7D8BBBC01E66CC0700CB4DD9 /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
+		7D8BBBC11E66CC0700CB4DD9 /* SuggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewController.h; sourceTree = "<group>"; };
+		7D8BBBC21E66CC0700CB4DD9 /* SuggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewController.m; sourceTree = "<group>"; };
 		7DCADC661E5E86E70092FA5A /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		7DCADC671E5E86E70092FA5A /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		7DCADC691E5EDC160092FA5A /* loginback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginback.png; sourceTree = "<group>"; };
@@ -1400,6 +1427,10 @@
 		34E15FA61E050B16004A65AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7D557AE61E67B9EC0038A6DA /* FriendModel.h */,
+				7D557AE71E67B9EC0038A6DA /* FriendModel.m */,
+				7D557AE81E67B9EC0038A6DA /* NewFriendModel.h */,
+				7D557AE91E67B9EC0038A6DA /* NewFriendModel.m */,
 				7D8BBB8E1E66A42A00CB4DD9 /* ZdFriendModel.h */,
 				7D8BBB8F1E66A42A00CB4DD9 /* ZdFriendModel.m */,
 				7D8BBB901E66A42A00CB4DD9 /* RuleModel.h */,
@@ -1445,6 +1476,8 @@
 				34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */,
 				7D8BBB8B1E66A3C800CB4DD9 /* ShareWork+Permission.h */,
 				7D8BBB8C1E66A3C800CB4DD9 /* ShareWork+Permission.m */,
+				7D557AE31E67B9B00038A6DA /* ShareWork+Friend.h */,
+				7D557AE41E67B9B00038A6DA /* ShareWork+Friend.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -2299,6 +2332,9 @@
 			children = (
 				34FBE9991E6410EF000E9A2B /* MeViewController.h */,
 				34FBE99A1E6410EF000E9A2B /* MeViewController.m */,
+				7D557AEC1E67BB620038A6DA /* Friend */,
+				7D8BBBC31E66CC0700CB4DD9 /* About */,
+				7D8BBBB71E66C93800CB4DD9 /* Exchangepassword */,
 				7D8BBB981E66A61B00CB4DD9 /* Permission */,
 				7D3E71181E6572C3002047C1 /* head */,
 			);
@@ -2377,6 +2413,23 @@
 			path = head;
 			sourceTree = "<group>";
 		};
+		7D557AEC1E67BB620038A6DA /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				7D557AED1E67BB700038A6DA /* VIews */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		7D557AED1E67BB700038A6DA /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				7D557AEE1E67BB770038A6DA /* FriendTableViewCell.h */,
+				7D557AEF1E67BB770038A6DA /* FriendTableViewCell.m */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
 		7D8BBB941E66A60400CB4DD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -2413,6 +2466,31 @@
 				7D8BBB9D1E66A63C00CB4DD9 /* ZdFriendTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7D8BBBB71E66C93800CB4DD9 /* Exchangepassword */ = {
+			isa = PBXGroup;
+			children = (
+				7D8BBBB81E66C94200CB4DD9 /* ExchangPasswordViewController.h */,
+				7D8BBBB91E66C94200CB4DD9 /* ExchangPasswordViewController.m */,
+			);
+			path = Exchangepassword;
+			sourceTree = "<group>";
+		};
+		7D8BBBC31E66CC0700CB4DD9 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7D8BBBBB1E66CC0700CB4DD9 /* AboutViewController.h */,
+				7D8BBBBC1E66CC0700CB4DD9 /* AboutViewController.m */,
+				7D8BBBBD1E66CC0700CB4DD9 /* AgreementViewController.h */,
+				7D8BBBBE1E66CC0700CB4DD9 /* AgreementViewController.m */,
+				7D8BBBBF1E66CC0700CB4DD9 /* IntroduceViewController.h */,
+				7D8BBBC01E66CC0700CB4DD9 /* IntroduceViewController.m */,
+				7D8BBBC11E66CC0700CB4DD9 /* SuggestViewController.h */,
+				7D8BBBC21E66CC0700CB4DD9 /* SuggestViewController.m */,
+			);
+			name = About;
+			path = ../../../../../SeGoApp2.0/sego2.0/Classes/ViewControlls/MeV/About;
 			sourceTree = "<group>";
 		};
 		BE24F9B948DE606D7B2BFECA /* Pods */ = {
@@ -2651,6 +2729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8BBBC71E66CC0700CB4DD9 /* SuggestViewController.m in Sources */,
 				7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */,
 				34A51E631E651DD1005E8888 /* ShareWork+GetSipIP.m in Sources */,
 				34E164151E050B18004A65AB /* UIViewController+HUD.m in Sources */,
@@ -2663,14 +2742,18 @@
 				7D2D58461E49ABE80086A823 /* AccountManager.m in Sources */,
 				7D4A009E1E4C62B400B5B40F /* PopStartView.m in Sources */,
 				34066F4D1E64247400CE0B0C /* NetWork.m in Sources */,
+				7D8BBBC61E66CC0700CB4DD9 /* IntroduceViewController.m in Sources */,
 				7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */,
 				7D8BBBAE1E66A6B800CB4DD9 /* ZdExchangFriendViewController.m in Sources */,
+				7D557AE51E67B9B00038A6DA /* ShareWork+Friend.m in Sources */,
 				34E164141E050B18004A65AB /* UIView+TapBlocks.m in Sources */,
+				7D8BBBC51E66CC0700CB4DD9 /* AgreementViewController.m in Sources */,
 				3468FF461E4857AF00DEBE4B /* ShareWork.m in Sources */,
 				7D3E711C1E6572E5002047C1 /* InformationViewController.m in Sources */,
 				7D58077E1E4DB95E00D79D7E /* BaseGridViewController.m in Sources */,
 				34E164191E050B18004A65AB /* NSTimer+Addition.m in Sources */,
 				7D8BBBAD1E66A6B800CB4DD9 /* ZdFriendViewController.m in Sources */,
+				7D8BBBBA1E66C94200CB4DD9 /* ExchangPasswordViewController.m in Sources */,
 				34A51E601E651958005E8888 /* RegiestViewController.m in Sources */,
 				34E164A71E050B18004A65AB /* UIView+SDAutoLayout.m in Sources */,
 				34A51E671E652532005E8888 /* InCallViewController.m in Sources */,
@@ -2680,6 +2763,7 @@
 				7D2D58401E49AB290086A823 /* LoginViewController.m in Sources */,
 				7D8BBB931E66A42A00CB4DD9 /* RuleModel.m in Sources */,
 				34A51E6D1E6525D7005E8888 /* ShareWork+Incall.m in Sources */,
+				7D8BBBC41E66CC0700CB4DD9 /* AboutViewController.m in Sources */,
 				34E164161E050B18004A65AB /* AppUtil.m in Sources */,
 				34E164181E050B18004A65AB /* CycleScrollView.m in Sources */,
 				34E164171E050B18004A65AB /* Reachability.m in Sources */,
@@ -2702,10 +2786,13 @@
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
 				7D8BBBAB1E66A6B800CB4DD9 /* NewPermissionViewController.m in Sources */,
 				34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */,
+				7D557AF01E67BB770038A6DA /* FriendTableViewCell.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
 				7D8BBBAC1E66A6B800CB4DD9 /* ExchangPermissionViewController.m in Sources */,
+				7D557AEA1E67B9EC0038A6DA /* FriendModel.m in Sources */,
 				7D8BBBAA1E66A6B800CB4DD9 /* PermissionViewController.m in Sources */,
 				7D3E710B1E6550E6002047C1 /* ShareWork+Visiters.m in Sources */,
+				7D557AEB1E67B9EC0038A6DA /* NewFriendModel.m in Sources */,
 				7DCADC681E5E86E70092FA5A /* LoginModel.m in Sources */,
 				7D8BBB8D1E66A3C800CB4DD9 /* ShareWork+Permission.m in Sources */,
 				7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */,
