@@ -143,7 +143,7 @@ static NSString * cellId = @"InformationCellId";
         [[UIApplication sharedApplication].keyWindow addSubview:_littleDownView];
         [[UIApplication sharedApplication].keyWindow addSubview:_downWithView];
     }];
-    NSArray * nameArray = @[NSLocalizedString(@"info_taph", nil),NSLocalizedString(@"info_cam", nil)];
+    NSArray * nameArray = @[@"拍照",@"相册"];
     for (int i = 0; i < 2; i++) {
         UILabel * lineLabel = [[UILabel alloc]initWithFrame:CGRectMake(0 * W_Wide_Zoom, 0 * W_Hight_Zoom + i * 40 * W_Hight_Zoom, 375 * W_Wide_Zoom, 1 * W_Hight_Zoom)];
         lineLabel.backgroundColor = GRAY_COLOR;
@@ -158,7 +158,7 @@ static NSString * cellId = @"InformationCellId";
         [downButtones addTarget:self action:@selector(imageButtonTouch:) forControlEvents:UIControlEventTouchUpInside];
     }
     UIButton * quxiaoButton = [[UIButton alloc]initWithFrame:CGRectMake(0 * W_Wide_Zoom, 0 * W_Hight_Zoom, 375 * W_Wide_Zoom, 40 * W_Hight_Zoom)];
-    [quxiaoButton setTitle:NSLocalizedString(@"Cancel_bind", nil) forState:UIControlStateNormal];
+    [quxiaoButton setTitle:@"取消"forState:UIControlStateNormal];
     [quxiaoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     quxiaoButton.titleLabel.font = [UIFont systemFontOfSize:14];
     [_littleDownView addSubview:quxiaoButton];
@@ -250,7 +250,7 @@ static NSString * cellId = @"InformationCellId";
 }
 -(void)changgeheadRequest{
     
-    [self showHudInView:self.view hint:NSLocalizedString(@"regist_repair", nil)];
+    [self showHudInView:self.view hint:@"修改中..."];
 //    [[AFHttpClient sharedAFHttpClient]modifyHeadportraitWithMid: [AccountManager sharedAccountManager].loginModel.mid picture:_picstr complete:^(BaseModel *model) {
 //        [self hideHud];
 //        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"info_re_su", nil)];

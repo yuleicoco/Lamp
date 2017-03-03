@@ -350,9 +350,9 @@
                _achieveString = model.totalrecords;
                _vercationNumber = model.content;
                [self timeout];
-               [[AppUtil appTopViewController] showHint:model.retDesc];
+              
            }
-
+            [[AppUtil appTopViewController] showHint:model.retDesc];
            
        }];
     

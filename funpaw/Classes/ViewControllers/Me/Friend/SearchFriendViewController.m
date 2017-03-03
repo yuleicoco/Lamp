@@ -61,7 +61,7 @@ static NSString * cellId = @"friendSearchCellid";
     
     UILabel * searechLabel = [[UILabel alloc]init];
     searechLabel.text = @"搜索";
-    searechLabel.textColor = GREEN_COLOR;
+    searechLabel.textColor = SKY_bLUE_COLOR;
     searechLabel.font = [UIFont systemFontOfSize:18];
     [topView addSubview:searechLabel];
     [searechLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -233,6 +233,7 @@
 		7D2C4A901E696E5D002E40E0 /* shebeimeidian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A8A1E696E5D002E40E0 /* shebeimeidian@2x.png */; };
 		7D2C4A911E696E5D002E40E0 /* visiterdiandian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A8B1E696E5D002E40E0 /* visiterdiandian@2x.png */; };
 		7D2C4A921E696E5D002E40E0 /* visitermeidian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A8C1E696E5D002E40E0 /* visitermeidian@2x.png */; };
+		7D2C4A941E6970BF002E40E0 /* guanyuback.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A931E6970BF002E40E0 /* guanyuback.png */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -980,6 +981,7 @@
 		7D2C4A8A1E696E5D002E40E0 /* shebeimeidian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shebeimeidian@2x.png"; sourceTree = "<group>"; };
 		7D2C4A8B1E696E5D002E40E0 /* visiterdiandian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visiterdiandian@2x.png"; sourceTree = "<group>"; };
 		7D2C4A8C1E696E5D002E40E0 /* visitermeidian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visitermeidian@2x.png"; sourceTree = "<group>"; };
+		7D2C4A931E6970BF002E40E0 /* guanyuback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanyuback.png; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1139,6 +1141,7 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
+				7D2C4A931E6970BF002E40E0 /* guanyuback.png */,
 				3446F87B1E6959DC0036AE1C /* egg_add.png */,
 				3446F8791E6959A70036AE1C /* konw.png */,
 				3446F8751E6959070036AE1C /* egg_nodevcie.png */,
@@ -2778,6 +2781,7 @@
 				7D2C4A701E6955D2002E40E0 /* mydian11@2x.png in Resources */,
 				34CAC2501E5BEA1D00249BA9 /* tapping.wav in Resources */,
 				34E01DCB1E55832E00C71B94 /* splash_top.png.jpeg in Resources */,
+				7D2C4A941E6970BF002E40E0 /* guanyuback.png in Resources */,
 				34E1644A1E050B18004A65AB /* ring.wav in Resources */,
 				7D8BBBB21E66AA0E00CB4DD9 /* pickkhou.png in Resources */,
 				34E1644B1E050B18004A65AB /* ringback.wav in Resources */,

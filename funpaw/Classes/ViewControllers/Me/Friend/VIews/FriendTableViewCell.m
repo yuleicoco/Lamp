@@ -54,7 +54,7 @@
         }];
         
         _rightBtn = [[UIButton alloc]init];
-        _rightBtn.backgroundColor = GREEN_COLOR;
+        _rightBtn.backgroundColor = SKY_bLUE_COLOR;
         [_rightBtn setTitle:@"添加" forState:UIControlStateNormal];
         _rightBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         _rightBtn.layer.cornerRadius = 3;

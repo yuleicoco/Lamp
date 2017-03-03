@@ -136,7 +136,7 @@
 //    }];
     
     _registBtn = [[UIButton alloc]init];
-    _registBtn.backgroundColor = GREEN_COLOR;
+    _registBtn.backgroundColor = SKY_bLUE_COLOR;
     _registBtn.layer.cornerRadius = 3;
     [_registBtn setTitle:@"确 定"forState:UIControlStateNormal];
     [_registBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

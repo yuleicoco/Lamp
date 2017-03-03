@@ -37,7 +37,7 @@
     }];
     
     UIImageView * aboutImage = [[UIImageView alloc]init];
-    aboutImage.image = [UIImage imageNamed:@"aboutlogo.png"];
+    aboutImage.image = [UIImage imageNamed:@"guanyuback.png"];
     [topView addSubview:aboutImage];
     [aboutImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(aboutImage.superview).offset(28);
@@ -49,7 +49,7 @@
     }];
     
     UILabel * banbenLabel = [[UILabel alloc]init];
-    banbenLabel.text = @"SEGO  V2.0";
+    banbenLabel.text = @"LAMP  V1.0";
     banbenLabel.textColor = [UIColor blackColor];
     banbenLabel.font = [UIFont systemFontOfSize:18];
     [topView addSubview:banbenLabel];
