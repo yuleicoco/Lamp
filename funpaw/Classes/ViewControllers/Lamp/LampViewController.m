@@ -23,6 +23,8 @@
     VisiterModel * modelOt;
     
     
+    
+    
 }
 
 @end
@@ -37,6 +39,8 @@
 @synthesize IkonwBtn;
 @synthesize strState;
 @synthesize DeviceNum;
+
+@synthesize Isother;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -119,9 +123,10 @@
 - (void)OtherName:(NSNotification *)sn
 {
      modelOt = sn.object;
-    
     self.OTdeviceNum = modelOt.retVal[@"deviceno"];
     self.OTmid = modelOt.retVal[@"mid"];
+
+    
     
     
 }
@@ -209,14 +214,13 @@
     [[ShareWork sharedManager]service:nil complete:^(BaseModel *model) {
         if ([model.retCode isEqualToString:@"0000"]) {
             // SIP注册 www.segosip001.cn
-            [SephoneManager addProxyConfig:[AccountManager sharedAccountManager].loginModel.sipno password:[AccountManager sharedAccountManager].loginModel.sippw domain:@"www.segosip001.cn"];
+            [SephoneManager addProxyConfig:[AccountManager sharedAccountManager].loginModel.sipno password:[AccountManager sharedAccountManager].loginModel.sippw domain:model.content];
         }
     }];
 }
 - (void)setupView
 {
     [super setupView];
-    
     // 手势
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handletapPressGesture:)];
     [self.view addGestureRecognizer:tapGesture];
@@ -432,18 +436,27 @@
             
             [bgImage setImage:[UIImage imageNamed:@"busy_e"]];
         }
-        [self showBarBtn:NO];
-        addBtn.hidden = YES;
+        
+       
+            [self showBarBtn:NO];
+            addBtn.hidden = YES;
     }
 }
 // +号功能显示
 - (void)showBarBtn:(BOOL)hide
 {
-    [self showBarButton:NAV_RIGHT imageName:@"egg_add_nav" hide:hide];
-    if (hide) {
-        openVideoBtn.hidden = YES;
+    
+    
+    if (Isother) {
+        hide = YES;
     }else
     {
+        hide = hide;
+    }
+    [self showBarButton:NAV_RIGHT imageName:@"egg_add_nav" hide:hide];
+    
+    
+    
         openVideoBtn.hidden = NO;
         if ([strState isEqualToString:@"ds001"]) {
 
@@ -455,7 +468,6 @@
             
             
         }
-    }
     
     
 }
@@ -541,7 +553,7 @@
 // 设置按钮点击
 - (void)doRightButtonTouch
 {
-    
+
     if (SbgImage.hidden) {
         SbgImage.hidden = NO;
         
