@@ -62,7 +62,7 @@
     self.view.backgroundColor = LIGHT_GRAY_COLOR;
     UIImageView * topImage = [[UIImageView alloc]init];
     // topImage.backgroundColor= [UIColor redColor];
-    topImage.image = [UIImage imageNamed:@"newpersonback.png"];
+    topImage.image = [UIImage imageNamed:@"meback.jpg"];
     [self.view addSubview:topImage];
     [topImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(topImage.superview);

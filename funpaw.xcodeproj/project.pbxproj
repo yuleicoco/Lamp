@@ -217,6 +217,7 @@
 		7D2C4A761E695736002E40E0 /* exchangepassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A751E695736002E40E0 /* exchangepassword.png */; };
 		7D2C4A781E695742002E40E0 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A771E695742002E40E0 /* about.png */; };
 		7D2C4A7A1E695775002E40E0 /* goodfriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A791E695775002E40E0 /* goodfriend.png */; };
+		7D2C4A7C1E6958A8002E40E0 /* meback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D2C4A7B1E6958A8002E40E0 /* meback.jpg */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -948,6 +949,7 @@
 		7D2C4A751E695736002E40E0 /* exchangepassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exchangepassword.png; sourceTree = "<group>"; };
 		7D2C4A771E695742002E40E0 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		7D2C4A791E695775002E40E0 /* goodfriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goodfriend.png; sourceTree = "<group>"; };
+		7D2C4A7B1E6958A8002E40E0 /* meback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meback.jpg; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1137,6 +1139,7 @@
 		348A2D8A1E52B24700B85D7B /* funpawegg */ = {
 			isa = PBXGroup;
 			children = (
+				7D2C4A7B1E6958A8002E40E0 /* meback.jpg */,
 				7D2C4A791E695775002E40E0 /* goodfriend.png */,
 				7D2C4A771E695742002E40E0 /* about.png */,
 				7D2C4A751E695736002E40E0 /* exchangepassword.png */,
@@ -2676,6 +2679,7 @@
 				34CAC22F1E5BEA1D00249BA9 /* dialer.png in Resources */,
 				3420B39D1E65689200AE228F /* offline_e.png in Resources */,
 				34CAC24A1E5BEA1D00249BA9 /* oldphone-mono.wav in Resources */,
+				7D2C4A7C1E6958A8002E40E0 /* meback.jpg in Resources */,
 				343E50891E54473B002C2AD1 /* egg_more@2x.png in Resources */,
 				34CAC2421E5BEA1D00249BA9 /* stopcall-small.png in Resources */,
 				34CAC2291E5BEA1D00249BA9 /* composing_active_chat.png in Resources */,
