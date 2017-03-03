@@ -88,6 +88,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registrationUpdate:) name:kSephoneRegistrationUpdate object:nil];
     [[NSNotificationCenter  defaultCenter]addObserver:self selector:@selector(OtherName:) name:@"otherNam" object:nil];
     
+    //去掉导航栏下面的线
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
     // 检查设置状态
     moveTimer =[HWWeakTimer scheduledTimerWithTimeInterval:5.0 block:^(id userInfo) {
@@ -189,6 +192,11 @@
     self.OTmid = nil;
     self.OTdeviceNum = nil;
     [moveTimer invalidate];
+    
+    //由于去掉了线，要还原导航栏样式
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+    
     
 }
 

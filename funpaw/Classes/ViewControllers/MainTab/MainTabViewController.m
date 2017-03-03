@@ -29,11 +29,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.viewControllers = @[self.lampVc,self.visiterVc,self.meVc];
     
-    self.tabBar.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.tabBar.layer.shadowOffset = CGSizeMake(0, -1);
-    self.tabBar.layer.shadowOpacity = 0.4;
-    self.tabBar.layer.shadowRadius = 2;
+   // self.tabBar.layer.shadowColor = [UIColor blackColor].CGColor;
+//    self.tabBar.layer.shadowOffset = CGSizeMake(0, -1);
+//    self.tabBar.layer.shadowOpacity = 0.4;
+//    self.tabBar.layer.shadowRadius = 2;
+    self.tabBar.barTintColor =[UIColor whiteColor];
     
+  
+
+
     
 }
 ////device

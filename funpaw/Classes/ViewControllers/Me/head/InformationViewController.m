@@ -299,7 +299,13 @@ static NSString * cellId = @"InformationCellId";
         cell.rightLabel.text = [AccountManager sharedAccountManager].loginModel.accountnumber;
     }
     if (indexPath.row == 1) {
+        if ([AppUtil isBlankString:[AccountManager sharedAccountManager].loginModel.phone]) {
+            cell.rightLabel.text = @"无";
+        }else{
         cell.rightLabel.text = [AccountManager sharedAccountManager].loginModel.phone;
+        }
+        
+        
     }
     if (indexPath.row == 2) {
         cell.rightLabel.text = [AccountManager sharedAccountManager].loginModel.nickname;
@@ -307,6 +313,8 @@ static NSString * cellId = @"InformationCellId";
     
     
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    tableView.separatorStyle = UITableViewCellSelectionStyleNone;
 
     return cell;
 }

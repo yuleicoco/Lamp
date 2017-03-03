@@ -205,6 +205,7 @@
 		34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBE99A1E6410EF000E9A2B /* MeViewController.m */; };
 		34FBE99E1E641105000E9A2B /* VisiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBE99D1E641105000E9A2B /* VisiterViewController.m */; };
 		7D0F71831E63BE9200F27BFD /* LampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F71821E63BE9200F27BFD /* LampViewController.m */; };
+		7D1E41941E690CB500BCE52F /* AppDelegate+ShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E41931E690CB500BCE52F /* AppDelegate+ShareSDK.m */; };
 		7D2D58281E499FEF0086A823 /* AppDelegate+Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */; };
 		7D2D58331E49A3700086A823 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58301E49A3700086A823 /* BaseViewController.m */; };
 		7D2D58341E49A3700086A823 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D58321E49A3700086A823 /* BaseTabViewController.m */; };
@@ -923,6 +924,8 @@
 		782952FC14463F99DF3112FF /* libPods-funpaw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-funpaw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0F71811E63BE9200F27BFD /* LampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampViewController.h; sourceTree = "<group>"; };
 		7D0F71821E63BE9200F27BFD /* LampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampViewController.m; sourceTree = "<group>"; };
+		7D1E41921E690CB500BCE52F /* AppDelegate+ShareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ShareSDK.h"; sourceTree = "<group>"; };
+		7D1E41931E690CB500BCE52F /* AppDelegate+ShareSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ShareSDK.m"; sourceTree = "<group>"; };
 		7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launcher.h"; sourceTree = "<group>"; };
 		7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launcher.m"; sourceTree = "<group>"; };
 		7D2D582F1E49A3700086A823 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1335,6 +1338,8 @@
 				34E15F7B1E050B16004A65AB /* AppDelegate.m */,
 				7D2D58261E499FEF0086A823 /* AppDelegate+Launcher.h */,
 				7D2D58271E499FEF0086A823 /* AppDelegate+Launcher.m */,
+				7D1E41921E690CB500BCE52F /* AppDelegate+ShareSDK.h */,
+				7D1E41931E690CB500BCE52F /* AppDelegate+ShareSDK.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -2823,6 +2828,7 @@
 				34E164101E050B18004A65AB /* UIAlertView+Blocks.m in Sources */,
 				34E164131E050B18004A65AB /* UIView+Sizes.m in Sources */,
 				7D8BBBAB1E66A6B800CB4DD9 /* NewPermissionViewController.m in Sources */,
+				7D1E41941E690CB500BCE52F /* AppDelegate+ShareSDK.m in Sources */,
 				34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */,
 				7D557AF01E67BB770038A6DA /* FriendTableViewCell.m in Sources */,
 				34E164521E050B18004A65AB /* SephoneUtils.m in Sources */,
