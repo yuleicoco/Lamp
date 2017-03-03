@@ -223,7 +223,7 @@
     }];
     
     UIButton * sureBtn = [[UIButton alloc]init];
-    sureBtn.backgroundColor = GREEN_COLOR;
+    sureBtn.backgroundColor = SKY_bLUE_COLOR;
     [sureBtn setTitle:@"确认" forState:UIControlStateNormal];
     [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     sureBtn.titleLabel.font = [UIFont systemFontOfSize:20];
@@ -300,7 +300,7 @@
 
 -(void)allButtonTouch{
     _allBtn.selected = YES;
-    _allBtn.backgroundColor = GREEN_COLOR;
+    _allBtn.backgroundColor = SKY_bLUE_COLOR;
     _zdBtn.selected = NO;
     _zdBtn.backgroundColor = [UIColor whiteColor];
     _friendBtn.selected = NO;
@@ -316,7 +316,7 @@
     _zdBtn.selected = NO;
     _zdBtn.backgroundColor = [UIColor whiteColor];
     _friendBtn.selected = YES;
-    _friendBtn.backgroundColor = GREEN_COLOR;
+    _friendBtn.backgroundColor = SKY_bLUE_COLOR;
 
 }
 
@@ -324,7 +324,7 @@
     _allBtn.selected = NO;
     _allBtn.backgroundColor = [UIColor whiteColor];
     _zdBtn.selected = YES;
-    _zdBtn.backgroundColor = GREEN_COLOR;
+    _zdBtn.backgroundColor = SKY_bLUE_COLOR;
     _friendBtn.selected = NO;
     _friendBtn.backgroundColor = [UIColor whiteColor];
     

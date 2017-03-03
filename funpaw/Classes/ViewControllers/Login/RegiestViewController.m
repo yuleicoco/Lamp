@@ -73,7 +73,7 @@
     }];
     
     _vercationBtn = [[UIButton alloc]init];
-    _vercationBtn.backgroundColor = GREEN_COLOR;
+    _vercationBtn.backgroundColor = SKY_bLUE_COLOR;
     _vercationBtn.layer.cornerRadius = 5;
     
     [_vercationBtn setTitle:@"获取验证码"forState:UIControlStateNormal];
@@ -229,7 +229,7 @@
     //    }];
     
     _registBtn = [[UIButton alloc]init];
-    _registBtn.backgroundColor = GREEN_COLOR;
+    _registBtn.backgroundColor = SKY_bLUE_COLOR;
     _registBtn.layer.cornerRadius = 5;
     [_registBtn setTitle:@"注 册"forState:UIControlStateNormal];
     [_registBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

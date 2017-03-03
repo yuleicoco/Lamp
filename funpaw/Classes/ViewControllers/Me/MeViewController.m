@@ -37,7 +37,8 @@
         _redBtn.hidden = YES;
     }else{
         _redBtn.hidden = NO;
-
+        [_redBtn setTitle:tipstr forState:UIControlStateNormal];
+        
     }
     //  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cleanTip) name:@"isreaddd" object:nil];
     
@@ -46,6 +47,7 @@
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeName) name:@"meshuashua" object:nil];
+     self.navigationController.navigationBarHidden = YES;
 }
 -(void)changeName{
     _nameLabel.text = [AccountManager sharedAccountManager].loginModel.nickname;
@@ -57,6 +59,7 @@
     
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:nil];
+     self.navigationController.navigationBarHidden = NO;
 }
 
 
@@ -67,22 +70,39 @@
     self.view.backgroundColor = LIGHT_GRAY_COLOR;
     UIImageView * topImage = [[UIImageView alloc]init];
     // topImage.backgroundColor= [UIColor redColor];
-    topImage.image = [UIImage imageNamed:@"meback.jpg"];
+    topImage.image = [UIImage imageNamed:@"mebackkk.png"];
     [self.view addSubview:topImage];
     [topImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(topImage.superview);
         make.left.equalTo(topImage.superview);
         make.right.equalTo(topImage.superview);
-        make.height.mas_equalTo(172);
+        make.height.mas_equalTo(219);
         
     }];
+    
+    UILabel * meLabel = [[UILabel alloc]init];
+    meLabel.text = @"我的";
+    meLabel.textColor = [UIColor whiteColor];
+    meLabel.font = [UIFont systemFontOfSize:20];
+    [self.view addSubview:meLabel];
+    [meLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(meLabel.superview);
+        make.top.equalTo(meLabel.superview.mas_top).offset(27);
+        
+    }];
+    
+    
+    
+    
+    
+    
     
     _headBtn = [[UIButton alloc]init];
     _headBtn.backgroundColor = [UIColor clearColor];
     [_headBtn addTarget:self action:@selector(headbuttonTouch) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_headBtn];
     [_headBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_headBtn.superview).offset(14);
+        make.top.equalTo(_headBtn.superview).offset(68);
         make.left.equalTo(_headBtn.superview).offset(147);
         make.right.equalTo(_headBtn.superview).offset(-147);
         make.height.mas_equalTo(80);
@@ -99,7 +119,7 @@
     [_headImage sd_setImageWithURL:[NSURL URLWithString:[AccountManager sharedAccountManager].loginModel.headportrait] placeholderImage:[UIImage imageNamed:@"sego1.png"]];
     [self.view addSubview:_headImage];
     [_headImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_headImage.superview).offset(14);
+        make.top.equalTo(_headImage.superview).offset(68);
         //  make.left.equalTo(_headImage.superview).offset(147);
         make.centerX.equalTo(_headImage.superview);
         //  make.right.equalTo(_headImage.superview).offset(-147);
@@ -111,11 +131,11 @@
     _nameLabel = [[UILabel alloc]init];
     _nameLabel.textColor = [UIColor whiteColor];
     _nameLabel.text = [AccountManager sharedAccountManager].loginModel.nickname;
-    _nameLabel.font = [UIFont systemFontOfSize:18];
+    _nameLabel.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:_nameLabel];
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_headBtn.mas_centerX);
-        make.top.equalTo(_headBtn.mas_bottom).offset(9);
+        make.top.equalTo(_headBtn.mas_bottom).offset(12);
         
     }];
     
@@ -222,15 +242,25 @@
     
     _redBtn = [[UIButton alloc]init];
     _redBtn.backgroundColor = [UIColor redColor];
-    _redBtn.layer.cornerRadius = 7;
+    _redBtn.layer.cornerRadius = 10;
+      [_redBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+     _redBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:_redBtn];
     [_redBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(_redBtn.superview).offset(-16);
         make.centerY.equalTo(doumaImage.mas_centerY);
-        make.width.mas_equalTo(14);
-        make.height.mas_equalTo(14);
+        make.width.mas_equalTo(20);
+        make.height.mas_equalTo(20);
         
     }];
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     UIButton * doumaBtn = [[UIButton alloc]init];

@@ -44,7 +44,7 @@
     }];
     
     UILabel * numberLabel = [[UILabel alloc]init];
-    numberLabel.text = @"愿密码:";
+    numberLabel.text = @"原密码:";
     numberLabel.textColor = [UIColor blackColor];
     numberLabel.font = [UIFont systemFontOfSize:18];
     [numberView addSubview:numberLabel];

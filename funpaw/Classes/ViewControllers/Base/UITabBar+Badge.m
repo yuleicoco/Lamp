@@ -17,7 +17,7 @@
     //新建小红点
     UIView *badgeView = [[UIView alloc]init];
     badgeView.tag = 888 + index;
-    badgeView.layer.cornerRadius = 5;
+    badgeView.layer.cornerRadius = 4;
     badgeView.backgroundColor = [UIColor redColor];
     CGRect tabFrame = self.frame;
     
@@ -25,7 +25,7 @@
     float percentX = (index +0.6) / TabbarItemNums;
     CGFloat x = ceilf(percentX * tabFrame.size.width);
     CGFloat y = ceilf(0.1 * tabFrame.size.height);
-    badgeView.frame = CGRectMake(x + 10, y, 9, 9);
+    badgeView.frame = CGRectMake(x-5, y+16, 8, 8);
     [self addSubview:badgeView];
 
     

@@ -48,8 +48,8 @@
         }];
         
         _rightBtn = [[UIButton alloc]init];
-        [_rightBtn setImage:[UIImage imageNamed:@"pickk.png"] forState:UIControlStateNormal];
-        [_rightBtn setImage:[UIImage imageNamed:@"pickkhou.png"] forState:UIControlStateSelected];
+        [_rightBtn setImage:[UIImage imageNamed:@"weixuanzhong1.png"] forState:UIControlStateNormal];
+        [_rightBtn setImage:[UIImage imageNamed:@"xuanzeze.png"] forState:UIControlStateSelected];
         [self addSubview:_rightBtn];
         [_rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(_rightBtn.superview).offset(-12);

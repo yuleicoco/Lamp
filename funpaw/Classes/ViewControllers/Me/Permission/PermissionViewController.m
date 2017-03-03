@@ -45,7 +45,7 @@ static NSString * cellId = @"permissontableviewCellId";
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     UIButton * creatBtn = [[UIButton alloc]init];
-    creatBtn.backgroundColor = GREEN_COLOR;
+    creatBtn.backgroundColor = SKY_bLUE_COLOR;
     [creatBtn setTitle:@"新建规则" forState:UIControlStateNormal];
     [creatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     creatBtn.titleLabel.font = [UIFont systemFontOfSize:20];

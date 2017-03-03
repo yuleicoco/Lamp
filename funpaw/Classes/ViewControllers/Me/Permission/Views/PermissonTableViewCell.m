@@ -13,8 +13,8 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _leftBtn = [[UIButton alloc]init];
-        [_leftBtn setImage:[UIImage imageNamed:@"quan_guize.png"] forState:UIControlStateNormal];
-        [_leftBtn setImage:[UIImage imageNamed:@"xuanquan_guize.png"] forState:UIControlStateSelected];
+        [_leftBtn setImage:[UIImage imageNamed:@"weixuanzhong1.png"] forState:UIControlStateNormal];
+        [_leftBtn setImage:[UIImage imageNamed:@"xuanzhongzhong.png"] forState:UIControlStateSelected];
         _leftBtn.selected = NO;
         [self addSubview:_leftBtn];
         [_leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -37,7 +37,7 @@
         }];
         
         _guizeNameLabel = [[UILabel alloc]init];
-        _guizeNameLabel.textColor = GREEN_COLOR;
+        _guizeNameLabel.textColor = SKY_bLUE_COLOR;
         _guizeNameLabel.text = @"默认规则";
         _guizeNameLabel.font = [UIFont systemFontOfSize:18];
         [self addSubview:_guizeNameLabel];

@@ -157,7 +157,7 @@ static NSString * cellId = @"zdFriendTableviewcellId";
     }
     
     if (_sourceArray.count>0) {
-        [_sureBtn setTitleColor:GREEN_COLOR forState:UIControlStateNormal];
+        [_sureBtn setTitleColor:SKY_bLUE_COLOR forState:UIControlStateNormal];
         _sureBtn.userInteractionEnabled = YES;
     }else{
         [_sureBtn setTitleColor:LIGHT_GRAYdcdc_COLOR forState:UIControlStateNormal];

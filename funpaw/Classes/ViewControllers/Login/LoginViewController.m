@@ -128,7 +128,7 @@
     }];
     
     _loginBtn = [[UIButton alloc]init];
-    _loginBtn.backgroundColor = GREEN_COLOR;
+    _loginBtn.backgroundColor = SKY_bLUE_COLOR;
     _loginBtn.layer.cornerRadius = 5;
     [_loginBtn setTitle:@"登 录"forState:UIControlStateNormal];
     _loginBtn.titleLabel.font = [UIFont systemFontOfSize:22];
