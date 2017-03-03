@@ -12,4 +12,8 @@ pod 'RMMapper', '~> 1.1.5'
 pod 'MWPhotoBrowser', '~> 2.1.1'
 pod 'Masonry', '~> 0.6.0'
 pod 'ShareSDK3', '~> 3.2.2'
+pod 'ShareSDK3/ShareSDKUI'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 end
