@@ -25,6 +25,9 @@
 #define LIGHT_GRAYdcdc_COLOR RGB(220, 220, 220)
 //蓝色 73,195,241
 #define BLUE_COLOR RGB(73, 195, 241)
+//tianlanse
+//7,126,155
+#define SKY_bLUE_COLOR RGB(7, 126, 155)
 // 红色
 #define RED_COLOR RGB(193, 42, 56)
 

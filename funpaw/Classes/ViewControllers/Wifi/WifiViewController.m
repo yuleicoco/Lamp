@@ -47,7 +47,8 @@
     [self setNavTitle:@"WIFI设置"];
     listArr = @[ @"Public", @"WPA/WPA2", @"WEP" ];
     curEncryption = [NSString stringWithFormat:@"1"];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor =[UIColor whiteColor];
+    
     
     
     
@@ -69,15 +70,15 @@
     devNum.backgroundColor = [UIColor whiteColor];
     wifiView.backgroundColor = [UIColor whiteColor];
     wifiCode.backgroundColor = [UIColor whiteColor];
-    devNum.layer.cornerRadius =28;
-    devNum.layer.borderWidth =1;
-    devNum.layer.borderColor =RED_COLOR.CGColor;
-    wifiView.layer.cornerRadius =28;
-    wifiView.layer.borderWidth =1;
-    wifiView.layer.borderColor = RED_COLOR.CGColor;
-    wifiCode.layer.cornerRadius =28;
-    wifiCode.layer.borderWidth =1;
-    wifiCode.layer.borderColor = RED_COLOR.CGColor;
+    devNum.layer.cornerRadius =4;
+    devNum.layer.borderWidth =0.4;
+    devNum.layer.borderColor =GRAY_COLOR.CGColor;
+    wifiView.layer.cornerRadius =4;
+    wifiView.layer.borderWidth =0.4;
+    wifiView.layer.borderColor = GRAY_COLOR.CGColor;
+    wifiCode.layer.cornerRadius =4;
+    wifiCode.layer.borderWidth =0.4;
+    wifiCode.layer.borderColor = GRAY_COLOR.CGColor;
     wifiCode.userInteractionEnabled = YES;
     [self.view addSubview:wifiCode];
     [self.view addSubview:devNum];
@@ -130,7 +131,6 @@
     UILabel * labelMess=[UILabel new];
     labelMess.text =NSLocalizedString(@"wif_encryption", nil);
     labelMess.font =[UIFont systemFontOfSize:18];
-    labelMess.textColor = YELLOW_COLOR;
     [self.view addSubview:labelMess];
     
     [labelMess mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -149,14 +149,13 @@
     UILabel * wifips =[UILabel new];
     
     deveLB.text =NSLocalizedString(@"deviceNum", nil);
-    deveLB.textColor =YELLOW_COLOR;
     deveLB.font = [UIFont systemFontOfSize:18];
     wifiLB.text =@"Wifi名字:";
     wifiLB.font =[UIFont systemFontOfSize:18];
-    wifiLB.textColor =YELLOW_COLOR;
+
     wifips.text =@"Wifi密码:";
     wifips.font =[UIFont systemFontOfSize:18];
-    wifips.textColor =YELLOW_COLOR;
+   
     
     
     [devNum addSubview:deveLB];
@@ -188,12 +187,12 @@
     
     
     UITextField *  deviceTF =[UITextField new];
-    deviceTF.textColor =YELLOW_COLOR;
+
     incodeTF =[UITextField new];
-    incodeTF.textColor= YELLOW_COLOR;
+   
     
     wifiPsTF =[UITextField new];
-    wifiPsTF.textColor= YELLOW_COLOR;
+ 
     NSString * str  =  [Defaluts objectForKey:PREF_DEVICE_NUMBER];
     NSString * str1  = [AccountManager sharedAccountManager].loginModel.deviceno;
     deviceTF.text = str.length>str1.length?str:str1;
@@ -314,9 +313,6 @@
     
     
     
-    
-    
-    
         if ([AppUtil isBlankString:wifiPsTF.text]) {
     
              btnBind.enabled = FALSE;
@@ -326,7 +322,7 @@
         {
     
             btnBind.enabled = TRUE;
-            btnBind.backgroundColor = YELLOW_COLOR;
+            btnBind.backgroundColor = SKY_bLUE_COLOR;
     
         }
     

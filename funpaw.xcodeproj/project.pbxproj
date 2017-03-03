@@ -21,6 +21,10 @@
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
 		343E50891E54473B002C2AD1 /* egg_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50851E54473B002C2AD1 /* egg_more@2x.png */; };
 		3446F8741E693B300036AE1C /* down_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F8731E693B300036AE1C /* down_list.png */; };
+		3446F8771E6959070036AE1C /* egg_nodevcie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F8751E6959070036AE1C /* egg_nodevcie.png */; };
+		3446F8781E6959070036AE1C /* setWaring.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F8761E6959070036AE1C /* setWaring.png */; };
+		3446F87A1E6959A70036AE1C /* konw.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F8791E6959A70036AE1C /* konw.png */; };
+		3446F87C1E6959DC0036AE1C /* egg_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F87B1E6959DC0036AE1C /* egg_add.png */; };
 		34662FF41E6808CC00019D2E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FED1E6808CC00019D2E /* AboutViewController.m */; };
 		34662FF51E6808CC00019D2E /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FEF1E6808CC00019D2E /* AgreementViewController.m */; };
 		34662FF61E6808CC00019D2E /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FF11E6808CC00019D2E /* IntroduceViewController.m */; };
@@ -286,6 +290,10 @@
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
 		343E50851E54473B002C2AD1 /* egg_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more@2x.png"; sourceTree = "<group>"; };
 		3446F8731E693B300036AE1C /* down_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_list.png; sourceTree = "<group>"; };
+		3446F8751E6959070036AE1C /* egg_nodevcie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg_nodevcie.png; sourceTree = "<group>"; };
+		3446F8761E6959070036AE1C /* setWaring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setWaring.png; sourceTree = "<group>"; };
+		3446F8791E6959A70036AE1C /* konw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = konw.png; sourceTree = "<group>"; };
+		3446F87B1E6959DC0036AE1C /* egg_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg_add.png; sourceTree = "<group>"; };
 		34662FEC1E6808CC00019D2E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		34662FED1E6808CC00019D2E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		34662FEE1E6808CC00019D2E /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
@@ -1109,6 +1117,10 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
+				3446F87B1E6959DC0036AE1C /* egg_add.png */,
+				3446F8791E6959A70036AE1C /* konw.png */,
+				3446F8751E6959070036AE1C /* egg_nodevcie.png */,
+				3446F8761E6959070036AE1C /* setWaring.png */,
 				3446F8731E693B300036AE1C /* down_list.png */,
 				34662FF81E68181800019D2E /* guide_l.jpg */,
 				3420B3A11E657EBF00AE228F /* English_tips.png */,
@@ -2641,6 +2653,7 @@
 				34CAC2361E5BEA1D00249BA9 /* ok.png in Resources */,
 				34E164491E050B18004A65AB /* ring.caf in Resources */,
 				3420B39E1E65689200AE228F /* online_e.png in Resources */,
+				3446F87C1E6959DC0036AE1C /* egg_add.png in Resources */,
 				34CAC2231E5BEA1D00249BA9 /* call_status_incoming.png in Resources */,
 				34E1664B1E0520F1004A65AB /* Lnormal_light.png in Resources */,
 				34E164471E050B18004A65AB /* msg.wav in Resources */,
@@ -2685,6 +2698,7 @@
 				34CAC2291E5BEA1D00249BA9 /* composing_active_chat.png in Resources */,
 				34E164531E050B18004A65AB /* shortring.caf in Resources */,
 				343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */,
+				3446F8771E6959070036AE1C /* egg_nodevcie.png in Resources */,
 				34E166451E0520F1004A65AB /* Lclick_food.png in Resources */,
 				34E166461E0520F1004A65AB /* Lclick_light.png in Resources */,
 				34CAC2211E5BEA1D00249BA9 /* addcall-green.png in Resources */,
@@ -2706,6 +2720,7 @@
 				34E1664E1E0520F1004A65AB /* right_egg.png in Resources */,
 				34CAC2341E5BEA1D00249BA9 /* mic_muted.png in Resources */,
 				34CAC2411E5BEA1D00249BA9 /* stopcall-red.png in Resources */,
+				3446F87A1E6959A70036AE1C /* konw.png in Resources */,
 				34CAC2431E5BEA1D00249BA9 /* rootca.pem in Resources */,
 				340DE9EE1E55535B00B7B258 /* backk@2x.png in Resources */,
 				7D2C4A6A1E695513002E40E0 /* sssbbb2@2x.png in Resources */,
@@ -2754,6 +2769,7 @@
 				34E166431E0520F1004A65AB /* L_down.png in Resources */,
 				34E164451E050B18004A65AB /* hold.wav in Resources */,
 				34CAC23F1E5BEA1D00249BA9 /* status-orange.png in Resources */,
+				3446F8781E6959070036AE1C /* setWaring.png in Resources */,
 				34E1664C1E0520F1004A65AB /* Lnormal_photo.png in Resources */,
 				34CAC2511E5BEA1D00249BA9 /* toy-mono.wav in Resources */,
 				34CAC22E1E5BEA1D00249BA9 /* dialer-orange.png in Resources */,

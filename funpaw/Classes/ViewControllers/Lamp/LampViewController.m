@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = BLUE_COLOR;
+    self.view.backgroundColor = SKY_bLUE_COLOR;
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     switch (status) {
         case AVAuthorizationStatusNotDetermined:{
@@ -224,7 +224,7 @@
     
     // 指导界面
     Guideview =[UIImageView new];
-    Guideview.image =[UIImage imageNamed:@"egg_guide"];
+    Guideview.image =[UIImage imageNamed:@"egg_Waring"];
     Guideview.userInteractionEnabled = YES;
     Guideview.hidden = YES;
     
@@ -237,7 +237,7 @@
     }];
     
     IkonwBtn =[UIButton new];
-    [IkonwBtn setImage:[UIImage imageNamed:@"ikonw"] forState:UIControlStateNormal];
+    [IkonwBtn setImage:[UIImage imageNamed:@"konw"] forState:UIControlStateNormal];
     [IkonwBtn addTarget:self action:@selector(disparrBtn:) forControlEvents:UIControlEventTouchUpInside];
     IkonwBtn.hidden = YES;
     
@@ -268,7 +268,7 @@
     
     // 添加按钮
     addBtn =[UIButton new];
-    [addBtn setImage:[UIImage imageNamed:@"egg_add_bin"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"egg_add"] forState:UIControlStateNormal];
     addBtn.hidden = YES;
     [addBtn addTarget:self action:@selector(btn_add:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:addBtn];
@@ -312,8 +312,8 @@
     
     [SbgImage mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.size.mas_equalTo(CGSizeMake(110, 129));
-        make.right.equalTo(self.view).offset(-1);
+        make.size.mas_equalTo(CGSizeMake(105, 92));
+        make.right.equalTo(self.view).offset(-11);
         make.top.equalTo(self.view).offset(1);
         
     }];
@@ -323,12 +323,12 @@
     UIButton * bdinBtn =[UIButton new];
     // 三个buton
     
-    [wifiBtn setTitle:@"WIFI" forState:UIControlStateNormal];
+    [wifiBtn setTitle:@"设置wifi" forState:UIControlStateNormal];
     [wifiBtn addTarget:self action:@selector(wifiTouch:) forControlEvents:UIControlEventTouchUpInside];
     
     
     [bdinBtn addTarget:self action:@selector(bdinTouch:) forControlEvents:UIControlEventTouchUpInside];
-    [bdinBtn setTitle:@"绑定" forState:UIControlStateNormal];
+    [bdinBtn setTitle:@"解绑设备" forState:UIControlStateNormal];
     [SbgImage addSubview:wifiBtn];
     [SbgImage addSubview:bdinBtn];
     
@@ -337,13 +337,14 @@
     
     [arrBtn mas_distributeViewsAlongAxis:MASAxisTypeVertical
                         withFixedSpacing:15
-                             leadSpacing:10
-                             tailSpacing:5];
+                             leadSpacing:15
+                             tailSpacing:6];
     
     [arrBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(SbgImage).offset(20);
-        make.right.equalTo(SbgImage).offset(-20);
+        make.width.mas_equalTo(90);
+       
+        make.right.equalTo(SbgImage).offset(-5);
         
     }];
 }
@@ -406,7 +407,7 @@
 {
     // 设备不存在
     if ([strState isEqualToString:@"ds000"]) {
-        [bgImage setImage:[UIImage imageNamed:@"English_tips"]];
+        [bgImage setImage:[UIImage imageNamed:@"egg_nodevice"]];
         addBtn.hidden = NO;
         SbgImage.hidden = YES;
         [self showBarBtn:YES];
