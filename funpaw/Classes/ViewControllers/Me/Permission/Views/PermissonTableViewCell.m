@@ -19,7 +19,8 @@
         [self addSubview:_leftBtn];
         [_leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(_leftBtn.superview).offset(12);
-            make.top.equalTo(_leftBtn.superview).offset(13);
+            make.centerY.equalTo(_leftBtn.superview.mas_centerY);
+          
             make.width.mas_equalTo(23);
             make.height.mas_equalTo(23);
             
@@ -42,7 +43,7 @@
         [self addSubview:_guizeNameLabel];
         [_guizeNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(_leftBtn.mas_right).offset(15);
-            make.top.equalTo(_guizeNameLabel.superview).offset(14);
+            make.centerY.equalTo(_guizeNameLabel.superview.mas_centerY);
             
         }];
         
@@ -51,8 +52,9 @@
         _leftLabel.font = [UIFont systemFontOfSize:15];
         [self addSubview:_leftLabel];
         [_leftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(_guizeNameLabel.mas_left);
-            make.bottom.equalTo(_leftLabel.superview).offset(-9);
+            make.right.equalTo(_leftLabel.superview).offset(-15);
+           // make.bottom.equalTo(_leftLabel.superview).offset(-9);
+            make.centerY.equalTo(_leftLabel.superview.mas_centerY);
         }];
         
         _toushiLabel = [[UILabel alloc]init];
