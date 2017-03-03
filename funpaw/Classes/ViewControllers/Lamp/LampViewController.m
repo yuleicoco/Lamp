@@ -224,7 +224,7 @@
     
     // 指导界面
     Guideview =[UIImageView new];
-    Guideview.image =[UIImage imageNamed:@"egg_guide"];
+    Guideview.image =[UIImage imageNamed:@"egg_Waring"];
     Guideview.userInteractionEnabled = YES;
     Guideview.hidden = YES;
     
@@ -237,7 +237,7 @@
     }];
     
     IkonwBtn =[UIButton new];
-    [IkonwBtn setImage:[UIImage imageNamed:@"ikonw"] forState:UIControlStateNormal];
+    [IkonwBtn setImage:[UIImage imageNamed:@"konw"] forState:UIControlStateNormal];
     [IkonwBtn addTarget:self action:@selector(disparrBtn:) forControlEvents:UIControlEventTouchUpInside];
     IkonwBtn.hidden = YES;
     
@@ -268,7 +268,7 @@
     
     // 添加按钮
     addBtn =[UIButton new];
-    [addBtn setImage:[UIImage imageNamed:@"egg_add_bin"] forState:UIControlStateNormal];
+    [addBtn setImage:[UIImage imageNamed:@"egg_add"] forState:UIControlStateNormal];
     addBtn.hidden = YES;
     [addBtn addTarget:self action:@selector(btn_add:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:addBtn];
@@ -407,7 +407,7 @@
 {
     // 设备不存在
     if ([strState isEqualToString:@"ds000"]) {
-        [bgImage setImage:[UIImage imageNamed:@"English_tips"]];
+        [bgImage setImage:[UIImage imageNamed:@"egg_nodevice"]];
         addBtn.hidden = NO;
         SbgImage.hidden = YES;
         [self showBarBtn:YES];
