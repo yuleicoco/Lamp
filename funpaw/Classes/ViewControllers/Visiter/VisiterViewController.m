@@ -96,7 +96,7 @@ static NSString * cellId = @"douyidouCellid";
     if ([model.status isEqualToString:@"ds001"]) {
         cell.rightBtn.backgroundColor = [UIColor clearColor];;
         [cell.rightBtn setTitle:@"在线" forState:UIControlStateNormal];
-        [cell.rightBtn setTitleColor:GREEN_COLOR forState:UIControlStateNormal];
+        [cell.rightBtn setTitleColor:SKY_bLUE_COLOR forState:UIControlStateNormal];
         cell.rightBtn.userInteractionEnabled = NO;
 
     }else if([model.status isEqualToString:@"ds002"]){

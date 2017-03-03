@@ -28,7 +28,7 @@
                                                        [UIColor blackColor], NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       GREEN_COLOR,NSForegroundColorAttributeName,
+                                                       SKY_bLUE_COLOR,NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateSelected];
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
 

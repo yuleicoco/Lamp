@@ -21,7 +21,7 @@ static NSString * cellId = @"friendSearchCellid";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavTitle:@"添加好友"];
-    self.view.backgroundColor = GRAY_COLOR;
+    self.view.backgroundColor = LIGHT_GRAY_COLOR;
 }
 
 -(void)setupView{

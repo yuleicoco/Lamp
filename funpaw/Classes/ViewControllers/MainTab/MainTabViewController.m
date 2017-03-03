@@ -72,7 +72,7 @@
     if ((!_lampVc)) {
         LampViewController * vc = [[LampViewController alloc]init];
                 vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"设备"
-                                                             image:[[UIImage imageNamed:@"sssbbb@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"sssbbb2@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                                             image:[[UIImage imageNamed:@"shebeidiandian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"shebeimeidian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 
     _lampVc = [[UINavigationController alloc]initWithRootViewController:vc];
     }
@@ -84,7 +84,7 @@
     if (!_visiterVc) {
         VisiterViewController * vc = [[VisiterViewController alloc]init];
         vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"访问"
-                                                     image:[[UIImage imageNamed:@"vister11@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"visterdian11@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                                     image:[[UIImage imageNamed:@"visitermeidian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"visiterdiandian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         
         
         _visiterVc = [[UINavigationController alloc]initWithRootViewController:vc];
@@ -99,7 +99,7 @@
     if (!_meVc) {
         MeViewController * vc = [[MeViewController alloc]init];
         vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的"
-                                                     image:[[UIImage imageNamed:@"my11@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"mydian11@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                                     image:[[UIImage imageNamed:@"memeidian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"mediandian@2x.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         _meVc = [[UINavigationController alloc]initWithRootViewController:vc];
         
         
