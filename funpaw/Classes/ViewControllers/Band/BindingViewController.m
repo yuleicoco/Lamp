@@ -125,12 +125,12 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     UIView * inCode =[UIView new];
     devNum.backgroundColor = [UIColor whiteColor];
     inCode.backgroundColor = [UIColor whiteColor];
-    devNum.layer.cornerRadius =28;
-    devNum.layer.borderWidth =1;
-    devNum.layer.borderColor =RED_COLOR.CGColor;
-    inCode.layer.cornerRadius =28;
-    inCode.layer.borderWidth =1;
-    inCode.layer.borderColor = RED_COLOR.CGColor;
+    devNum.layer.cornerRadius =4;
+    devNum.layer.borderWidth =0.4;
+    devNum.layer.borderColor =GRAY_COLOR.CGColor;
+    inCode.layer.cornerRadius =4;
+    inCode.layer.borderWidth =0.4;
+    inCode.layer.borderColor = GRAY_COLOR.CGColor;
     [self.view addSubview:devNum];
     [self.view addSubview:inCode];
     
@@ -157,15 +157,13 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     btnBind.backgroundColor = LIGHT_GRAYdcdc_COLOR;
     if ([AppUtil isBlankString:strTT]) {
         [btnBind setTitle:@"绑定" forState:UIControlStateNormal];
-        btnBind.backgroundColor = GRAY_COLOR;
+        btnBind.backgroundColor = LIGHT_GRAYdcdc_COLOR;
         btnBind.enabled = FALSE;
     }else
     {
         [btnBind setTitle:@"解绑" forState:UIControlStateNormal];
         btnBind.enabled = TRUE;
-        btnBind.backgroundColor = YELLOW_COLOR;
-        
-        
+        btnBind.backgroundColor = SKY_bLUE_COLOR;
         
     }
     
@@ -185,11 +183,10 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     UILabel * deveLB= [UILabel new];
     UILabel * incoLB =[UILabel new];
     deveLB.text =@"设备号";
-    deveLB.textColor = YELLOW_COLOR;
     deveLB.font = [UIFont systemFontOfSize:18];
     incoLB.text =@"接入码";
     incoLB.font =[UIFont systemFontOfSize:18];
-    incoLB.textColor = YELLOW_COLOR;
+   
     
     [devNum addSubview:deveLB];
     [inCode addSubview:incoLB];
@@ -211,8 +208,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     
     deviceTF =[UITextField new];
     incodeTF =[UITextField new];
-    deviceTF.textColor =YELLOW_COLOR;
-    incodeTF.textColor = YELLOW_COLOR;
+
     
     
    

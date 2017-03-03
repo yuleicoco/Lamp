@@ -17,7 +17,7 @@
     if (self.navigationController) {
 //        self.navigationController.navigationBar.layer.shadowColor = [UIColor whiteColor].CGColor;
     //   self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0, 1);
-        self.navigationController.navigationBar.barTintColor =GREEN_COLOR;
+        self.navigationController.navigationBar.barTintColor =SKY_bLUE_COLOR;
         //self.navigationController.navigationBar.layer.shadowOpacity = 0.4;
         //self.navigationController.navigationBar.layer.shadowRadius = 2;
        //self.navigationController.navigationBar.barStyle=UIBarStyleDefault;
