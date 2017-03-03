@@ -25,7 +25,7 @@
     float percentX = (index +0.6) / TabbarItemNums;
     CGFloat x = ceilf(percentX * tabFrame.size.width);
     CGFloat y = ceilf(0.1 * tabFrame.size.height);
-    badgeView.frame = CGRectMake(x + 20, y, 9, 9);
+    badgeView.frame = CGRectMake(x + 10, y, 9, 9);
     [self addSubview:badgeView];
 
     

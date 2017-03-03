@@ -193,12 +193,12 @@
     }];
     
     UIImageView * doumaImage = [[UIImageView alloc]init];
-    doumaImage.image = [UIImage imageNamed:@"douma.png"];
+    doumaImage.image = [UIImage imageNamed:@"goodfriend.png"];
     [self.view addSubview:doumaImage];
     [doumaImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(doumaImage.superview).offset(13);
-        make.top.equalTo(firstView.mas_top).offset(20);
-        make.bottom.equalTo(centerLabel.mas_top).offset(-20);
+        make.top.equalTo(firstView.mas_top).offset(18);
+        make.bottom.equalTo(centerLabel.mas_top).offset(-18);
         make.width.mas_equalTo(21);
         
         
@@ -455,9 +455,15 @@
 
 //修改密码
 -(void)exchangebuttonTouch{
-    ExchangPasswordViewController * exchangeVc = [[ExchangPasswordViewController alloc]init];
-    [self.navigationController pushViewController:exchangeVc animated:NO];
+    if ([AppUtil isBlankString:[AccountManager sharedAccountManager].loginModel.rtype]) {
+        ExchangPasswordViewController * exchangeVc = [[ExchangPasswordViewController alloc]init];
+        [self.navigationController pushViewController:exchangeVc animated:NO];
 
+    }else{
+         [[AppUtil appTopViewController]showHint:@"第三方登录不能修改密码哦!"];
+    }
+    
+   
 
 }
 
