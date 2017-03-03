@@ -14,7 +14,7 @@
     params[@"phone"] = phone;
     params[@"type"] = type;
     
-    [self requestWithMethod:POST WithPath:@"common=chech" WithParams:params WithSuccessBlock:^(BaseModel *model) {
+    [self requestWithMethod:POST WithPath:@"common=check" WithParams:params WithSuccessBlock:^(BaseModel *model) {
         
         if (model) {
             // NSLog(@"哈哈");
@@ -136,7 +136,26 @@
 
 }
 
-
+-(void)addFeedbackWithMid:(NSString *)mid fconcent:(NSString *)fconcent fphone:(NSString *)fphone complete:(void (^)(BaseModel *))completeBlock{
+    NSMutableDictionary * params = [[NSMutableDictionary alloc]init];
+    params[@"mid"] = mid;
+    params[@"type"] = @"iphone";
+    params[@"fconcent"] = fconcent;
+    params[@"fphone"] = fphone;
+    
+    [self requestWithMethod:POST WithPath:@"common=addFeedback" WithParams:params WithSuccessBlock:^(BaseModel *model) {
+        
+        if (model) {
+            // NSLog(@"哈哈");
+        }
+        if (completeBlock) {
+            completeBlock(model);
+        }
+        
+    } WithFailurBlock:^(NSError *error) {
+        
+    }];
+}
 
 
 

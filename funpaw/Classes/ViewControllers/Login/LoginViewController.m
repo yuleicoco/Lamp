@@ -28,17 +28,11 @@
     
     
 }
--(void)dowewerwfwafa{
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
-
-}
-
 
 -(void)setupView{
     
     UIImageView * loginbackImage = [[UIImageView alloc]init];
-    loginbackImage.image = [UIImage imageNamed:@"loginback.png"];
+    loginbackImage.image = [UIImage imageNamed:@"loginBackkk.png"];
     [self.view addSubview:loginbackImage];
     [loginbackImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.left.right.equalTo(loginbackImage.superview).insets(UIEdgeInsetsMake(0, 0, 0, 0));
@@ -75,7 +69,7 @@
     _numberTextfield = [[UITextField alloc]init];
     _numberTextfield.font = [UIFont systemFontOfSize:18];
     _numberTextfield.keyboardAppearance = UIKeyboardAppearanceDark;
-    _numberTextfield.placeholder = NSLocalizedString(@"login_acc", nil);
+    _numberTextfield.placeholder = @"请输入账号";
     _numberTextfield.tintColor = [UIColor whiteColor];
     _numberTextfield.textColor = [UIColor whiteColor];
     _numberTextfield.keyboardType = UIKeyboardTypeNumberPad;
@@ -118,7 +112,7 @@
     
     _passwordTextfield = [[UITextField alloc]init];
     _passwordTextfield.font = [UIFont systemFontOfSize:18];
-    _passwordTextfield.placeholder = NSLocalizedString(@"login_ps", nil);
+    _passwordTextfield.placeholder = @"请输入密码";
     _passwordTextfield.keyboardAppearance = UIKeyboardAppearanceDark;
     _passwordTextfield.tintColor = [UIColor whiteColor];
     _passwordTextfield.textColor = [UIColor whiteColor];
@@ -136,7 +130,7 @@
     _loginBtn = [[UIButton alloc]init];
     _loginBtn.backgroundColor = GREEN_COLOR;
     _loginBtn.layer.cornerRadius = 5;
-    [_loginBtn setTitle:NSLocalizedString(@"login", nil) forState:UIControlStateNormal];
+    [_loginBtn setTitle:@"登 录"forState:UIControlStateNormal];
     _loginBtn.titleLabel.font = [UIFont systemFontOfSize:22];
     [_loginBtn addTarget:self action:@selector(loginbuttonTouch) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_loginBtn];
@@ -161,7 +155,7 @@
     }];
     
     UILabel * regiestLabel = [[UILabel alloc]init];
-    regiestLabel.text = NSLocalizedString(@"login_regist", nil);
+    regiestLabel.text = @"新用户注册";
     regiestLabel.textColor = [UIColor whiteColor];
     regiestLabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:regiestLabel];
@@ -172,7 +166,7 @@
     }];
     
     UILabel * forgetPasswordlabel = [[UILabel alloc]init];
-    forgetPasswordlabel.text =NSLocalizedString(@"login_forget", nil);
+    forgetPasswordlabel.text =@"忘记密码?";
     forgetPasswordlabel.textColor = [UIColor whiteColor];
     forgetPasswordlabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:forgetPasswordlabel];
@@ -201,7 +195,7 @@
     }];
     
     UILabel * disanfangLabel = [[UILabel alloc]init];
-    disanfangLabel.text =NSLocalizedString(@"login_3rd", nil);
+    disanfangLabel.text =@"第三方登录";
     disanfangLabel.textColor = [UIColor whiteColor];
     disanfangLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:disanfangLabel];
@@ -337,11 +331,11 @@
 
 -(void)loginbuttonTouch{
     if ([AppUtil isBlankString:_numberTextfield.text]) {
-        [[AppUtil appTopViewController] showHint:NSLocalizedString(@"login_acc", nil)];
+        [[AppUtil appTopViewController] showHint:@"请输入账号"];
         return;
     }
     if ([AppUtil isBlankString:_passwordTextfield.text]) {
-        [[AppUtil appTopViewController]showHint:NSLocalizedString(@"login_ps", nil)];
+        [[AppUtil appTopViewController]showHint:@"请输入密码"];
         return;
     }
     

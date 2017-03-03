@@ -36,7 +36,8 @@
     [self launcherApplication:application didFinishLaunchingWithOptions:launchOptions];
  
     [self initSephoneVoip:application didFinishLaunchingWithOptions:launchOptions];
-    
+    //分享
+ //   [self shareSDKApplication:application didFinishLaunchingWithOptions:launchOptions];
 
    
     

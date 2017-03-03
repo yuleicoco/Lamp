@@ -26,8 +26,14 @@
 
 
 //修改密码
-//修改密码
 -(void)exchangePasswordWithMid:(NSString *)mid password:(NSString *)password complete:(void (^)(BaseModel * model))completeBlock;
+
+//投诉建议
+-(void)addFeedbackWithMid:(NSString *)mid
+                 fconcent:(NSString *)fconcent
+                   fphone:(NSString *)fphone
+                 complete:(void(^)(BaseModel *model))completeBlock;
+
 
 
 

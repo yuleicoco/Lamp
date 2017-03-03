@@ -103,47 +103,47 @@
         
     }];
     
-    UILabel * linelabel = [[UILabel alloc]init];
-    linelabel.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:linelabel];
-    [linelabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(_nameLabel.mas_centerX);
-        make.top.equalTo(_nameLabel.mas_bottom).offset(16);
-        make.width.mas_equalTo(1);
-        make.bottom.equalTo(topImage.mas_bottom).offset(-18);
-        
-    }];
+//    UILabel * linelabel = [[UILabel alloc]init];
+//    linelabel.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:linelabel];
+//    [linelabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(_nameLabel.mas_centerX);
+//        make.top.equalTo(_nameLabel.mas_bottom).offset(16);
+//        make.width.mas_equalTo(1);
+//        make.bottom.equalTo(topImage.mas_bottom).offset(-18);
+//        
+//    }];
     
-    UILabel * wenzhangNum = [[UILabel alloc]init];
-    wenzhangNum.textColor = [UIColor whiteColor];
-    wenzhangNum.font = [UIFont systemFontOfSize:15];
-  //  wenzhangNum.text = [AccountManager sharedAccountManager].loginModel.articles;
-    [self.view addSubview:wenzhangNum];
-    [wenzhangNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(linelabel.mas_left).offset(-16);
-        make.centerY.equalTo(linelabel.mas_centerY);
-        
-    }];
-    
-    UILabel * wenzhang = [[UILabel alloc]init];
-    wenzhang.text = NSLocalizedString(@"me_article", nil);
-    wenzhang.textColor = [UIColor whiteColor];
-    wenzhang.font = [UIFont systemFontOfSize:15];
-    [self.view addSubview:wenzhang];
-    [wenzhang mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(wenzhangNum.mas_left).offset(-7);
-        make.centerY.equalTo(wenzhangNum.mas_centerY);
-        
-    }];
-    
+//    UILabel * wenzhangNum = [[UILabel alloc]init];
+//    wenzhangNum.textColor = [UIColor whiteColor];
+//    wenzhangNum.font = [UIFont systemFontOfSize:15];
+//  //  wenzhangNum.text = [AccountManager sharedAccountManager].loginModel.articles;
+//    [self.view addSubview:wenzhangNum];
+//    [wenzhangNum mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(linelabel.mas_left).offset(-16);
+//        make.centerY.equalTo(linelabel.mas_centerY);
+//        
+//    }];
+//    
+//    UILabel * wenzhang = [[UILabel alloc]init];
+//    wenzhang.text = @"文章";
+//    wenzhang.textColor = [UIColor whiteColor];
+//    wenzhang.font = [UIFont systemFontOfSize:15];
+//    [self.view addSubview:wenzhang];
+//    [wenzhang mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(wenzhangNum.mas_left).offset(-7);
+//        make.centerY.equalTo(wenzhangNum.mas_centerY);
+//        
+//    }];
+//    
     UILabel * haoyou = [[UILabel alloc]init];
-    haoyou.text = NSLocalizedString(@"tabRank", nil);
+    haoyou.text = @"好友";
     haoyou.textColor = [UIColor whiteColor];
     haoyou.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:haoyou];
     [haoyou mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(linelabel.mas_right).offset(16);
-        make.centerY.equalTo(linelabel.mas_centerY);
+        make.centerX.equalTo(haoyou.superview.mas_centerX);
+        make.top.equalTo(_nameLabel.mas_centerY).offset(10);
         
     }];
     
