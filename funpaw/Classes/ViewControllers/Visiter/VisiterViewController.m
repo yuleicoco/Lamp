@@ -140,12 +140,13 @@ static NSString * cellId = @"douyidouCellid";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
      VisiterModel * model = self.dataSource[indexPath.row];
-    
+     LampViewController * VClamp =[[LampViewController alloc]init];
     if ([model.status isEqualToString:@"ds001"]) {
         [[ShareWork sharedManager]OtherMid:model.mid complete:^(BaseModel * model) {
             [[NSNotificationCenter defaultCenter]postNotificationName:@"otherNam" object: model];
-            self.navigationController.tabBarController.selectedIndex =0;
+            [self.navigationController pushViewController:VClamp animated:NO];
         }];
+        
     }else if([model.status isEqualToString:@"ds002"]){
        [[AppUtil appTopViewController] showHint:@"离线，无法开启视频"];
         

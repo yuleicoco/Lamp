@@ -24,7 +24,7 @@
 // wifi
 "wifiTitle" = "Set networ";
 "bindDevice" = "Binding device";
-"Wifi_done"="Done";
+"Wifi_done"="完成";
 
 
 // wifi
@@ -36,7 +36,7 @@
 "INFO_ReachableViaWWAN"= "当前非WIFI环境";
 "bindDevice" = "Binding";
 "solveaBinding" ="Unbind";
-"deviceNum" ="Q NO/";
+"deviceNum" ="设备号:";
 "deviceIncode"="AccessCode/";
 "Warring_bing" ="The device number does not exist";
 "Success_bing" ="Bind Success";
@@ -48,14 +48,14 @@
 "Find_device" ="Searching for devices...";
 "find_noway" ="The device is not found";
 "I_kown" ="I know";
-"no_turnon" ="You have not turned on Bluetooth";
-"Fail_seting" ="Configuration failed. Search the device again";
-"wif_encryption" ="Encryption type";
+"no_turnon" ="请打开你的蓝牙";
+"Fail_seting" ="配置失败请再次搜索设备";
+"wif_encryption" ="加密选项";
 "wif_name" ="Name/";
 "wif_code" ="Password/";
-"faile_net" ="The configuration fails. Please reset the network";
-"falie_bl"= "Configuration failed, please make sure device Bluetooth is turned on";
-"ing_net" ="Configuring...";
+"faile_net" ="配置失败。请重新设置网络";
+"falie_bl"= "配置失败 请确保你的蓝牙是否打开";
+"ing_net" ="配置中...";
 
 // setting
 "settingViewTitle" = "Setting";

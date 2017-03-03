@@ -44,10 +44,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavTitle:NSLocalizedString(@"wifiTitle",nil)];
+    [self setNavTitle:@"WIFI设置"];
     listArr = @[ @"Public", @"WPA/WPA2", @"WEP" ];
     curEncryption = [NSString stringWithFormat:@"1"];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
     
@@ -152,10 +151,10 @@
     deveLB.text =NSLocalizedString(@"deviceNum", nil);
     deveLB.textColor =YELLOW_COLOR;
     deveLB.font = [UIFont systemFontOfSize:18];
-    wifiLB.text =NSLocalizedString(@"wif_name", nil);
+    wifiLB.text =@"Wifi名字:";
     wifiLB.font =[UIFont systemFontOfSize:18];
     wifiLB.textColor =YELLOW_COLOR;
-    wifips.text =NSLocalizedString(@"wif_code", nil);
+    wifips.text =@"Wifi密码:";
     wifips.font =[UIFont systemFontOfSize:18];
     wifips.textColor =YELLOW_COLOR;
     
@@ -372,7 +371,7 @@
  *  显示打开蓝牙提示窗
  */
 - (void)showNeedBluetoothWaringDialog {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Warning", nil) message:NSLocalizedString(@"no_turnon", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"I_kown", nil) otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:NSLocalizedString(@"no_turnon", nil) delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:nil, nil];
     [alert show];
 }
 

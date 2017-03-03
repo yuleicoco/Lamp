@@ -20,7 +20,7 @@
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
 		343E50891E54473B002C2AD1 /* egg_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50851E54473B002C2AD1 /* egg_more@2x.png */; };
-		3446F8721E6910BB0036AE1C /* LampOthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3446F8711E6910BB0036AE1C /* LampOthViewController.m */; };
+		3446F8741E693B300036AE1C /* down_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446F8731E693B300036AE1C /* down_list.png */; };
 		34662FF41E6808CC00019D2E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FED1E6808CC00019D2E /* AboutViewController.m */; };
 		34662FF51E6808CC00019D2E /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FEF1E6808CC00019D2E /* AgreementViewController.m */; };
 		34662FF61E6808CC00019D2E /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FF11E6808CC00019D2E /* IntroduceViewController.m */; };
@@ -274,8 +274,7 @@
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
 		343E50851E54473B002C2AD1 /* egg_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more@2x.png"; sourceTree = "<group>"; };
-		3446F8701E6910BB0036AE1C /* LampOthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampOthViewController.h; sourceTree = "<group>"; };
-		3446F8711E6910BB0036AE1C /* LampOthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampOthViewController.m; sourceTree = "<group>"; };
+		3446F8731E693B300036AE1C /* down_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_list.png; sourceTree = "<group>"; };
 		34662FEC1E6808CC00019D2E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		34662FED1E6808CC00019D2E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		34662FEE1E6808CC00019D2E /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
@@ -1088,6 +1087,7 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
+				3446F8731E693B300036AE1C /* down_list.png */,
 				34662FF81E68181800019D2E /* guide_l.jpg */,
 				3420B3A11E657EBF00AE228F /* English_tips.png */,
 				3420B39F1E65689B00AE228F /* busy_e.png */,
@@ -2360,8 +2360,6 @@
 			children = (
 				7D0F71811E63BE9200F27BFD /* LampViewController.h */,
 				7D0F71821E63BE9200F27BFD /* LampViewController.m */,
-				3446F8701E6910BB0036AE1C /* LampOthViewController.h */,
-				3446F8711E6910BB0036AE1C /* LampOthViewController.m */,
 			);
 			path = Lamp;
 			sourceTree = "<group>";
@@ -2637,6 +2635,7 @@
 				3420B3A21E657EBF00AE228F /* English_tips.png in Resources */,
 				34E1644E1E050B18004A65AB /* sephonerc in Resources */,
 				34CAC2371E5BEA1D00249BA9 /* sephone-banner.png in Resources */,
+				3446F8741E693B300036AE1C /* down_list.png in Resources */,
 				343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */,
 				34CAC2461E5BEA1D00249BA9 /* incoming_chat.wav in Resources */,
 				34CAC23C1E5BEA1D00249BA9 /* startcall-small.png in Resources */,
@@ -2847,7 +2846,6 @@
 				7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
 				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
-				3446F8721E6910BB0036AE1C /* LampOthViewController.m in Sources */,
 				34A51E711E65264A005E8888 /* BindingViewController.m in Sources */,
 				7D557AF91E67BBBC0038A6DA /* SearchFriendViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
