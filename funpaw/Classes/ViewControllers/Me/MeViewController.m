@@ -42,8 +42,17 @@
     //  [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cleanTip) name:@"isreaddd" object:nil];
     
     
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
 }
 
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
 
 
 
@@ -80,6 +89,8 @@
     _headImage.backgroundColor = [UIColor clearColor];
     _headImage.layer.cornerRadius = 40;
     [_headImage.layer setMasksToBounds:YES];
+    _headImage.layer.borderWidth = 2;
+    _headImage.layer.borderColor =RGB(128, 212, 245).CGColor;
     [_headImage sd_setImageWithURL:[NSURL URLWithString:[AccountManager sharedAccountManager].loginModel.headportrait] placeholderImage:[UIImage imageNamed:@"sego1.png"]];
     [self.view addSubview:_headImage];
     [_headImage mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -136,27 +147,27 @@
 //        
 //    }];
 //    
-    UILabel * haoyou = [[UILabel alloc]init];
-    haoyou.text = @"好友";
-    haoyou.textColor = [UIColor whiteColor];
-    haoyou.font = [UIFont systemFontOfSize:15];
-    [self.view addSubview:haoyou];
-    [haoyou mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(haoyou.superview.mas_centerX);
-        make.top.equalTo(_nameLabel.mas_centerY).offset(10);
-        
-    }];
-    
-    UILabel * haoyouNum = [[UILabel alloc]init];
-    haoyouNum.textColor = [UIColor whiteColor];
-    haoyouNum.text = [AccountManager sharedAccountManager].loginModel.friends;
-    haoyouNum.font = [UIFont systemFontOfSize:15];
-    [self.view addSubview:haoyouNum];
-    [haoyouNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(haoyou.mas_right).offset(7);
-        make.centerY.equalTo(haoyou.mas_centerY);
-        
-    }];
+//    UILabel * haoyou = [[UILabel alloc]init];
+//    haoyou.text = @"好友";
+//    haoyou.textColor = [UIColor whiteColor];
+//    haoyou.font = [UIFont systemFontOfSize:15];
+//    [self.view addSubview:haoyou];
+//    [haoyou mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(haoyou.superview.mas_centerX);
+//        make.top.equalTo(_nameLabel.mas_centerY).offset(10);
+//        
+//    }];
+//    
+//    UILabel * haoyouNum = [[UILabel alloc]init];
+//    haoyouNum.textColor = [UIColor whiteColor];
+//    haoyouNum.text = [AccountManager sharedAccountManager].loginModel.friends;
+//    haoyouNum.font = [UIFont systemFontOfSize:15];
+//    [self.view addSubview:haoyouNum];
+//    [haoyouNum mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(haoyou.mas_right).offset(7);
+//        make.centerY.equalTo(haoyou.mas_centerY);
+//        
+//    }];
     
     //第一坨
     UIView * firstView = [[UIView alloc]init];

@@ -11,7 +11,7 @@
 #import <CoreTelephony/CTCallCenter.h>
 #import "AppDelegate+Sephone.h"
 #import "AppDelegate+Launcher.h"
-
+#import "AppDelegate+ShareSDK.h"
 
 
 @interface AppDelegate ()
@@ -37,7 +37,7 @@
  
     [self initSephoneVoip:application didFinishLaunchingWithOptions:launchOptions];
     //分享
- //   [self shareSDKApplication:application didFinishLaunchingWithOptions:launchOptions];
+    [self shareSDKApplication:application didFinishLaunchingWithOptions:launchOptions];
 
    
     

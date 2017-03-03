@@ -25,7 +25,7 @@
 - (void)launcherApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       [UIColor grayColor], NSForegroundColorAttributeName,
+                                                       [UIColor blackColor], NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        GREEN_COLOR,NSForegroundColorAttributeName,

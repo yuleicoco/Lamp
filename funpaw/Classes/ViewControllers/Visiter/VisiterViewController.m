@@ -20,7 +20,7 @@ static NSString * cellId = @"douyidouCellid";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavTitle:@"逗一逗"];
+    [self setNavTitle:@"访问"];
 
 }
 -(void)setupView{
@@ -32,7 +32,7 @@ static NSString * cellId = @"douyidouCellid";
         make.bottom.equalTo(self.tableView.superview);
         
     }];
-    self.tableView.backgroundColor = GRAY_COLOR;
+    self.tableView.backgroundColor = LIGHT_GRAY_COLOR;
     [self.tableView registerClass:[DouyiDouTableViewCell class] forCellReuseIdentifier:cellId];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
