@@ -94,10 +94,10 @@ static NSString * cellId = @"douyidouCellid";
     cell.nameLabel.text = model.nickname;
    
     if ([model.status isEqualToString:@"ds001"]) {
-        cell.rightBtn.backgroundColor = GREEN_COLOR;
-        [cell.rightBtn setTitle:@"开启" forState:UIControlStateNormal];
-        [cell.rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        cell.rightBtn.userInteractionEnabled = YES;
+        cell.rightBtn.backgroundColor = [UIColor clearColor];;
+        [cell.rightBtn setTitle:@"在线" forState:UIControlStateNormal];
+        [cell.rightBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        cell.rightBtn.userInteractionEnabled = NO;
 
     }else if([model.status isEqualToString:@"ds002"]){
         //cell.rightBtn.hidden = YES;
@@ -129,23 +129,38 @@ static NSString * cellId = @"douyidouCellid";
 
 //
 -(void)rightButtontouch1:(UIButton *)sender{
-    NSInteger i = sender.tag - 111;
-    VisiterModel * model = self.dataSource[i];
-    
-    
-  
-    [[ShareWork sharedManager]OtherMid:model.mid complete:^(BaseModel * model) {
-    
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"otherNam" object: model];
-     self.navigationController.tabBarController.selectedIndex =0;
-        
-    }];
-    
-    
-    
-    
+//    NSInteger i = sender.tag - 111;
+//    VisiterModel * model = self.dataSource[i];
+//    
+//    
+//  
     
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     VisiterModel * model = self.dataSource[indexPath.row];
+    
+    if ([model.status isEqualToString:@"ds001"]) {
+        [[ShareWork sharedManager]OtherMid:model.mid complete:^(BaseModel * model) {
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"otherNam" object: model];
+            self.navigationController.tabBarController.selectedIndex =0;
+        }];
+    }else if([model.status isEqualToString:@"ds002"]){
+       [[AppUtil appTopViewController] showHint:@"离线，无法开启视频"];
+        
+    }else if ([model.status isEqualToString:@"ds003"]){
+        [[AppUtil appTopViewController] showHint:@"通话中，无法开启视频"];
+        
+    }else if ([model.status isEqualToString:@"ds004"]){
+       [[AppUtil appTopViewController] showHint:@"上传中，无法开启视频"];
+        
+    }
+
+
+}
+
+
 
 
 

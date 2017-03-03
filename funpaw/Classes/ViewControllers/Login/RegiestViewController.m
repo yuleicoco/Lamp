@@ -8,6 +8,7 @@
 
 #import "RegiestViewController.h"
 #import "ShareWork+Login.h"
+#import "AgreementViewController.h"
 
 @interface RegiestViewController ()
 @property (nonatomic,strong)UIButton * vercationBtn;
@@ -325,8 +326,8 @@
 }
 -(void)xieyibuttontouch{
 //    FuckLog(@"hehhhh");
-//    AgreementViewController * agreVc = [[AgreementViewController alloc]init];
-//    [self.navigationController pushViewController:agreVc animated:NO];
+    AgreementViewController * agreVc = [[AgreementViewController alloc]init];
+    [self.navigationController pushViewController:agreVc animated:NO];
 }
 
 -(void)vercationbuttontouch{

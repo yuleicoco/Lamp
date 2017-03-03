@@ -57,7 +57,7 @@ static NSString * cellId = @"InformationCellId";
     }];
     
     UILabel * headLabel = [[UILabel alloc]init];
-    headLabel.text = NSLocalizedString(@"info_headimeg", nil);
+    headLabel.text = @"头像";
     headLabel.textColor = [UIColor blackColor];
     headLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:headLabel];
