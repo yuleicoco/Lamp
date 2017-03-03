@@ -45,8 +45,13 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
+     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeName) name:@"meshuashua" object:nil];
 }
+-(void)changeName{
+    _nameLabel.text = [AccountManager sharedAccountManager].loginModel.nickname;
+    [_headImage sd_setImageWithURL:[NSURL URLWithString:[AccountManager sharedAccountManager].loginModel.headportrait] placeholderImage:[UIImage imageNamed:@"sego1.png"]];
 
+}
 
 -(void)viewWillDisappear:(BOOL)animated{
     
