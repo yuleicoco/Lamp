@@ -773,7 +773,6 @@
 - (int )getTimeNow
 {
     NSString* date;
-    
     NSDateFormatter * formatter = [[NSDateFormatter alloc ] init];
     [formatter setDateFormat:@"hh:mm:ss:SSS"];
     date = [formatter stringFromDate:[NSDate date]];
@@ -784,7 +783,6 @@
     int d =[[timeNow substringFromIndex:9]intValue];
     a= a*3600000+b*60000+c*1000+d;
     return a;
-    
 }
 
 
@@ -910,12 +908,7 @@
     [self moveRobot:@"3"];
     
     NSLog(@"下");
-    
-    
 }
-
-
-
 
 // 左
 - (void)Sleftclick:(UIButton *)sender {

@@ -20,6 +20,7 @@
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
 		343E50891E54473B002C2AD1 /* egg_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50851E54473B002C2AD1 /* egg_more@2x.png */; };
+		3446F8721E6910BB0036AE1C /* LampOthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3446F8711E6910BB0036AE1C /* LampOthViewController.m */; };
 		34662FF41E6808CC00019D2E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FED1E6808CC00019D2E /* AboutViewController.m */; };
 		34662FF51E6808CC00019D2E /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FEF1E6808CC00019D2E /* AgreementViewController.m */; };
 		34662FF61E6808CC00019D2E /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34662FF11E6808CC00019D2E /* IntroduceViewController.m */; };
@@ -273,6 +274,8 @@
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
 		343E50851E54473B002C2AD1 /* egg_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more@2x.png"; sourceTree = "<group>"; };
+		3446F8701E6910BB0036AE1C /* LampOthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampOthViewController.h; sourceTree = "<group>"; };
+		3446F8711E6910BB0036AE1C /* LampOthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampOthViewController.m; sourceTree = "<group>"; };
 		34662FEC1E6808CC00019D2E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		34662FED1E6808CC00019D2E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		34662FEE1E6808CC00019D2E /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
@@ -2357,6 +2360,8 @@
 			children = (
 				7D0F71811E63BE9200F27BFD /* LampViewController.h */,
 				7D0F71821E63BE9200F27BFD /* LampViewController.m */,
+				3446F8701E6910BB0036AE1C /* LampOthViewController.h */,
+				3446F8711E6910BB0036AE1C /* LampOthViewController.m */,
 			);
 			path = Lamp;
 			sourceTree = "<group>";
@@ -2842,6 +2847,7 @@
 				7D8BBB921E66A42A00CB4DD9 /* ZdFriendModel.m in Sources */,
 				7D2D583D1E49A5A30086A823 /* MainTabViewController.m in Sources */,
 				34FBE99B1E6410EF000E9A2B /* MeViewController.m in Sources */,
+				3446F8721E6910BB0036AE1C /* LampOthViewController.m in Sources */,
 				34A51E711E65264A005E8888 /* BindingViewController.m in Sources */,
 				7D557AF91E67BBBC0038A6DA /* SearchFriendViewController.m in Sources */,
 				34E164A61E050B18004A65AB /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
