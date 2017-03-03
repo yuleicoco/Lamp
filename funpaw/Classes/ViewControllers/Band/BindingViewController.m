@@ -156,12 +156,12 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     btnBind.layer.cornerRadius = 4;
     btnBind.backgroundColor = LIGHT_GRAYdcdc_COLOR;
     if ([AppUtil isBlankString:strTT]) {
-        [btnBind setTitle:NSLocalizedString(@"bindDevice",nil) forState:UIControlStateNormal];
+        [btnBind setTitle:@"绑定" forState:UIControlStateNormal];
         btnBind.backgroundColor = GRAY_COLOR;
         btnBind.enabled = FALSE;
     }else
     {
-        [btnBind setTitle:NSLocalizedString(@"solveaBinding",nil) forState:UIControlStateNormal];
+        [btnBind setTitle:@"解绑" forState:UIControlStateNormal];
         btnBind.enabled = TRUE;
         btnBind.backgroundColor = YELLOW_COLOR;
         
@@ -184,10 +184,10 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     
     UILabel * deveLB= [UILabel new];
     UILabel * incoLB =[UILabel new];
-    deveLB.text =NSLocalizedString(@"deviceNum",nil);
+    deveLB.text =@"设备号";
     deveLB.textColor = YELLOW_COLOR;
     deveLB.font = [UIFont systemFontOfSize:18];
-    incoLB.text =NSLocalizedString(@"deviceIncode",nil);
+    incoLB.text =@"接入码";
     incoLB.font =[UIFont systemFontOfSize:18];
     incoLB.textColor = YELLOW_COLOR;
     
@@ -218,12 +218,12 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
    
         if ([AppUtil isBlankString:strTT]) {
             
-            [self setNavTitle:NSLocalizedString(@"bindDevice",nil)];
+            [self setNavTitle:@"绑定设备"];
             deviceTF.text =@"";
             incodeTF.text =@"";
         }else{
             
-            [self setNavTitle:NSLocalizedString(@"solveaBinding",nil)];
+            [self setNavTitle:@"解绑"];
             deviceTF.text =strTT;
             incodeTF.text =@"123456";
         }
@@ -284,7 +284,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     }
     NSString *strNumber = deviceTF.text;
     if ([AppUtil isBlankString:strNumber]) {
-        [self showWarningTip:NSLocalizedString(@"Warring_bing",nil)];
+        [self showWarningTip:@"设备号不存在"];
         return;
     }
     if ([AppUtil isBlankString:strTT]) {
@@ -321,16 +321,16 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     }else
     {
         
-        UIAlertController * alert =[UIAlertController alertControllerWithTitle:NSLocalizedString(@"Warning", nil) message:NSLocalizedString(@"Warning_Message", nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController * alert =[UIAlertController alertControllerWithTitle:@"提示" message:@"确定解绑吗" preferredStyle:UIAlertControllerStyleAlert];
         
         
         
-        [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel_bind_n", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
             
         }]];
         
-        [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Sure_bind_n_", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
             [self jiechuband];
             
@@ -354,7 +354,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
         if ([model.retCode isEqualToString:@"0000"]) {
             // 解除绑定成功
             // 提示
-            [self showWarningTip:NSLocalizedString(@"Solve_Success", nil)];
+            [self showWarningTip:@"解绑成功"];
             
             [Defaluts removeObjectForKey:PREF_DEVICE_NUMBER];
             [AccountManager sharedAccountManager].loginModel.deviceno =nil;
@@ -381,7 +381,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
 {
     // hud
     hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = NSLocalizedString(@"Find_device", nil);
+    hud.labelText = @"正在搜索设备......";
     
     
     
@@ -443,7 +443,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
     if (timerEnd>35 && [AppUtil isBlankString:deviceTF.text]) {
         // 关闭服务
         [hud hide:TRUE];
-        [self showWarningTip:NSLocalizedString(@"find_noway", nil)];
+        [self showWarningTip:@"没有找到设备"];
         timerEnd=0;
     }
     

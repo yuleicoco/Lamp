@@ -297,7 +297,7 @@
     
     // tab
     SbgImage =[UIImageView new];
-    SbgImage.image =[UIImage imageNamed:@"egg_ prompt"];
+    SbgImage.image =[UIImage imageNamed:@"down_list"];
     SbgImage.userInteractionEnabled = YES;
     SbgImage.hidden = YES;
     [self.view addSubview:SbgImage];
@@ -312,25 +312,20 @@
     
     
     UIButton * wifiBtn =[UIButton new];
-    UIButton * foodBtn =[UIButton new];
     UIButton * bdinBtn =[UIButton new];
     // 三个buton
     
-    [wifiBtn setTitle:NSLocalizedString(@"tab_wifi", nil) forState:UIControlStateNormal];
+    [wifiBtn setTitle:@"WIFI" forState:UIControlStateNormal];
     [wifiBtn addTarget:self action:@selector(wifiTouch:) forControlEvents:UIControlEventTouchUpInside];
     
     
-    [foodBtn addTarget:self action:@selector(foodTouch:) forControlEvents:UIControlEventTouchUpInside];
-    [foodBtn setTitle:NSLocalizedString(@"tab_food", nil) forState:UIControlStateNormal];
-    
     [bdinBtn addTarget:self action:@selector(bdinTouch:) forControlEvents:UIControlEventTouchUpInside];
-    [bdinBtn setTitle:NSLocalizedString(@"solveaBinding", nil) forState:UIControlStateNormal];
+    [bdinBtn setTitle:@"绑定" forState:UIControlStateNormal];
     [SbgImage addSubview:wifiBtn];
-    [SbgImage addSubview:foodBtn];
     [SbgImage addSubview:bdinBtn];
     
     arrBtn =[NSArray array];
-    arrBtn =@[wifiBtn,foodBtn,bdinBtn];
+    arrBtn =@[wifiBtn,bdinBtn];
     
     [arrBtn mas_distributeViewsAlongAxis:MASAxisTypeVertical
                         withFixedSpacing:15
@@ -351,7 +346,7 @@
     [UIView animateWithDuration:0.5 animations:^{
         SbgImage.hidden = YES;
     } completion:^(BOOL finished) {
-        // [setImage removeFromSuperview];
+        
     }];
     [self dismissViewControllerAnimated:YES
                              completion:^{
@@ -531,6 +526,27 @@
         
     }
     
+    
+}
+
+// 设置按钮点击
+- (void)doRightButtonTouch
+{
+    
+    if (SbgImage.hidden) {
+        SbgImage.hidden = NO;
+        
+    }else
+    {
+        [UIView animateWithDuration:0.5 animations:^{
+            SbgImage.hidden = YES;
+            
+        } completion:^(BOOL finished) {
+            // [setImage removeFromSuperview];
+        }];
+        return;
+        
+    }
     
 }
 
