@@ -350,6 +350,12 @@
                 LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
                 [[AccountManager sharedAccountManager]login:loginmodel];
                 [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:model.retVal[@"deviceno"] forKey:@"logindeviceno"];
+                [defaults synchronize];
+                
+                
+                
             
             }else{
                   [[AppUtil appTopViewController]showHint:model.retDesc];

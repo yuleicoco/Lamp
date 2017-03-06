@@ -34,7 +34,7 @@
     [super setupView];
     self.view.backgroundColor = [UIColor whiteColor];
    // [self showBarButton:NAV_RIGHT title:@"发送" fontColor:[UIColor blackColor]];
-    [self showBarButton:NAV_RIGHT title:@"发送" fontColor:GREEN_COLOR hide:NO];
+    [self showBarButton:NAV_RIGHT title:@"发送" fontColor:[UIColor whiteColor] hide:NO];
     _topTextfield = [[UITextView alloc]initWithFrame:CGRectMake(20 * W_Wide_Zoom, 10 * W_Hight_Zoom, 335 * W_Wide_Zoom, 120 * W_Hight_Zoom)];
     _topTextfield.backgroundColor = LIGHT_GRAYdcdc_COLOR;
     _topTextfield.textAlignment = NSTextAlignmentLeft;
