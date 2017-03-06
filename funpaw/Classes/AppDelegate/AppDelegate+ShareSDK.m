@@ -12,7 +12,7 @@
 
 - (void)shareSDKApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [ShareSDK registerApp:@"85d250655d35" activePlatforms:
+    [ShareSDK registerApp:@"1bd5ed910da5a" activePlatforms:
      @[
        @(SSDKPlatformTypeWechat),
        @(SSDKPlatformTypeQQ)]onImport:^(SSDKPlatformType platformType) {

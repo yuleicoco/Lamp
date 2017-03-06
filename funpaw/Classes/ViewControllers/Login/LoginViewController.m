@@ -314,6 +314,10 @@
             if ([model.retCode isEqualToString:@"0000"]) {
                 
                 LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
+               NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:@"LoginSB" forKey:loginmodel.deviceno];
+                [defaults synchronize];
+                
                 [[AccountManager sharedAccountManager]login:loginmodel];
                 [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
                 

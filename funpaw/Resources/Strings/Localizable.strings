@@ -54,7 +54,7 @@
 "wif_name" ="Name/";
 "wif_code" ="Password/";
 "faile_net" ="配置失败。请重新设置网络";
-"falie_bl"= "配置失败 请确保你的蓝牙是否打开";
+"falie_bl"= "配置失败 确保设备进入配置模式";
 "ing_net" ="配置中...";
 
 // setting
