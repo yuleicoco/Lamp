@@ -15,12 +15,12 @@
 #import "WifiViewController.h"
 #import "BindingViewController.h"
 #import "ShareWork+Incall.h"
-#import "VisiterModel.h"
+
 
 @interface LampViewController ()
 {
     NSArray * arrBtn;
-    VisiterModel * modelOt;
+    
     
     
     
@@ -39,7 +39,7 @@
 @synthesize IkonwBtn;
 @synthesize strState;
 @synthesize DeviceNum;
-
+@synthesize modelOt;
 @synthesize Isother;
 
 - (void)viewDidLoad {
@@ -122,9 +122,9 @@
 
 - (void)OtherName:(NSNotification *)sn
 {
-     modelOt = sn.object;
-    self.OTdeviceNum = modelOt.retVal[@"deviceno"];
-    self.OTmid = modelOt.retVal[@"mid"];
+//     modelOt = sn.object;
+//    self.OTdeviceNum = modelOt.retVal[@"deviceno"];
+//    self.OTmid = modelOt.retVal[@"mid"];
 
     
     
@@ -193,9 +193,7 @@
     
     [[NSNotificationCenter defaultCenter]removeObserver:self name:kSephoneRegistrationUpdate object:nil];
    // [[NSNotificationCenter  defaultCenter]removeObserver:self name:@"otherNam" object:nil];
-    
-    self.OTmid = nil;
-    self.OTdeviceNum = nil;
+ 
     [moveTimer invalidate];
     
     //由于去掉了线，要还原导航栏样式
@@ -281,7 +279,7 @@
         
         make.size.mas_equalTo(CGSizeMake(90, 60));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.bottom.equalTo(self.view.mas_bottom).offset(-204);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-184);
         
         
         
@@ -295,10 +293,10 @@
     openVideoBtn =[UIButton new];
     [openVideoBtn setTitle:@"开启" forState:UIControlStateNormal];
     openVideoBtn.layer.cornerRadius =45;
+    openVideoBtn.hidden = YES;
     openVideoBtn.layer.borderWidth =1;
     [openVideoBtn addTarget:self action:@selector(OpenVideo:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:openVideoBtn];
-    
     [openVideoBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.height.width.equalTo(@90);
@@ -379,11 +377,11 @@
 - (void)checkDeviceStats
 {
     NSString * str;
-    if ([AppUtil isBlankString:self.OTdeviceNum]) {
+    if ([AppUtil isBlankString:modelOt.retVal[@"mid"]]) {
         str = Mid_S;
     }else
     {
-        str = self.OTmid;
+        str = modelOt.retVal[@"mid"];
     }
     [[ShareWork sharedManager]DeviceStats:str complete:^(BaseModel * model) {
         
@@ -411,8 +409,9 @@
 {
     // 设备不存在
     if ([strState isEqualToString:@"ds000"]) {
-        [bgImage setImage:[UIImage imageNamed:@"egg_nodevice"]];
+        [bgImage setImage:[UIImage imageNamed:@"egg_nodevcie"]];
         addBtn.hidden = NO;
+        openVideoBtn.hidden = YES;
         SbgImage.hidden = YES;
         [self showBarBtn:YES];
         return;
@@ -421,19 +420,21 @@
         //设备在线
         if ([strState isEqualToString:@"ds001"]) {
             [bgImage setImage:[UIImage imageNamed:@"online_e"]];
+            openVideoBtn.hidden = NO;
         }
         //离线
         if ([strState isEqualToString:@"ds002"]) {
-            
+            openVideoBtn.hidden = NO;
             [bgImage setImage:[UIImage imageNamed:@"offline_e"]];
         }
         // 通话中
         if ([strState isEqualToString:@"ds003"]) {
+            openVideoBtn.hidden = NO;
             [bgImage setImage:[UIImage imageNamed:@"busy_e"]];
         }
         //正在上传文件
         if ([strState isEqualToString:@"ds004"]) {
-            
+            openVideoBtn.hidden = NO;
             [bgImage setImage:[UIImage imageNamed:@"busy_e"]];
         }
         
@@ -446,7 +447,6 @@
 - (void)showBarBtn:(BOOL)hide
 {
     
-    
     if (Isother) {
         hide = YES;
     }else
@@ -457,14 +457,14 @@
     
     
     
-        openVideoBtn.hidden = NO;
+    
         if ([strState isEqualToString:@"ds001"]) {
 
              openVideoBtn.layer.borderColor =[UIColor whiteColor].CGColor;
             openVideoBtn.userInteractionEnabled = YES;
         }else{
              openVideoBtn.layer.borderColor = GRAY_COLOR.CGColor;
-            openVideoBtn.userInteractionEnabled = NO;
+             openVideoBtn.userInteractionEnabled = NO;
             
             
         }
@@ -513,7 +513,7 @@
     [dateformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *  locationString=[dateformatter stringFromDate:senddate];
     
-    if ([AppUtil isBlankString:self.OTdeviceNum]) {
+    if ([AppUtil isBlankString:modelOt.retVal[@"deviceno"]]) {
         if ([AppUtil isBlankString:Mid_D]) {
             [self sipCall:strDevicenume sipName:nil];
         }else
@@ -533,10 +533,10 @@
         
     }else
     {
-         [self sipCall:self.OTdeviceNum sipName:nil];
+         [self sipCall:modelOt.retVal[@"deviceno"] sipName:nil];
         
         if ([strState isEqualToString:@"ds001"]) {
-            [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"other" deviceno:self.OTdeviceNum belong:self.OTmid starttime:locationString complete:^(BaseModel * model) {
+            [[ShareWork sharedManager]DeviceUseMember:Mid_S object:@"other" deviceno:modelOt.retVal[@"deviceno"] belong:modelOt.retVal[@"mid"] starttime:locationString complete:^(BaseModel * model) {
                 [Defaluts setObject:model.content forKey:@"selfID"];
                 [Defaluts synchronize];
             }];

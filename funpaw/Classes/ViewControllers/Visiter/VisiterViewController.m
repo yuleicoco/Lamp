@@ -143,9 +143,11 @@ static NSString * cellId = @"douyidouCellid";
      LampViewController * VClamp =[[LampViewController alloc]init];
     if ([model.status isEqualToString:@"ds001"]) {
         [[ShareWork sharedManager]OtherMid:model.mid complete:^(BaseModel * model) {
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"otherNam" object: model];
+          
             VClamp.Isother = YES;
+            VClamp.modelOt = (VisiterModel *)model;
             [self.navigationController pushViewController:VClamp animated:NO];
+    
         }];
         
     }else if([model.status isEqualToString:@"ds002"]){

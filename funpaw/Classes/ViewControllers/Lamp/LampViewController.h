@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "VisiterModel.h"
 
 @interface LampViewController : BaseViewController
 
@@ -21,9 +22,8 @@
 @property(nonatomic,strong)NSString * DeviceNum;
 
 // other
-@property(nonatomic,strong)NSString * OTdeviceNum;
-@property(nonatomic,strong)NSString * OTmid;
 @property(nonatomic,assign)BOOL  Isother;
+@property(nonatomic,strong)VisiterModel * modelOt;
 
 
 
