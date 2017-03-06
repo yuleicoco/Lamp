@@ -34,6 +34,9 @@
                    fphone:(NSString *)fphone
                  complete:(void(^)(BaseModel *model))completeBlock;
 
+//查询会员个人详细资料
+-(void)queryByIdMemberWithMid:(NSString *)mid complete:(void (^)(BaseModel * model))completeBlock;
+
 
 
 

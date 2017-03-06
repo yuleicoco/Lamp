@@ -8,7 +8,7 @@
 
 #import "AppDelegate+Launcher.h"
 #import "PopStartView.h"
-//#import "AFHttpClient+Account.h"
+#import "ShareWork+Login.h"
 //#import "EggViewController.h"
 
 @interface AppDelegate()<GetScrollVDelegate>
@@ -102,16 +102,16 @@
     self.window.rootViewController = self.mainTabVC;
     
     [self.window makeKeyAndVisible];
-//    [self quermember];
+    [self quermember];
     
 }
 -(void)quermember{
-//    [[AFHttpClient sharedAFHttpClient]queryByIdMemberWithMid:[AccountManager sharedAccountManager].loginModel.mid complete:^(BaseModel *model) {
-//        LoginModel * loginModel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
-//        [[AccountManager sharedAccountManager]login:loginModel];
-//        
-//    }];
-//
+    [[ShareWork sharedManager]queryByIdMemberWithMid:[AccountManager sharedAccountManager].loginModel.mid complete:^(BaseModel *model) {
+        LoginModel * loginModel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
+        [[AccountManager sharedAccountManager]login:loginModel];
+        
+    }];
+
 
 }
 

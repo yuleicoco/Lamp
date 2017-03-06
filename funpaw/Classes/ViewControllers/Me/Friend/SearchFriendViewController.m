@@ -102,9 +102,11 @@ static NSString * cellId = @"friendSearchCellid";
 -(void)loadDataSourceWithPage:(int)page{
     if ([AppUtil isBlankString:_topTextfield.text]) {
         [[AppUtil appTopViewController] showHint:@"请输入查找内容"];
+        self.tableView.hidden = YES;
+        [self.tableView reloadData];
+        [self handleEndRefresh];
         return;
     }
-    
     
     [[ShareWork sharedManager]searchPeopleWithMid:[AccountManager sharedAccountManager].loginModel.mid condition:_topTextfield.text page:page size:REQUEST_PAGE_SIZE complete:^(BaseModel *model) {
         if (model.list.count == 0) {
