@@ -261,10 +261,15 @@ static NSString * cellId = @"InformationCellId";
 //    }];
     [[ShareWork sharedManager]modifyHeadportraitWithMid:Mid_S picture:_picstr complete:^(BaseModel *model) {
         [self hideHud];
-        [[AppUtil appTopViewController] showHint:model.retDesc];
-        LoginModel * loginModel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
-        [[AccountManager sharedAccountManager]login:loginModel];
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"meshuashua" object:nil];
+        if ([model.retCode isEqualToString:@"0000"]) {
+            [[AppUtil appTopViewController] showHint:@"修改成功"];
+            LoginModel * loginModel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
+            [[AccountManager sharedAccountManager]login:loginModel];
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"meshuashua" object:nil];
+        }else{
+            [[AppUtil appTopViewController] showHint:model.retDesc];
+        }
+      
         
     }];
     
