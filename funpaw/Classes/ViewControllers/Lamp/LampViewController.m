@@ -311,7 +311,7 @@
     UIButton * bdinBtn =[UIButton new];
     // 三个buton
     
-    [wifiBtn setTitle:@"设置wifi" forState:UIControlStateNormal];
+    [wifiBtn setTitle:@"WIFI设置" forState:UIControlStateNormal];
     [wifiBtn addTarget:self action:@selector(wifiTouch:) forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -384,6 +384,7 @@
                 Mid_D =model.retVal[@"deviceno"];
                 Mid_T = model.retVal[@"termid"];
                 DeviceNum =model.retVal[@"deviceno"];
+
             }
         }// 没有设备
         else if ([model.totalrecords isEqualToString:@"0"])
@@ -408,8 +409,6 @@
         return;
     }else
     {
-        
-        IkonwBtn.hidden = YES;
         //设备在线
         if ([strState isEqualToString:@"ds001"]) {
             [bgImage setImage:[UIImage imageNamed:@"online_e"]];
