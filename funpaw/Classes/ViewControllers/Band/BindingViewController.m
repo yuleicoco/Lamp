@@ -35,6 +35,8 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
 @interface BindingViewController ()
 {
     CBPeripheralManager *peripheralManager;
+    CBPeripheral * peripheral;
+    
     int serviceNum;   // 添加成功的service数量
     BOOL isAccecptOk; // 是否接收结果成功
     BOOL isOpenPerOK; // 判断是否从机开始广播
@@ -632,6 +634,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
         NSData *data = request.characteristic.value;
         [request setValue:data];
         [peripheralManager respondToRequest:request withResult:CBATTErrorSuccess];
+        
     }
     // 无读权限，拒绝之。
     else {

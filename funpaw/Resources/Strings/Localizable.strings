@@ -36,7 +36,7 @@
 "INFO_ReachableViaWWAN"= "当前非WIFI环境";
 "bindDevice" = "Binding";
 "solveaBinding" ="Unbind";
-"deviceNum" ="设备号:";
+"deviceNum" ="  设备号:";
 "deviceIncode"="AccessCode/";
 "Warring_bing" ="The device number does not exist";
 "Success_bing" ="Bind Success";
