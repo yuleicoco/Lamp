@@ -20,11 +20,7 @@
 @interface LampViewController ()
 {
     NSArray * arrBtn;
-    
-    
-    
-    
-    
+
 }
 
 @end
@@ -90,7 +86,7 @@
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callUpdate:) name:kSephoneCallUpdate object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registrationUpdate:) name:kSephoneRegistrationUpdate object:nil];
-    [[NSNotificationCenter  defaultCenter]addObserver:self selector:@selector(OtherName:) name:@"otherNam" object:nil];
+   
     
     //去掉导航栏下面的线
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -119,17 +115,6 @@
 }
 
 
-
-- (void)OtherName:(NSNotification *)sn
-{
-//     modelOt = sn.object;
-//    self.OTdeviceNum = modelOt.retVal[@"deviceno"];
-//    self.OTmid = modelOt.retVal[@"mid"];
-
-    
-    
-    
-}
 /**
  通话状态处理
  
@@ -207,7 +192,7 @@
 - (void)setupData
 {
     [super setupData];
-    [self setNavTitle:@"Lamp"];
+    [self setNavTitle:@"设备"];
     // 获取sip地址
     [[ShareWork sharedManager]service:nil complete:^(BaseModel *model) {
         if ([model.retCode isEqualToString:@"0000"]) {
@@ -242,6 +227,7 @@
     [IkonwBtn setImage:[UIImage imageNamed:@"konw"] forState:UIControlStateNormal];
     [IkonwBtn addTarget:self action:@selector(disparrBtn:) forControlEvents:UIControlEventTouchUpInside];
     IkonwBtn.hidden = YES;
+    
     
     [Guideview addSubview:IkonwBtn];
     
@@ -369,6 +355,7 @@
 - (void)disparrBtn:(UIButton *)sender
 {
     bgImage.hidden = NO;
+    IkonwBtn.hidden = YES;
     [sender removeFromSuperview];
     [Guideview removeFromSuperview];
 }

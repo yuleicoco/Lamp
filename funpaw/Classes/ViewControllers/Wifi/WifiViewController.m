@@ -344,7 +344,6 @@
             // 蓝牙开启时，启动sego配置服务。
         case CBPeripheralManagerStatePoweredOn:
             NSLog(@"Bluetooth powered on");
-            
             hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.labelText = NSLocalizedString(@"ing_net", nil);
             [self setUpBleDevice];
@@ -353,9 +352,10 @@
             
             // 蓝牙关闭时，提示用户打开蓝牙。
         case CBPeripheralManagerStatePoweredOff:
-            NSLog(@"Bluetooth powered off");
-            
+        
             [self showNeedBluetoothWaringDialog];
+            [self stopSever];
+            
             break;
             
         default:
