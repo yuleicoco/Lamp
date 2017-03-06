@@ -623,7 +623,7 @@
     
         }else{
         btnBind.enabled = TRUE;
-        btnBind.backgroundColor = YELLOW_COLOR;
+        btnBind.backgroundColor = SKY_bLUE_COLOR;
         }
     
 }

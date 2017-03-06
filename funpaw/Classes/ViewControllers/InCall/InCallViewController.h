@@ -20,7 +20,6 @@
 @property (nonatomic,strong)UIActivityIndicatorView * flowUI;
 
 // 5个button背景
-@property (nonatomic,strong)UIImageView * FiveView;
 @property (nonatomic,strong)UIImageView * Lcoin;
 @property (nonatomic,strong)UIButton *Scoin;
 @property (nonatomic,strong)UIImageView * pointTouch;

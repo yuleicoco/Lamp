@@ -23,6 +23,8 @@
 // other
 @property(nonatomic,strong)NSString * OTdeviceNum;
 @property(nonatomic,strong)NSString * OTmid;
+@property(nonatomic,assign)BOOL  Isother;
+
 
 
 @end

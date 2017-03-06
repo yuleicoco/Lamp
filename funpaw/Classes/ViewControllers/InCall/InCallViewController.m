@@ -77,7 +77,6 @@
 @synthesize videoView;
 @synthesize btnBack;
 @synthesize flowUI;
-@synthesize FiveView;
 @synthesize pointTouch;
 @synthesize timeLable;
 @synthesize pullBtn;
@@ -201,11 +200,7 @@
     [self.view addSubview:btnBack];
     
     
-    // 时间
-    timeLable =[UILabel new];
-    timeLable.textColor =[UIColor whiteColor];
-    timeLable.font =[UIFont systemFontOfSize:21];
-    [self.view addSubview:timeLable];
+
     
 
     
@@ -222,11 +217,7 @@
     
     
     
-    
-    // 5个按钮背景
-    FiveView =[UIImageView new];
-    FiveView.userInteractionEnabled = YES;
-    [self.view addSubview:FiveView];
+
     
     
     // 方向键
@@ -262,45 +253,6 @@
         
         
     }
-    
-
-    // 推拉
-    pullBtn =[UIButton new];
-    pullBtn.userInteractionEnabled = YES;
-    [pullBtn setImage:[UIImage imageNamed:@"take_off"] forState:UIControlStateNormal];
-    [pullBtn addTarget:self action:@selector(pullBtn:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:pullBtn];
-    
-    pullSbtn =[UIButton new];
-    [pullSbtn setImage:[UIImage imageNamed:@"take_on"] forState:UIControlStateNormal];
-    pullSbtn.hidden = YES;
-    [pullSbtn addTarget:self action:@selector(pullBtnS:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:pullSbtn];
-    
-    
-    
-    
-    
-    // 5个按钮
-    UIButton * lightbtn =[UIButton new];
-    UIButton * foodbtn =[UIButton new];
-    UIButton * rollbtn =[UIButton new];
-    UIButton * takephoto =[UIButton new];
-    
-    
-    [lightbtn addTarget:self action:@selector(LightClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [foodbtn addTarget:self action:@selector(RollClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [rollbtn addTarget:self action:@selector(FoodClick:) forControlEvents:UIControlEventTouchUpInside];
-    [takephoto addTarget:self action:@selector(PhotoClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    btnList =@[lightbtn,foodbtn,rollbtn,takephoto];
-    for (NSInteger i =0; i<4; i++) {
-        
-        [FiveView addSubview:btnList[i]];
-    }
-    
     
     [self HviewUpdateView];
     
@@ -440,63 +392,28 @@
     
     
     
-    
-    [timeLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.right.equalTo(self.view.mas_right).offset(0);
-        make.top.equalTo(self.view.mas_top).offset(0);
-        make.size.mas_equalTo(CGSizeMake(65, 40));
-        
-    }];
+//    
+//    [timeLable mas_makeConstraints:^(MASConstraintMaker *make) {
+//        
+//        make.right.equalTo(self.view.mas_right).offset(0);
+//        make.top.equalTo(self.view.mas_top).offset(0);
+//        make.size.mas_equalTo(CGSizeMake(65, 40));
+//        
+//    }];
     
 
-    FiveView.image =[UIImage imageNamed:@"halfAp"];
-    FiveView.backgroundColor =[UIColor clearColor];
-    FiveView.layer.borderWidth =0;
+
+//    
+//    // 5个按钮
+//    NSArray * imageListS=@[@"v_light",@"v_rool",@"v_feed",@"v_photo"];
+//    NSArray * imageListN=@[@"v_light_n",@"v_rool_n",@"v_feed_n",@"v_photo_n"];
+//    for (NSInteger i =0; i<4; i++) {
+//        [btnList[i] setImage:[UIImage imageNamed:imageListN[i]] forState:UIControlStateNormal];
+//        [btnList[i] setImage:[UIImage imageNamed:imageListS[i]] forState:UIControlStateSelected];
+//    }
+//    
+//    
     
-    // 5个按钮背景
-    [FiveView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.width.mas_equalTo(83);
-        make.top.equalTo(self.view.mas_top).offset(40);
-        make.bottom.mas_offset(-40);
-        make.right.equalTo(self.view.mas_right);
-        
-        
-        
-    }];
-    
-    // 5个按钮
-    NSArray * imageListS=@[@"v_light",@"v_rool",@"v_feed",@"v_photo"];
-    NSArray * imageListN=@[@"v_light_n",@"v_rool_n",@"v_feed_n",@"v_photo_n"];
-    for (NSInteger i =0; i<4; i++) {
-        [btnList[i] setImage:[UIImage imageNamed:imageListN[i]] forState:UIControlStateNormal];
-        [btnList[i] setImage:[UIImage imageNamed:imageListS[i]] forState:UIControlStateSelected];
-    }
-    
-    
-    
-    
-    
-    
-    // 推拉
-    [pullBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.left.equalTo(FiveView.mas_left).offset(6);
-        make.size.mas_equalTo(CGSizeMake(15, 22));
-        make.bottom.equalTo(self.view.mas_bottom).offset(-184);
-        
-        
-    }];
-    
-    [pullSbtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.right.equalTo(self.view.mas_right).offset(0);
-        make.size.mas_equalTo(CGSizeMake(15, 22));
-        make.bottom.equalTo(self.view.mas_bottom).offset(-184);
-        
-        
-    }];
     
     
     
@@ -510,34 +427,6 @@
         [DriArr[i] setImage:[UIImage imageNamed:imageList[i]] forState:UIControlStateNormal];
         
     }
-    
-    
-    [btnList mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(FiveView.mas_left).offset(28);
-        make.right.equalTo(self.view.mas_right).offset(-13);
-        make.height.mas_equalTo(50);
-        
-        
-        
-        
-    }];
-    
-    /**
-     *  axisType         轴线方向
-     *  fixedSpacing     间隔大小
-     *  fixedItemLength  每个控件的固定长度/宽度
-     *  leadSpacing      头部间隔
-     *  tailSpacing      尾部间隔
-     *
-     */
-    
-    // 50 22 22
-    
-    [btnList mas_distributeViewsAlongAxis:MASAxisTypeVertical
-                      withFixedItemLength:50 leadSpacing:20 tailSpacing:20];
-    
-    
-    
     
     
     // 大圆小圆
@@ -684,32 +573,6 @@
 #pragma mark  buttonMethod _________________各点击事件__________________________
 
 
-//弹出 收回
-
-- (void)pullBtn:(UIButton *)sender
-{
-
-        // 移动view
-        FiveView.hidden = YES;
-        pullBtn.hidden = YES;
-        pullSbtn.hidden = NO;
-    
-}
-
-- (void)pullBtnS:(UIButton *)sender
-{
-    
-    // 移动view
-    FiveView.hidden = NO;
-    pullBtn.hidden = NO;
-    pullSbtn.hidden = YES;
-    
-}
-
-
-
-
-
 
 - (void)applicationWillResignActive:(NSNotification *)notification
 
@@ -799,85 +662,6 @@
     sephone_core_send_user_message([SephoneManager getLc], message);
     
 }
-
-
-
-// 除了开灯其他的都延迟3秒
-
-//喂食
-- (void)FoodClick:(UIButton *)sender {
-    
-    sender.selected = !sender.selected;
-    [[ShareWork sharedManager]feed:deviceoSelf ter:termidSelf complete:^(BaseModel *model) {
-         sender.selected = !sender.selected;
-        
-    }];
-    
-
-    
-    
-}
-
-
-
-
-/**
- *  开灯
- *
- *  @param sender  on  off
- */
-- (void)LightClick:(UIButton *)sender {
-    
-    sender.selected = !sender.selected;
-    NSString * str1;
-    doubleTime++;
-    if (doubleTime%2 ==0) {
-        str1 = @"off";
-    }else
-    {
-        
-        str1 =@"on";
-    }
-   [[ShareWork sharedManager]light:deviceoSelf ter:termidSelf action:str1 complete:^(BaseModel *model) {
-       
-   }];
-    
-    
-    
-}
-
-// 零食
-- (void)RollClick:(UIButton *)sender {
-    
-    sender.selected = !sender.selected;
-    NSString * selfID =[Defaluts objectForKey:@"selfID"];
-    [[ShareWork sharedManager]roll:deviceoSelf ter:termidSelf num:selfID complete:^(BaseModel *model) {
-        sender.selected = !sender.selected;
-    }];
-    
-
-    
-    
-    
-}
-
-//抓拍
-- (void)PhotoClick:(UIButton *)sender {
-    
-    sender.selected = !sender.selected;
-    
-
-    
-   [[ShareWork sharedManager]photo:deviceoSelf ter:termidSelf complete:^(BaseModel *model) {
-       
-       sender.selected = !sender.selected;
-
-   }];
-    
-
-    
-}
-
 
 //4上 3下 2左 1右
 
@@ -1037,13 +821,13 @@
         int duration = sephone_call_get_duration(calltime);
         
         //NSLog(@"=========时间======%02i:%02i",(duration/60), (duration%60));
-        timeLable.text =[NSString stringWithFormat:@"%02i:%02i", (duration/60), (duration%60), nil];
+      //  timeLable.text =[NSString stringWithFormat:@"%02i:%02i", (duration/60), (duration%60), nil];
         
         if (duration >= 300) {
             
-            [SephoneManager terminateCurrentCallOrConference];
-            NSLog(@"五分钟到时视频流自动断开");
-            [self videoEnd];
+//            [SephoneManager terminateCurrentCallOrConference];
+//            NSLog(@"五分钟到时视频流自动断开");
+//            [self videoEnd];
             
         }
         
