@@ -404,6 +404,8 @@
         return;
     }else
     {
+        
+        IkonwBtn.hidden = YES;
         //设备在线
         if ([strState isEqualToString:@"ds001"]) {
             [bgImage setImage:[UIImage imageNamed:@"online_e"]];
