@@ -78,7 +78,7 @@
     }];
     
     UILabel * passwordLabel = [[UILabel alloc]init];
-    passwordLabel.text = @"新密码";
+    passwordLabel.text = @"新密码:";
     passwordLabel.textColor = [UIColor blackColor];
     passwordLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:passwordLabel];

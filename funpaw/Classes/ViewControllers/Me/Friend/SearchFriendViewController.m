@@ -177,6 +177,11 @@ static NSString * cellId = @"friendSearchCellid";
     if ([model.isfriend isEqualToString:@""]) {
         cell.rightBtn.hidden = NO;
         cell.rightLabe.hidden = YES;
+        cell.rightBtn.backgroundColor = SKY_bLUE_COLOR;
+        cell.rightBtn.userInteractionEnabled = YES;
+        [cell.rightBtn setTitle:@"添加" forState:UIControlStateNormal];
+        cell.rightBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [cell.rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }else{
         cell.rightBtn.hidden = YES;
         cell.rightLabe.hidden = NO;
@@ -203,9 +208,9 @@ static NSString * cellId = @"friendSearchCellid";
         if (model) {
             sender.backgroundColor = [UIColor clearColor];
             sender.titleLabel.font = [UIFont systemFontOfSize:13];
-            
             [sender setTitle:@"等待验证"forState:UIControlStateNormal];
             [sender setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            sender.userInteractionEnabled = NO;
         }
 
     }];

@@ -106,6 +106,7 @@
         [self showHudInView:self.view hint:@"提交中..."];
         isClick = NO;
         [[ShareWork sharedManager]addFeedbackWithMid:[AccountManager sharedAccountManager].loginModel.mid fconcent:_topTextfield.text fphone:_downTextfield.text complete:^(BaseModel *model) {
+              [[AppUtil appTopViewController] showHint:model.retDesc];
             if (model) {
                 [self hideHud];
                 [self.navigationController popViewControllerAnimated:YES];

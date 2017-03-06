@@ -100,7 +100,7 @@
     }];
     
     UILabel * verificationLabel = [[UILabel alloc]init];
-    verificationLabel.text =@"验证码";
+    verificationLabel.text =@"验证码:";
     verificationLabel.textColor = [UIColor blackColor];
     verificationLabel.font = [UIFont systemFontOfSize:18];
     [verificationView addSubview:verificationLabel];
@@ -153,7 +153,7 @@
     
     
     UILabel * passwordLabel = [[UILabel alloc]init];
-    passwordLabel.text = @"密码";
+    passwordLabel.text = @"密码:";
     passwordLabel.textColor = [UIColor blackColor];
     passwordLabel.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:passwordLabel];
@@ -373,7 +373,7 @@
                 _vercationBtn.titleLabel.font = [UIFont systemFontOfSize:18  ];
                 [_vercationBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
                 _vercationBtn.userInteractionEnabled = YES;
-                _vercationBtn.backgroundColor = GREEN_COLOR;
+                _vercationBtn.backgroundColor = SKY_bLUE_COLOR;
                 [_vercationBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             });
         }else{

@@ -94,9 +94,6 @@
     
     
     
-    
-    
-    
     _headBtn = [[UIButton alloc]init];
     _headBtn.backgroundColor = [UIColor clearColor];
     [_headBtn addTarget:self action:@selector(headbuttonTouch) forControlEvents:UIControlEventTouchUpInside];
@@ -240,6 +237,22 @@
         
     }];
     
+    UIImageView * rightjian1 = [[UIImageView alloc]init];
+    rightjian1.image = [UIImage imageNamed:@"rightjian.png"];
+    [self.view addSubview:rightjian1];
+    [rightjian1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(rightjian1.superview).offset(-13);
+        make.top.equalTo(firstView.mas_top).offset(21);
+        make.bottom.equalTo(centerLabel.mas_top).offset(-21);
+        make.width.mas_equalTo(9);
+       // make.height.mas_equalTo(10);
+        
+        
+        
+    }];
+    
+
+    
     _redBtn = [[UIButton alloc]init];
     _redBtn.backgroundColor = [UIColor redColor];
     _redBtn.layer.cornerRadius = 10;
@@ -247,7 +260,7 @@
      _redBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:_redBtn];
     [_redBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(_redBtn.superview).offset(-16);
+        make.right.equalTo(rightjian1.mas_left).offset(-16);
         make.centerY.equalTo(doumaImage.mas_centerY);
         make.width.mas_equalTo(20);
         make.height.mas_equalTo(20);
@@ -294,6 +307,20 @@
         make.left.equalTo(quanxianImage.mas_right).offset(16);
         make.centerY.equalTo(quanxianImage.mas_centerY);
     }];
+    
+    UIImageView * rightjian2 = [[UIImageView alloc]init];
+    rightjian2.image = [UIImage imageNamed:@"rightjian.png"];
+    [self.view addSubview:rightjian2];
+    [rightjian2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(rightjian2.superview).offset(-13);
+        make.top.equalTo(centerLabel.mas_top).offset(21);
+        make.bottom.equalTo(firstView.mas_bottom).offset(-21);
+        make.width.mas_equalTo(9);
+        // make.height.mas_equalTo(10);
+        
+    }];
+    
+
     UIButton * quanxianBtn = [[UIButton alloc]init];
     quanxianBtn.backgroundColor = [UIColor clearColor];
     [quanxianBtn addTarget:self action:@selector(quanxianbuttonTouch) forControlEvents:UIControlEventTouchUpInside];
@@ -305,6 +332,8 @@
         make.right.equalTo(doumaBtn.superview);
     }];
     
+    
+
     //第二坨
     UIView * secoendView = [[UIView alloc]init];
     secoendView.backgroundColor = [UIColor whiteColor];
@@ -349,6 +378,23 @@
         make.centerY.equalTo(exchangeImage.mas_centerY);
     }];
     
+    UIImageView * rightjian3 = [[UIImageView alloc]init];
+    rightjian3.image = [UIImage imageNamed:@"rightjian.png"];
+    [self.view addSubview:rightjian3];
+    [rightjian3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(rightjian3.superview).offset(-13);
+        make.top.equalTo(secoendView.mas_top).offset(21);
+        make.bottom.equalTo(centerlabel2.mas_top).offset(-21);
+        make.width.mas_equalTo(9);
+        // make.height.mas_equalTo(10);
+        
+        
+        
+    }];
+    
+    
+    
+    
     UIButton * exchangBtn = [[UIButton alloc]init];
     exchangBtn.backgroundColor = [UIColor clearColor];
     [exchangBtn addTarget:self action:@selector(exchangebuttonTouch) forControlEvents:UIControlEventTouchUpInside];
@@ -380,6 +426,20 @@
         make.centerY.equalTo(aboutImage.mas_centerY);
         
     }];
+    
+    UIImageView * rightjian4 = [[UIImageView alloc]init];
+    rightjian4.image = [UIImage imageNamed:@"rightjian.png"];
+    [self.view addSubview:rightjian4];
+    [rightjian4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(rightjian4.superview).offset(-13);
+        make.top.equalTo(centerlabel2.mas_top).offset(21);
+        make.bottom.equalTo(secoendView.mas_bottom).offset(-21);
+        make.width.mas_equalTo(9);
+        // make.height.mas_equalTo(10);
+        
+    }];
+    
+    
     
     
     

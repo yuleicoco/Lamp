@@ -333,7 +333,7 @@
                 _vercationBtn.titleLabel.font = [UIFont systemFontOfSize:18  ];
                 [_vercationBtn setTitle:@"获取验证码"forState:UIControlStateNormal];
                 _vercationBtn.userInteractionEnabled = YES;
-                _vercationBtn.backgroundColor = GREEN_COLOR;
+                _vercationBtn.backgroundColor = SKY_bLUE_COLOR;
                 [_vercationBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             });
         }else{

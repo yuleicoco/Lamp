@@ -536,7 +536,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
  *  显示打开蓝牙提示窗
  */
 - (void)showNeedBluetoothWaringDialog {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Warning", nil) message:NSLocalizedString(@"no_turnon", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"I_kown", nil) otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"message:@"请打开你的蓝牙" delegate:self cancelButtonTitle:@"知道了"otherButtonTitles:nil, nil];
     [alert show];
 }
 
@@ -738,7 +738,7 @@ NSString *const SEGOEGG_PREFIX = @"segoegg";
  *  使能绑定按钮
  */
 - (void)enableBindButton {
-    btnBind.backgroundColor = YELLOW_COLOR;
+    btnBind.backgroundColor = SKY_bLUE_COLOR;
     btnBind.enabled = TRUE;
     
 }
