@@ -211,7 +211,7 @@
     
     // 指导界面
     Guideview =[UIImageView new];
-    Guideview.image =[UIImage imageNamed:@"egg_Waring"];
+    Guideview.image =[UIImage imageNamed:@"egg_guide"];
     Guideview.userInteractionEnabled = YES;
     Guideview.hidden = YES;
     

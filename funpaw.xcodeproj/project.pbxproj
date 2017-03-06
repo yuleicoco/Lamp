@@ -16,6 +16,7 @@
 		3420B39E1E65689200AE228F /* online_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39C1E65689200AE228F /* online_e.png */; };
 		3420B3A01E65689B00AE228F /* busy_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39F1E65689B00AE228F /* busy_e.png */; };
 		3420B3A21E657EBF00AE228F /* English_tips.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B3A11E657EBF00AE228F /* English_tips.png */; };
+		34263E1C1E6D4A6900338F4B /* egg_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 34263E1B1E6D4A6900338F4B /* egg_guide.png */; };
 		343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50821E54473B002C2AD1 /* egg_device_n@2x.png */; };
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
@@ -308,6 +309,7 @@
 		3420B39C1E65689200AE228F /* online_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online_e.png; sourceTree = "<group>"; };
 		3420B39F1E65689B00AE228F /* busy_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busy_e.png; sourceTree = "<group>"; };
 		3420B3A11E657EBF00AE228F /* English_tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = English_tips.png; sourceTree = "<group>"; };
+		34263E1B1E6D4A6900338F4B /* egg_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg_guide.png; sourceTree = "<group>"; };
 		343E50821E54473B002C2AD1 /* egg_device_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device_n@2x.png"; sourceTree = "<group>"; };
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
@@ -1163,6 +1165,7 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
+				34263E1B1E6D4A6900338F4B /* egg_guide.png */,
 				7D4046991E6CFA4D008D1E04 /* yin1.jpg */,
 				7D40469A1E6CFA4D008D1E04 /* yin2.jpg */,
 				7D40469B1E6CFA4D008D1E04 /* yin3.jpg */,
@@ -2749,6 +2752,7 @@
 				7D8BBBB01E66AA0300CB4DD9 /* pickk.png in Resources */,
 				34CAC2311E5BEA1D00249BA9 /* hold_off.png in Resources */,
 				34CAC24D1E5BEA1D00249BA9 /* rock.wav in Resources */,
+				34263E1C1E6D4A6900338F4B /* egg_guide.png in Resources */,
 				7D2C4A921E696E5D002E40E0 /* visitermeidian@2x.png in Resources */,
 				34C102EF1E52D85500FFB241 /* Assets.xcassets in Resources */,
 				34E166521E0520F1004A65AB /* 退出.png in Resources */,
