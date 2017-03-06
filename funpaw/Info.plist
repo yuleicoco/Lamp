@@ -81,13 +81,13 @@
 		<true/>
 	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Please let me use the bluetooth</string>
+	<string>打开蓝牙</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Please let me use the camera</string>
+	<string>App需要您的同意，才能访问相机</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Please let me use the microphone</string>
+	<string>App需要您的同意，才能访问麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please let me use the photo</string>
+	<string>App需要您的同意，才能访问相册</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

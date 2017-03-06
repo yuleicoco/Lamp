@@ -23,15 +23,15 @@
         _scrollView.backgroundColor = [UIColor whiteColor];
         [self addSubview:_scrollView];
 //        
-//        _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2, [UIScreen mainScreen].bounds.size.height-90, 100, 60)];
-//        [self addSubview:_pageControl];
+        _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2, [UIScreen mainScreen].bounds.size.height-90, 100, 60)];
+        [self addSubview:_pageControl];
         
-        _PicArray = @[@"guide1.jpg",@"guide2.jpg",@"guide3.jpg"];
-//        _pageControl.numberOfPages = _PicArray.count;
-//        _pageControl.currentPage = 0;
-//        _pageControl.pageIndicatorTintColor = [[UIColor whiteColor] colorWithAlphaComponent: 0.3f];
-//        _pageControl.currentPageIndicatorTintColor = GREEN_COLOR;
-//        _pageControl.userInteractionEnabled = YES;
+        _PicArray = @[@"yin1.jpg",@"yin2.jpg",@"yin3.jpg"];
+        _pageControl.numberOfPages = _PicArray.count;
+        _pageControl.currentPage = 0;
+        _pageControl.pageIndicatorTintColor = [[UIColor whiteColor] colorWithAlphaComponent: 0.3f];
+        _pageControl.currentPageIndicatorTintColor = GREEN_COLOR;
+        _pageControl.userInteractionEnabled = NO;
 
         
         for(int i=0;i<_PicArray.count;i++){
@@ -55,7 +55,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     //用来计算pageView该显示第几个 scrollView.contentOffset.x
-   // _pageControl.currentPage = scrollView.contentOffset.x/_scrollView.frame.size.width;
+    _pageControl.currentPage = scrollView.contentOffset.x/_scrollView.frame.size.width;
     self.page++;
     if (self.page >2) {
         if (self.delegate) {
