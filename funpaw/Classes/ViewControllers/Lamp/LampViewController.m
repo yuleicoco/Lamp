@@ -363,6 +363,9 @@
 // 检查设备状态
 - (void)checkDeviceStats
 {
+    
+    
+    
     NSString * str;
     if ([AppUtil isBlankString:modelOt.retVal[@"mid"]]) {
         str = Mid_S;
@@ -370,6 +373,7 @@
     {
         str = modelOt.retVal[@"mid"];
     }
+    
     [[ShareWork sharedManager]DeviceStats:str complete:^(BaseModel * model) {
         
         if ([model.retCode isEqualToString:@"0000"]) {
@@ -497,6 +501,7 @@
 - (void)OpenVideo:(UIButton *)sender
 {
     NSString * strDevicenume =[Defaluts objectForKey:PREF_DEVICE_NUMBER];
+    
     NSDate *  senddate=[NSDate date];
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];

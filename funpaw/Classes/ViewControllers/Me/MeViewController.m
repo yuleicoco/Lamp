@@ -484,7 +484,7 @@
 -(void)quanxianbuttonTouch{
    // FuckLog(@"权限设置");
     NSString * str  =  [Defaluts objectForKey:@"deviceNumber"];
-    NSString * str1  = [AccountManager sharedAccountManager].loginModel.deviceno;
+    NSString * str1  = [Defaluts objectForKey:@"LoginSB"];
     if ([AppUtil isBlankString:str] && [AppUtil isBlankString:str1]) {
         [[AppUtil appTopViewController]showHint:@"您还未绑定设备"];
 
@@ -493,6 +493,8 @@
     [self.navigationController pushViewController:perVc animated:NO];
     
     }
+    
+    
 
 }
 

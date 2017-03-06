@@ -147,7 +147,6 @@ static NSString * cellId = @"douyidouCellid";
             VClamp.Isother = YES;
             VClamp.modelOt = (VisiterModel *)model;
             [self.navigationController pushViewController:VClamp animated:NO];
-    
         }];
         
     }else if([model.status isEqualToString:@"ds002"]){
