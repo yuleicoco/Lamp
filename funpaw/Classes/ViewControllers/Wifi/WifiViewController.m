@@ -165,7 +165,7 @@
     
     // 27 MAS_LEFT
     [deveLB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(devNum).with.offset(12);
+        make.left.equalTo(devNum).with.offset(13);
         make.centerY.equalTo(devNum.mas_centerY);
         
         
