@@ -16,7 +16,6 @@
 		3420B39E1E65689200AE228F /* online_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39C1E65689200AE228F /* online_e.png */; };
 		3420B3A01E65689B00AE228F /* busy_e.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B39F1E65689B00AE228F /* busy_e.png */; };
 		3420B3A21E657EBF00AE228F /* English_tips.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420B3A11E657EBF00AE228F /* English_tips.png */; };
-		34263E1C1E6D4A6900338F4B /* egg_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 34263E1B1E6D4A6900338F4B /* egg_guide.png */; };
 		343E50861E54473B002C2AD1 /* egg_device_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50821E54473B002C2AD1 /* egg_device_n@2x.png */; };
 		343E50871E54473B002C2AD1 /* egg_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50831E54473B002C2AD1 /* egg_device@2x.png */; };
 		343E50881E54473B002C2AD1 /* egg_more_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 343E50841E54473B002C2AD1 /* egg_more_s@2x.png */; };
@@ -37,6 +36,7 @@
 		3496F9CE1E04DF8E00744A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3496F9CC1E04DF8E00744A1E /* Main.storyboard */; };
 		3496F9D11E04DF8E00744A1E /* funpaw.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3496F9CF1E04DF8E00744A1E /* funpaw.xcdatamodeld */; };
 		3496F9D61E04DF8E00744A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3496F9D41E04DF8E00744A1E /* LaunchScreen.storyboard */; };
+		349FB0B21E6FDA1C00DFEF09 /* egg_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 349FB0B11E6FDA1C00DFEF09 /* egg_guide.png */; };
 		34A51E5F1E651958005E8888 /* CompleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E5C1E651958005E8888 /* CompleViewController.m */; };
 		34A51E601E651958005E8888 /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E5E1E651958005E8888 /* RegiestViewController.m */; };
 		34A51E631E651DD1005E8888 /* ShareWork+GetSipIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A51E621E651DD1005E8888 /* ShareWork+GetSipIP.m */; };
@@ -309,7 +309,6 @@
 		3420B39C1E65689200AE228F /* online_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online_e.png; sourceTree = "<group>"; };
 		3420B39F1E65689B00AE228F /* busy_e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busy_e.png; sourceTree = "<group>"; };
 		3420B3A11E657EBF00AE228F /* English_tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = English_tips.png; sourceTree = "<group>"; };
-		34263E1B1E6D4A6900338F4B /* egg_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg_guide.png; sourceTree = "<group>"; };
 		343E50821E54473B002C2AD1 /* egg_device_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device_n@2x.png"; sourceTree = "<group>"; };
 		343E50831E54473B002C2AD1 /* egg_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_device@2x.png"; sourceTree = "<group>"; };
 		343E50841E54473B002C2AD1 /* egg_more_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg_more_s@2x.png"; sourceTree = "<group>"; };
@@ -338,6 +337,7 @@
 		3496F9D01E04DF8E00744A1E /* funpaw.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funpaw.xcdatamodel; sourceTree = "<group>"; };
 		3496F9D51E04DF8E00744A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3496F9D71E04DF8E00744A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349FB0B11E6FDA1C00DFEF09 /* egg_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg_guide.png; sourceTree = "<group>"; };
 		34A51E5B1E651958005E8888 /* CompleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleViewController.h; sourceTree = "<group>"; };
 		34A51E5C1E651958005E8888 /* CompleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleViewController.m; sourceTree = "<group>"; };
 		34A51E5D1E651958005E8888 /* RegiestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
@@ -1165,7 +1165,7 @@
 		3420B3961E65676000AE228F /* eggImage */ = {
 			isa = PBXGroup;
 			children = (
-				34263E1B1E6D4A6900338F4B /* egg_guide.png */,
+				349FB0B11E6FDA1C00DFEF09 /* egg_guide.png */,
 				7D4046991E6CFA4D008D1E04 /* yin1.jpg */,
 				7D40469A1E6CFA4D008D1E04 /* yin2.jpg */,
 				7D40469B1E6CFA4D008D1E04 /* yin3.jpg */,
@@ -2752,7 +2752,7 @@
 				7D8BBBB01E66AA0300CB4DD9 /* pickk.png in Resources */,
 				34CAC2311E5BEA1D00249BA9 /* hold_off.png in Resources */,
 				34CAC24D1E5BEA1D00249BA9 /* rock.wav in Resources */,
-				34263E1C1E6D4A6900338F4B /* egg_guide.png in Resources */,
+				349FB0B21E6FDA1C00DFEF09 /* egg_guide.png in Resources */,
 				7D2C4A921E696E5D002E40E0 /* visitermeidian@2x.png in Resources */,
 				34C102EF1E52D85500FFB241 /* Assets.xcassets in Resources */,
 				34E166521E0520F1004A65AB /* 退出.png in Resources */,

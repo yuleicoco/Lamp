@@ -168,8 +168,7 @@
         make.left.equalTo(devNum).with.offset(13);
         make.centerY.equalTo(devNum.mas_centerY);
         
-        
-        
+    
     }];
     
     [wifiLB mas_makeConstraints:^(MASConstraintMaker *make) {
