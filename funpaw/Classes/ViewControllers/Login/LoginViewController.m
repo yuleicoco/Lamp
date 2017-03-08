@@ -315,7 +315,7 @@
                 
                 LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                [defaults setObject:@"LoginSB" forKey:loginmodel.deviceno];
+              [defaults setObject:model.retVal[@"deviceno"] forKey:@"logindeviceno"];
                 [defaults synchronize];
                 
                 [[AccountManager sharedAccountManager]login:loginmodel];
@@ -343,13 +343,18 @@
         return;
     }
     
-    //[[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
     [[ShareWork sharedManager]memberLoginWithaccountnumber:_numberTextfield.text password:_passwordTextfield.text complete:^(BaseModel *model) {
         if (model) {
             if ([model.retCode isEqualToString:@"0000"]) {
                 LoginModel * loginmodel = [[LoginModel alloc]initWithDictionary:model.retVal error:nil];
                 [[AccountManager sharedAccountManager]login:loginmodel];
                 [[NSNotificationCenter defaultCenter] postNotificationName:NotificationLoginStateChange object:@YES];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:model.retVal[@"deviceno"] forKey:@"logindeviceno"];
+                [defaults synchronize];
+                
+                
+                
             
             }else{
                   [[AppUtil appTopViewController]showHint:model.retDesc];

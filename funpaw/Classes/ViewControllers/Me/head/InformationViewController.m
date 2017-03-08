@@ -39,7 +39,7 @@ static NSString * cellId = @"InformationCellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = LIGHT_GRAY_COLOR;
-    [self setNavTitle:@"我的"];
+    [self setNavTitle:@"昵称"];
     _imagePicker =[[UIImagePickerController alloc]init];
     _imagePicker.delegate= self;
 }
